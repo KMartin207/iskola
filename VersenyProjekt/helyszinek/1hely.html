@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="history.back()">Vissza</button>
+
+    <h1>1 hely</h1>
+
+
+    <input type="text" id="ido" value="00:00" disabled style="width: 50px;">
+    <p id="perc">00</p>
+    <p>:</p>
+    <p id="masperc">00</p>
+
+    <input type="button" value="START" onclick="startTimer()">
+
+<script>
+
+    /*function idozito(){
+        
+        perc = 0
+        masperc = 0
+        
+
+
+        for(i = 0; i < 12; i++) {
+            for(j = 0; j < 60; j++) {
+                delay(1000)
+                masperc++
+                document.getElementById("masperc").innerHTML = masperc
+                
+            }
+            masperc = 0
+            perc++
+            document.getElementById("perc").innerHTML = perc 
+    }*/
+        
+    function delay(ms) { 
+        return new Promise(resolve => setTimeout(resolve, ms)); 
+    }
+    async function startTimer() { 
+        let perc = 0; 
+        let masperc = 0; 
+        
+        for (let i = 0; i < 12; i++) { 
+            for (let j = 0; j < 60; j++) { 
+                await delay(1000); 
+                masperc++; 
+                document.getElementById("masperc").innerHTML = masperc < 10 ? "0" + masperc : masperc; 
+            }
+            masperc = 0; 
+            document.getElementById("masperc").innerHTML = "00"; 
+            perc++; 
+            document.getElementById("perc").innerHTML = perc < 10 ? "0" + perc : perc; 
+        } 
+        alert("df")
+    }
+    
+    
+
+</script>
+
+</body>
+</html>
