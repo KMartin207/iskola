@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <h1>Vendégkönyv</h1>
 
 <form action='vendegkonyv_ir.php' method='post' target='kisablak' enctype='multipart/form-data'>
@@ -12,24 +15,35 @@
    <p>+</p>
    <p id='masodik'>0</p>
 
-   <script>
+   <input type="text" id="beirtSzam">
+
+   <input type='submit' onclick="ellenorz()">
+
+</form>
+
+<script>
 	randomSzam1 = Math.floor(Math.random(1) * 15);
 	randomSzam2 = Math.floor(Math.random(1) * 15);
 
 	document.getElementById("elso").innerHTML = randomSzam1;
 	document.getElementById("masodik").innerHTML = randomSzam2;
 
+	ossz = randomSzam1 + randomSzam2;
+
+	function ellenorz() {
+		if (ossz == document.getElementById("beirtSzam").value) {
+			alert("helyes")
+		}
+	}
+	
    </script>
 
-
-   <input type='submit'>
-
-</form>
 
 <hr>
 
 <?php
-	
+	$_SESSION['osszeg'] = "<script>document.getElementById('elso').value + document.getElementById('masodik').value</script>"
+	$_SESSION['beirtSzam'] = "<script>document.getElementById('beirtSzam').value</script>"
 
     $fajlnev = "vendegkonyv.txt" ;
     if( file_exists($fajlnev) )

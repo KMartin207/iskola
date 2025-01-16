@@ -5,7 +5,7 @@
     print "<hr>" ;
 
     print_r( $_FILES ) ;
-
+    if( $_POST['osszeg'] != $_POST['beirtSzam']) die("<script>  alert(' van!') </script>")
     if( $_POST['nev']=="" )  die("<script>  alert('Baj van!') </script>") ;
     if( mb_strlen($_POST['uzenet'])<10 )  die("<script>  alert('Legalább 10 karaktert írj...') </script>") ;
 
