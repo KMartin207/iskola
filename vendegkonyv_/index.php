@@ -17,6 +17,8 @@
 	if( $p=="forum"   )  print "Kütyü vélemények"       ; else
 	if( $p=="szavazas"   )  print "Szavazás"            ; else
 	if( $p=="vendegkonyv")  print "Vendégkönyv"         ; else
+	if( $p=="API")  		print "API"         		; else
+	if( $p=="pénznem")  		print "pénznem"         		; else
 	                     print "404 kütyü "             ;
 
 	print " - kütyübolt.hu" ;
@@ -78,6 +80,8 @@
       <a href='./?p=forum'   > Fórum       </a>
       <a href='./?p=szavazas'> Szavazás    </a>
       <a href='./?p=vendegkonyv'> Vendégkönyv  </a>
+	  <a href='./?p=API'> API  </a>
+	  <a href='./?p=pénznem'> Pénznemek  </a>
     </div>
 
     <div id='tartalom'>
@@ -89,6 +93,8 @@
 	if( $p=="forum"   )  print "<h1> Kíváncsiak vagyunk a véleményedre </h1>" ; else
 	if( $p=="szavazas")  include( "szavazas.php" )                            ; else
 	if( $p=="vendegkonyv")  include( "vendegkonyv_form.php" )                 ; else
+	if( $p=="API")  include( "API.php" )                 ; else
+	if( $p=="pénznem")  include( "penz.php" )                 ; else
 	                     include( "404.php" )                                 ;
 ?>
     </div>
