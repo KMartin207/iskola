@@ -6,11 +6,24 @@
     <title>Document</title>
 </head>
 <body>
+    <style>
+        td, th {
+            border: solid 2px black;
+        }
+        table {
+            margin: 20px;
+        }
+        #kiirat {
+
+            margin: 25%;
+        }
+        
+    </style>
     
 
 <?php
 
-print "A lekérdezés időpontja: " . date("H:i:s");
+print "<span id='kiirat'>A lekérdezés időpontja: " . date("H:i:s") . "</span>";
 
 $fk = @fopen("https://api.coingecko.com/api/v3/exchange_rates", "r");
 
@@ -48,14 +61,17 @@ if($fk) {
 
 
     <tr>
-        <td><?php print round($huf / $eur); ?></td>
-        <td><?php print round($huf / $usd); ?></td>
-        <td><?php print round($huf / $gbp); ?></td>
-        <td><?php print round($huf / $chf); ?></td>
-        <td><?php print round($huf / $jpy); ?></td>
-        <td><?php print round($huf / $czk); ?></td>
-        <td><?php print round($huf / $pln); ?></td>
+        
+        <td><?php if(isset($adat)) print round($huf / $eur); ?></td>
+        <td><?php if(isset($adat)) print round($huf / $usd); ?></td>
+        <td><?php if(isset($adat)) print round($huf / $gbp); ?></td>
+        <td><?php if(isset($adat)) print round($huf / $chf); ?></td>
+        <td><?php if(isset($adat)) print round($huf / $jpy); ?></td>
+        <td><?php if(isset($adat)) print round($huf / $czk); ?></td>
+        <td><?php if(isset($adat)) print round($huf / $pln); else print "Jelenleg nem működik az API";?></td>       
     </tr>
+
+    
 
 </table>
 
