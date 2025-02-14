@@ -7,6 +7,28 @@
 </head>
 <body>
     
+<style>
+    #valto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #valto-tartalom {
+        background: grey;
+        border-radius: 5px 5px 10px;
+        padding: 10px;
+    }
+    
+    #gomb {
+        margin-left: 60px;
+    }
+    input {
+        margin-left: 5px;
+        size: 10px;
+    }
+    
+
+</style>
 
 <?php
 
@@ -77,50 +99,72 @@ $EUR = $adat->rates->EUR ;
 
 //$_POST['valto_bol'] = "EUR" ;
 
-$bol = $_POST['valto_bol']  ;  
-$bol_ertek = $adat->rates->$bol ;
+if( isset($_POST['valto_bol'])) $bol = $_POST['valto_bol']  ;  
+if( isset($_POST['valto_bol'])) $bol_ertek = $adat->rates->$bol ;
 
-$ba = $_POST['valto_ba']  ;  
-$ba_ertek = $adat->rates->$ba ;
+if( isset($_POST['valto_ba'])) $ba = $_POST['valto_ba']  ;  
+if( isset($_POST['valto_ba'])) $ba_ertek = $adat->rates->$ba ;
 
-$ertek = $_POST['ertek'];
+if( isset($_POST['ertek'])) $ertek = $_POST['ertek'];
 
-$eredmeny = ($bol_ertek * $ba_ertek) ; 
-
-
+if( isset($_POST['ertek'])) $eredmeny = round((($ertek * $ba_ertek) / $bol_ertek)) ; 
 
 
-print $bol_ertek;
+
+
+
 
 
 
 
 ?>
 
-<form method='post'>
-    <select name='valto_bol'>
-        <option>---Válassz!---</option>
-        <option>EUR</option>
-        <option>HUF</option>
-        <option>USD</option>
-    </select>
-    <br>
-    <input type="text" name='ertek'>
-    <br>
-    <br>
-    <select name='valto_ba'>
-        <option>---Válassz!---</option>
-        <option>EUR</option>
-        <option>HUF</option>
-        <option>USD</option>
-    </select>
-    <br>
-    <input type="text" disabled value='<?php print $eredmeny; ?>'>
+<div id='valto'>
+    <div id='valto-tartalom'>
 
-    <br><br>
-    <input type="Submit" value="Váltás">
 
-</form>
+        <form method='post'>
+            <select name='valto_bol' placeholde='EUR'>
+                <option><?php if( isset($_POST['valto_bol'])) print $_POST['valto_bol']; else print '---Válassz!---'?></option>
+                <option>HUF</option>
+                <option>EUR</option>
+                <option>USD</option>
+                <option>CHF</option>
+                <option>GBP</option>
+                <option>CZK</option>
+                <option>HRK</option>
+                <option>PLN</option>
+                <option>JPY</option>
+                <option>BTC</option>
+            </select>
+            <br>
+            <input type="text" value='<?php if( isset($_POST['ertek'])) print $ertek; ?>' disabled>
+            <br>
+            <input type="text" name='ertek'>
+            <br>
+            <br>
+            <select name='valto_ba'>
+                <option><?php if( isset($_POST['valto_bol'])) print $_POST['valto_ba']; else print '---Válassz!---'?></option>
+                <option>HUF</option>
+                <option>EUR</option>
+                <option>USD</option>
+                <option>CHF</option>
+                <option>GBP</option>
+                <option>CZK</option>
+                <option>HRK</option>
+                <option>PLN</option>
+                <option>JPY</option>
+                <option>BTC</option>
+            </select>
+            <br>
+            <input type="text" disabled value='<?php if( isset($_POST['valto_bol'])) print $eredmeny; ?>'>
+
+            <br><br>
+            <input type="Submit" value="Váltás" id='gomb'>
+
+        </form>
+    </div>
+</div>
 
 </body>
 </html>
