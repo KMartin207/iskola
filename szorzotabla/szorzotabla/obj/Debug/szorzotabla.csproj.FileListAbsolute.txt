@@ -1,0 +1,6 @@
+Z:\Programozas_C\12\szorzotabla\szorzotabla\bin\Debug\szorzotabla.exe.config
+Z:\Programozas_C\12\szorzotabla\szorzotabla\bin\Debug\szorzotabla.exe
+Z:\Programozas_C\12\szorzotabla\szorzotabla\bin\Debug\szorzotabla.pdb
+Z:\Programozas_C\12\szorzotabla\szorzotabla\obj\Debug\szorzotabla.csprojAssemblyReference.cache
+Z:\Programozas_C\12\szorzotabla\szorzotabla\obj\Debug\szorzotabla.exe
+Z:\Programozas_C\12\szorzotabla\szorzotabla\obj\Debug\szorzotabla.pdb
