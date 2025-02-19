@@ -32,7 +32,7 @@
     if( $k==""        )  print "<h1>Kutya képek</h1>"  ; else
 	if( $k=="akita"        )  print "<h1>Akita</h1>"  ; else
 	if( $k=="mix"   )  print "<h1>Mix</h1>"    ; else
-    if( $k=="labrador"   )  print "<h1>Labrador</h1>"    ; else
+    if( $k=="Labrador"   )  print "<h1>Labrador</h1>"    ; else
     if( $k=="chihuahua"   )  print "<h1>Chihuahua</h1>"    ; else
     if( $k=="corgi"   )  print "<h1>Corgi</h1>"    ;
 ?>

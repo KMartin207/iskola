@@ -107,11 +107,11 @@ if( isset($_POST['valto_ba'])) $ba_ertek = $adat->rates->$ba ;
 
 if( isset($_POST['ertek'])) $ertek = $_POST['ertek'];
 
-if( isset($_POST['ertek'])) $eredmeny = (($ertek * $ba_ertek) / $bol_ertek) ; 
+if( isset($_POST['ertek'])) $eredmeny = round((($ertek * $ba_ertek) / $bol_ertek)) ; 
 
 
 
-print_r($eredmeny);
+
 
 
 
