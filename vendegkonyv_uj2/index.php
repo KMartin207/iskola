@@ -1,8 +1,7 @@
 <?php
     session_start() ;
 
-    if( isset($_SESSION['verification']) and $_SESSION['verification'] == 'belepve') require('fooldal.php');
-
+    if( isset($_SESSION['verification'])) include('fooldal.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,8 +12,9 @@
 </head>
 <body>
     <?php 
+
     if( isset($_GET['l'])) $l = $_GET['l'];
-    else                   $l = ''        ;
+    else                   $l = './index.php/?l=login'        ;
 
     if( $l == 'login') {
         if( !isset($_SESSION['verification'])) {
@@ -34,61 +34,53 @@
 
 
     <?php
-
-            
-
-            
-            
             $file = 'adattarolas.txt';
             if( isset($_POST['username'])) {
-                
                 $fp = fopen( $file, "r" ) ;
                 $ertekek = fread( $fp , filesize($file) ) ;
                 fclose( $fp ) ;
                 
-                $user = explode(" ", $ertekek);
-                if($_POST['username'] == $user[0] and $_POST['password'] == $user[1]) {
-                    $_SESSION['verification'] = 'belepve';
+                
+                $user = explode(";", $ertekek);
+                if($_POST['username'] == $user[0] && $_POST['password'] == $user[1]) {
+                    $_SESSION['verification'] = 'true';
                 }
                 
             }
         }
     }    
-
-    if( $l == 'register') {
-    ?>
-        <h1>Registration</h1>
-        <form method='post'>
-            Username: <input type="text" name='regUsername'>
-            <br><br>
-            Passowrd: <input type="password" name='regPassword'>
-            <br>
-            <input type="submit" value='Registration'>
-
-            <a href="./?l=login">Login</a>
-
-        </form>
-    <?php
-        $file = 'adattarolas.txt';
-        if( isset($_POST['regUsername'])) {
-            
-            $adat = $_POST['regUsername'] . "; " . $_POST['regPassword'];
-            
-            $fp = fopen( $file, "w" ) ;
-            $ertekek = fwrite( $fp , $adat ) ;
-            fclose( $fp ) ;
-            
-
-            
-            $_SESSION['verification'] = 'regisztrálva';
-            
-            
-        }
-    }
-
-    ?>
-
     
+    
+        if( $l == 'register') {
+            if( !isset($_SESSION['verification']) && $_SESSION['verification'] == 'regisztrálva') {
+        ?>
+            <h1>Registration</h1>
+            <form method='post'>
+                Username: <input type="text" name='regUsername'>
+                <br><br>
+                Passowrd: <input type="password" name='regPassword'>
+                <br>
+                <input type="submit" value='Registration'>
+
+                <a href="./?l=login">Login</a>
+
+            </form>
+        
+        <?php
+                $file = 'adattarolas.txt';
+                if( isset($_POST['regUsername'])) {
+                    
+                    $adat = $_POST['regUsername'] . "; " . $_POST['regPassword'] . "\r\n";
+                    
+                    $fp = fopen( $file, "a" ) ;
+                    $ertekek = fwrite( $fp, $adat ) ;
+                    fclose( $fp ) ;
+                     
+                }
+            }
+        }
+        
+        ?>
 
 </body>
 </html>
