@@ -1,9 +1,7 @@
 <?php
     session_start() ;
 
-    $_SESSION['verification'] = '';
-
-    
+   
         
     
 ?>
@@ -42,16 +40,16 @@
     }
     
     #login {
-        margin-top: 30%;
         background-color: grey;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-bottom: 10px;
-
-        margin-left: auto;
-        margin-right: auto;
-        max-width: fit-content;
         border-radius: 5px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        
+
     }
 
     
@@ -59,61 +57,66 @@
     
     <?php 
 
-        if($l == 'belepve') {
+        if( isset($_SESSION['verification'] ))
+         {
 
             include("fooldal.php");
-        }   
-    
-
-
-    if( $l == 'login') {
-        if( $_SESSION['verification'] == '') {
-    ?>
+        }  
+        else  
+     {
+        
+    print "
         <div id='login'>
 
             <form method='post'>
                 <h1>Login</h1>
-                Username: <input type="text" name='username' class='ir'>
+                Username: <input type=text name='username' class='ir'>
                 <br><br>
-                Password: <input type="password" name='password' class='ir'>
+                Password: <input type=password name='password' class='ir'>
                 <br><br>
-                <input type="submit" value='Login' class='kuld'>
+                <input type=submit value='Login' class='kuld'>
                 <br>
-                <a href="./?l=register">Registration</a>
+                <a href='./?l=register'>Registration</a>
 
             </form>
         </div>
         
+";
 
+  
+    }
 
-    <?php
             $file = 'adattarolas.txt';
             if( isset($_POST['username'])) {
 
                 $lines = count(file($file));
-                print $lines;
+
+                $fp = fopen( $file, "r" ) ;
                 for($i = 0; $i < $lines; $i++) {
-                    $fp = fopen( $file, "r" ) ;
-                    $ertekek = fread( $fp , filesize($file) ) ;
-                    fclose( $fp ) ;
+                    
+                    $ertekek = fgets( $fp ) ;
+                    $ertekek = str_replace("\r\n", "", $ertekek ) ;
+                    
                     
                     
                     $user = explode(";", $ertekek);
+
                     if($_POST['username'] == $user[0] && $_POST['password'] == $user[1]) {
                         $_SESSION['username'] = $_POST['username'];
                         $_SESSION['password'] = $_POST['password'];
                         $_SESSION['verification'] = 'true';
-                        ?>
-                            <a href="./?l=belepve">Sikeresen beléptél!</a>
-                        <?php
+                        
+                        print "    <script>  location.href=location.href  </script> " ;
+                        
                         break;
                     }
                 }
+                fclose( $fp ) ;
                 
                 
             }
-        }
-    }    
+        
+      
     
     
         if( $l == 'register') {
@@ -136,12 +139,12 @@
                 $file = 'adattarolas.txt';
                 if( isset($_POST['regUsername'])) {
                     if($_POST['regUsername'] != '' and $_POST['regPassword'] != '') {
-                        $adat = $_POST['regUsername'] . "; " . $_POST['regPassword'] . "\r\n";
+                        $adat = $_POST['regUsername'] . ";" . $_POST['regPassword'] . "\r\n";
                         
                         $fp = fopen( $file, "a" ) ;
                         $ertekek = fwrite( $fp, $adat ) ;
                         fclose( $fp ) ;
-                        $_SESSION['verification'] = 'register';
+                        
                     }
                 }
             

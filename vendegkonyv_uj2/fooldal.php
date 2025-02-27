@@ -28,13 +28,27 @@
 
   <style>
 
+	.kijel {
+		background-color: blue;
+		color: white;
+		margin: auto;
+		display:flex;
+		margin-top: 5px;
+	}
+
 	.profil {
 		background-color: blue;
 		border-radius: 30px;
 		margin: 10px;
-		padding: 10px;
+		padding: 15px;
 		color: white;
 		display: inline-block;
+	}
+
+	.ikon {
+		height: 30px;
+		width: 30px;
+		
 	}
 
 	.gomb {
@@ -96,11 +110,23 @@
 
 	<div class='profil'>
 		<?php print 'Felhasználónév: ' . $_SESSION['username'] ?>
+		<a href="./?l=belepve&p=setting"><img src="kepek/setting.png" class='ikon'></a>
 		<br>
+		
+		<form method='post'>	
+			<input type="submit" value="Kijelentkezés" name='kijel' class='kijel'>
+		</form>
+
 		<?php
-		$_SESSION['verification'] = "";
+
+			if( isset($_POST['kijel'])) {
+
+				session_destroy();
+				header("Location: index.php");
+				exit();
+			}
 		?>
-		<a href="index.php/?l=login" class='gomb'>Kijelentkezés</a>
+
 	</div>
 	
 
@@ -128,6 +154,7 @@
 	if( $p=="szavazas")  include( "szavazas.php" )                            ; else
 	if( $p=="vendegkonyv")  include( "vendegkonyv_form.php" )                 ; else
 	if( $p=="API")  include( "API.php" )                 ; else
+	if( $p=="setting")  include( "setting.php" )                 ; else
 	if( $p=="szorzo")  include( "szorzotabla.php" )                 ; else
 	                     include( "404.php" )                                 ;
 ?>
