@@ -19,11 +19,11 @@
 <body>
 
 <div id='menu' style="margin: 10px;">
-      <a href='./?p=API&g=kutya&k=akita'> Akita </a>
-      <a href='./?p=API&g=kutya&k=mix'   > Mix   </a>
-      <a href='./?p=API&g=kutya&k=labrador'   > Labrador   </a>
-      <a href='./?p=API&g=kutya&k=chihuahua'   > Cihuahua   </a>
-      <a href='./?p=API&g=kutya&k=corgi'   > Corgi   </a>
+      <a href='./?l=belepve&p=API&g=kutya&k=akita'> Akita </a>
+      <a href='./?l=belepve&p=API&g=kutya&k=mix'   > Mix   </a>
+      <a href='./?l=belepve&p=API&g=kutya&k=labrador'   > Labrador   </a>
+      <a href='./?l=belepve&p=API&g=kutya&k=chihuahua'   > Cihuahua   </a>
+      <a href='./?l=belepve&p=API&g=kutya&k=corgi'   > Corgi   </a>
       
 </div>
 

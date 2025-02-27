@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html>
 
@@ -26,6 +27,24 @@
   </head>
 
   <style>
+
+	.profil {
+		background-color: blue;
+		border-radius: 30px;
+		margin: 10px;
+		padding: 10px;
+		color: white;
+		display: inline-block;
+	}
+
+	.gomb {
+		text-decoration: none;
+		color: white;
+	}
+
+	.gomb:hover {
+		color: grey;
+	}
 
     body
     {
@@ -62,25 +81,41 @@
     div#lablec
     {
 	background-color : #BBB           ;
-	/*text-align: center;
-
-	position: absolute;
-    bottom: 0px;*/
+	position: fixed;
+	inset: 0px;
+	width: 95%;
+	height: 20px;
+	padding: 20px;
+	margin-top: 97%;
+	
     }
 
   </style>
 
   <body>
+
+	<div class='profil'>
+		<?php print 'Felhasználónév: ' . $_SESSION['username'] ?>
+		<br>
+		<?php
+		$_SESSION['verification'] = "";
+		?>
+		<a href="index.php/?l=login" class='gomb'>Kijelentkezés</a>
+	</div>
+	
+
+
+
     <div id='menu'>
-      <a href='./'           > Kezdőlap    </a>
-      <a href='./?p=kapcs'   > Kapcsolat   </a>
-      <a href='./?p=eler'    > Elérhetőség </a>
-      <a href='./?p=webshop' > Webshop     </a>
-      <a href='./?p=forum'   > Fórum       </a>
-      <a href='./?p=szavazas'> Szavazás    </a>
-      <a href='./?p=vendegkonyv'> Vendégkönyv  </a>
-	  <a href='./?p=API'> API  </a>
-	  <a href='./?p=szorzo&m=10'> Szorzótábla  </a>
+      <!--<a href='./l=belepve&'           > Kezdőlap    </a>-->
+      <a href='./?l=belepve&p=kapcs'   > Kapcsolat   </a>
+      <a href='./?l=belepve&p=eler'    > Elérhetőség </a>
+      <a href='./?l=belepve&p=webshop' > Webshop     </a>
+      <a href='./?l=belepve&p=forum'   > Fórum       </a>
+      <a href='./?l=belepve&p=szavazas'> Szavazás    </a>
+      <a href='./?l=belepve&p=vendegkonyv'> Vendégkönyv  </a>
+	  <a href='./?l=belepve&p=API'> API  </a>
+	  <a href='./?l=belepve&p=szorzo&m=10'> Szorzótábla  </a>
     </div>
 
     <div id='tartalom'>

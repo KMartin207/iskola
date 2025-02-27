@@ -22,7 +22,7 @@
 
 
 <div id='menu' style='margin: 10px;'>
-      <a href='./?p=API&g=kutya' > Kutya </a>
+      <a href='./?l=belepve&p=API&g=kutya' > Kutya </a>
       <a href='./?p=API&g=randuser' > Random felhasználó </a>
       <a href='./?p=API&g=penz'   > Penz   </a>
       <a href='./?p=API&g=koordinata'   > Koordinata   </a>

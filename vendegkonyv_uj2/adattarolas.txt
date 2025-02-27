@@ -1,6 +1,2 @@
-km12; 12345
-km12; 12345
 km25; 1234
-sbfusdjf; fdbsdig
-sbfusdjf; fdbsdig
-; 
+11; 1
