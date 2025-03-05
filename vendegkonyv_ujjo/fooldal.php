@@ -104,6 +104,12 @@
 	
     }
 
+	#menu-button {
+		background-color : #AAA           ;
+		text-align       : center         ;
+		display: inline;
+	}
+
   </style>
 
   <body>
@@ -130,19 +136,45 @@
 	</div>
 	
 
+	<?php
+		$pressed = 'false';
+
+		if( $pressed == 'true'){
+			print "
+				<div id='menu'>
+					<!--<a href='./l=belepve&'           > Kezdőlap    </a>-->
+					<a href='./?l=belepve&p=kapcs'   > Kapcsolat   </a>
+					<a href='./?l=belepve&p=eler'    > Elérhetőség </a>
+					<a href='./?l=belepve&p=webshop' > Webshop     </a>
+					<a href='./?l=belepve&p=forum'   > Fórum       </a>
+					<a href='./?l=belepve&p=szavazas'> Szavazás    </a>
+					<a href='./?l=belepve&p=vendegkonyv'> Vendégkönyv  </a>
+					<a href='./?l=belepve&p=API'> API  </a>
+					<a href='./?l=belepve&p=szorzo&m=10'> Szorzótábla  </a>
+				</div>
+			";
+		}
+		else {
+			print "
+				<div id='menu-button'>
+					<form method='post'>
+						<input type='image' src='kepek/setting.png' class='ikon'>
+					</form>
+				
+				</div>
+			";
+
+			if ($_SERVER["REQUEST_METHOD"] == "POST") {
+				$pressed = 'true';
+
+			}
 
 
-    <div id='menu'>
-      <!--<a href='./l=belepve&'           > Kezdőlap    </a>-->
-      <a href='./?l=belepve&p=kapcs'   > Kapcsolat   </a>
-      <a href='./?l=belepve&p=eler'    > Elérhetőség </a>
-      <a href='./?l=belepve&p=webshop' > Webshop     </a>
-      <a href='./?l=belepve&p=forum'   > Fórum       </a>
-      <a href='./?l=belepve&p=szavazas'> Szavazás    </a>
-      <a href='./?l=belepve&p=vendegkonyv'> Vendégkönyv  </a>
-	  <a href='./?l=belepve&p=API'> API  </a>
-	  <a href='./?l=belepve&p=szorzo&m=10'> Szorzótábla  </a>
-    </div>
+		}
+		print $pressed;
+	?>
+
+    
 
     <div id='tartalom'>
 <?php
@@ -161,7 +193,7 @@
     </div>
 
 
-<iframe name='kisablak' width=640 height=120 frameborder=1></iframe>
+
 
     <div id='lablec'>
 <?php
