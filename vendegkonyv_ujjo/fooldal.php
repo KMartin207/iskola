@@ -137,9 +137,9 @@
 	
 
 	<?php
-		$pressed = 'false';
+		
 
-		if( $pressed == 'true'){
+
 			print "
 				<div id='menu'>
 					<!--<a href='./l=belepve&'           > Kezdőlap    </a>-->
@@ -151,10 +151,11 @@
 					<a href='./?l=belepve&p=vendegkonyv'> Vendégkönyv  </a>
 					<a href='./?l=belepve&p=API'> API  </a>
 					<a href='./?l=belepve&p=szorzo&m=10'> Szorzótábla  </a>
+					<a href='./?l=belepve&p=idojaras'> Időjárás  </a>
 				</div>
 			";
-		}
-		else {
+
+
 			print "
 				<div id='menu-button'>
 					<form method='post'>
@@ -170,8 +171,8 @@
 			}
 
 
-		}
-		print $pressed;
+		
+
 	?>
 
     
@@ -188,6 +189,7 @@
 	if( $p=="API")  include( "API.php" )                 ; else
 	if( $p=="setting")  include( "setting.php" )                 ; else
 	if( $p=="szorzo")  include( "szorzotabla.php" )                 ; else
+	if( $p=="idojaras")  include( "idojaras.php" )                 ; else
 	                     include( "404.php" )                                 ;
 ?>
     </div>

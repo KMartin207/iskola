@@ -17,8 +17,7 @@
     <?php
     if( isset($_SESSION['verification'])) {
 
-        echo "html {background-image: linear-gradient(to bottom, #051937, #002b47, #003c42, #004928, #385100);
-            background-repeat: no-repeat;
+        echo "html {background-image: white;
             background-size: cover; /* Scales the image to cover the entire viewport */
     background-position: center; /* Centers the image */
     background-attachment: fixed; /* Keeps it fixed while scrolling */
