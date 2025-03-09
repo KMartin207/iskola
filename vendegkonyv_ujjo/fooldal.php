@@ -24,6 +24,9 @@
 	print " - kütyübolt.hu" ;
 ?>
     </title>
+
+	<link rel="stylesheet" href="style.css">
+
   </head>
 
   <style>
@@ -115,7 +118,16 @@
   <body>
 
 	<div class='profil'>
-		<?php print 'Felhasználónév: ' . $_SESSION['username'] ?>
+		<?php 
+			print "
+				<div>
+					Felhasználónév: $_SESSION[username]
+					<br>
+					Egyenleg: $_SESSION[egyenleg]
+				</div>
+			"; 
+			
+		?>
 		<a href="./?l=belepve&p=setting"><img src="kepek/setting.png" class='ikon'></a>
 		<br>
 		
@@ -152,6 +164,7 @@
 					<a href='./?l=belepve&p=API'> API  </a>
 					<a href='./?l=belepve&p=szorzo&m=10'> Szorzótábla  </a>
 					<a href='./?l=belepve&p=idojaras'> Időjárás  </a>
+					<a href='./?l=belepve&p=slot'> Slot  </a>
 				</div>
 			";
 
@@ -190,6 +203,7 @@
 	if( $p=="setting")  include( "setting.php" )                 ; else
 	if( $p=="szorzo")  include( "szorzotabla.php" )                 ; else
 	if( $p=="idojaras")  include( "idojaras.php" )                 ; else
+	if( $p=="slot")  include( "slot.php" )                 ; else
 	                     include( "404.php" )                                 ;
 ?>
     </div>
@@ -199,7 +213,7 @@
 
     <div id='lablec'>
 <?php
-	$fajlnev = date("Ymd") . ".txt" ;
+	$fajlnev = "./latogatottsag/" . date("Ymd") . ".txt" ;
 	if( !file_exists($fajlnev) )
 	{
 		$fp = fopen( $fajlnev, "w" ) ;

@@ -63,10 +63,10 @@
                 print "
                     <tr>
                         <td>$i:00</td>
-                        <td>$varhatoHomerseklet</td>
-                        <td>$felho</td>
-                        <td>$rainChance</td>
-                        <td>$windKph</td>
+                        <td>$varhatoHomerseklet C*</td>
+                        <td>$felho %</td>
+                        <td>$rainChance %</td>
+                        <td>$windKph km/h</td>
                         <td><img src='$ikon'></td>
                     </tr>
                     <tr>

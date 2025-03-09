@@ -147,19 +147,36 @@ else {
 
             $file = 'felhasznalok/' . $_POST['username'] . '.txt';
             if( file_exists($file)) {
+                
+                $adat = $_POST['username'] . ";" . $_POST['password'] . "\n";
+
+                $fu = fopen("passUserProba.txt", "a");
+                fwrite($fu, $adat); 
+                fclose($fu);
+
+
                 $fp = fopen( $file , "r" ) ;
                 $adat = fread($fp, filesize($file));
                 fclose( $fp ) ;
     
                 $ertekek = explode("\n", $adat);
 
+
                 if( $ertekek[0] == $_POST['password']) {
             
                     $_SESSION['username'] = $_POST['username'];
                     $_SESSION['password'] = $_POST['password'];
+                    $_SESSION['egyenleg'] = $ertekek[1];
+
+                    $datum = date("Y. m. d.  /  H:i:s");
+                    $adat = $_POST['username'] . "  /  " . $datum . "\n";
+
+                    $fu = fopen("userLogs.txt", "a");
+                    fwrite($fu, $adat);
+                    fclose($fu);
     
-                    if( $ertekek[1] != '') {
-                        $_SESSION['kor'] = $ertekek[1];
+                    if( $ertekek[2] != '') {
+                        $_SESSION['kor'] = $ertekek[2];
                     }
     
     
@@ -206,7 +223,8 @@ else {
     
             if( !file_exists($file) and $_POST['regusername'] != '' and $_POST['regpassword'] != '') {
                 $fp = fopen( $file , "w" ) ;
-                fwrite($fp, $_POST['regpassword']);
+                $adat = $_POST['regpassword'] . "\n" . 0;
+                fwrite($fp, $adat);
                 fclose( $fp ) ;
             }
             else {
@@ -254,13 +272,14 @@ else {
     
                 $ertekek = explode("\n", $adat);
 
-                if( $ertekek[2] == $_POST['cCode']) {
+                if( $ertekek[3] == $_POST['cCode']) {
             
                     $_SESSION['username'] = $_POST['cUsername'];
                     $_SESSION['password'] = $ertekek[0];
+                    $_SESSION['egyenleg'] = $ertekek[1];
     
-                    if( $ertekek[1] != '') {
-                        $_SESSION['kor'] = $ertekek[1];
+                    if( $ertekek[2] != '') {
+                        $_SESSION['kor'] = $ertekek[2];
                     }
     
     

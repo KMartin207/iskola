@@ -77,8 +77,16 @@
                 Jelszó: <input type="text" name='jelsz'> <br><br>
                 Kód beállítás: <input type="text" name='kod'><br><br> 
                 <input type="submit" value="Mentés">
-            </div>
             
+            
+        </form>
+
+        <form method='post'>
+                <br>
+                A fiók törléséhez írd be a jelszót! <br>
+                <input type="text" name='deleteAccPass'><br>
+                <input type="Submit" value="Töröl">
+            </div>
         </form>
         
         
@@ -92,7 +100,7 @@
         $file = 'felhasznalok/' . $_SESSION['username'] . '.txt';
         if( isset($_POST['eletkor']) and $_POST['eletkor'] != '' ) {
             if( !($_POST['eletkor'] > 100) and !($_POST['eletkor'] < 1) ) {
-                $row = 1;
+                $row = 2;
                 $fp = file($file, FILE_IGNORE_NEW_LINES);
                 $fp[$row] = $_POST['eletkor'];
                 
@@ -104,7 +112,7 @@
 
                 $ertekek = explode("\n", $adat);
 
-                $_SESSION['kor'] = $ertekek[1];
+                $_SESSION['kor'] = $ertekek[2];
                 $_SESSION['elmentve'] = 'true';
                 print "  <script>  location.href=location.href  </script> " ;
             }
@@ -142,7 +150,7 @@
 
         if( isset($_POST['kod']) and $_POST['kod'] != '' ) {
             if( strlen($_POST['kod']) == 4 ) {
-                $row = 2;
+                $row = 3;
                 $fp = file($file, FILE_IGNORE_NEW_LINES);
                 $fp[$row] = $_POST['kod'];
                 
@@ -159,6 +167,33 @@
                 ";
             }
             
+        }
+
+        if( isset($_POST['deleteAccPass']) ) {
+            $fp = fopen( $file , "r" ) ;
+            $adat = fread($fp, filesize($file));
+            fclose( $fp ) ;
+
+            $ertekek = explode("\n", $adat);
+            if( $ertekek[0] == $_POST['deleteAccPass']) {
+        
+                session_destroy();
+                print "<script>  location.href=location.href  </script>";
+                unlink($file);
+                header("Location: index.php/?l=oke");
+				exit();
+                
+                
+            }
+            else {
+                print "
+                    <div class='notification'>
+                        <p>Helytelen jelszót adtál meg!</p>
+                        <a href='./?l=belepve&p=setting' class='gomb'>X</a>
+                    </div>
+                    
+                ";
+            }
         }
 
     ?>
