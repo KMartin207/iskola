@@ -23,14 +23,40 @@ namespace FajlkezelesBevezetes
             //fel02();
             //fel03();
             //fel04();
-            fel05();
+            //fel05();
             fel06();
             Console.ReadKey();
         }
 
         private static void fel06()
         {
-            throw new NotImplementedException();
+            Random random = new Random();
+
+            Console.Write("\n\nKérlek írj be egy számot: ");
+            int bekertSzam = Convert.ToInt32(Console.ReadLine());
+            int randSzam = 0;
+
+            Console.WriteLine("Fájlba írás... ");
+
+            StreamWriter irocsatorna = new StreamWriter(@"E:\12\penzfeldobasok.txt", false, Encoding.GetEncoding("iso-8859-2"));
+
+            for (int i = 0; i < bekertSzam; i++)
+            {
+                randSzam = random.Next(0, 2);
+                if (randSzam == 0)
+                {
+                    irocsatorna.WriteLine("F");
+                }
+                else
+                {
+                    irocsatorna.WriteLine("I");
+                }                
+            }
+
+            irocsatorna.Close();
+
+            Console.WriteLine("\nA pénzfeldobások sikeresen eltárolva.");
+            Console.WriteLine("\nFájlba írás kész");
         }
 
         private static void fel05()

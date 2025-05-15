@@ -4,3 +4,10 @@ Z:\Programozas_C\12\FajlkezelesBevezetes\FajlkezelesBevezetes\obj\Debug\Fajlkeze
 Z:\Programozas_C\12\FajlkezelesBevezetes\FajlkezelesBevezetes\bin\Debug\FajlkezelesBevezetes.exe.config
 Z:\Programozas_C\12\FajlkezelesBevezetes\FajlkezelesBevezetes\bin\Debug\FajlkezelesBevezetes.exe
 Z:\Programozas_C\12\FajlkezelesBevezetes\FajlkezelesBevezetes\bin\Debug\FajlkezelesBevezetes.pdb
+E:\12\FajlkezelesBevezetes\FajlkezelesBevezetes\bin\Debug\FajlkezelesBevezetes.exe.config
+E:\12\FajlkezelesBevezetes\FajlkezelesBevezetes\bin\Debug\FajlkezelesBevezetes.exe
+E:\12\FajlkezelesBevezetes\FajlkezelesBevezetes\bin\Debug\FajlkezelesBevezetes.pdb
+E:\12\FajlkezelesBevezetes\FajlkezelesBevezetes\obj\Debug\FajlkezelesBevezetes.csproj.AssemblyReference.cache
+E:\12\FajlkezelesBevezetes\FajlkezelesBevezetes\obj\Debug\FajlkezelesBevezetes.csproj.CoreCompileInputs.cache
+E:\12\FajlkezelesBevezetes\FajlkezelesBevezetes\obj\Debug\FajlkezelesBevezetes.exe
+E:\12\FajlkezelesBevezetes\FajlkezelesBevezetes\obj\Debug\FajlkezelesBevezetes.pdb
