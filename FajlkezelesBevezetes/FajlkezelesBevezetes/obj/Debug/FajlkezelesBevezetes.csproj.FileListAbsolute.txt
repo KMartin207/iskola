@@ -1,0 +1,6 @@
+Z:\Programozas_C\12\FajlkezelesBevezetes\FajlkezelesBevezetes\obj\Debug\FajlkezelesBevezetes.csprojAssemblyReference.cache
+Z:\Programozas_C\12\FajlkezelesBevezetes\FajlkezelesBevezetes\obj\Debug\FajlkezelesBevezetes.exe
+Z:\Programozas_C\12\FajlkezelesBevezetes\FajlkezelesBevezetes\obj\Debug\FajlkezelesBevezetes.pdb
+Z:\Programozas_C\12\FajlkezelesBevezetes\FajlkezelesBevezetes\bin\Debug\FajlkezelesBevezetes.exe.config
+Z:\Programozas_C\12\FajlkezelesBevezetes\FajlkezelesBevezetes\bin\Debug\FajlkezelesBevezetes.exe
+Z:\Programozas_C\12\FajlkezelesBevezetes\FajlkezelesBevezetes\bin\Debug\FajlkezelesBevezetes.pdb
