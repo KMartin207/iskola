@@ -1,0 +1,6 @@
+Z:\Programozas_C\12\fajlkezeles-II\fajlkezeles-II\bin\Debug\fajlkezeles-II.exe.config
+Z:\Programozas_C\12\fajlkezeles-II\fajlkezeles-II\bin\Debug\fajlkezeles-II.exe
+Z:\Programozas_C\12\fajlkezeles-II\fajlkezeles-II\bin\Debug\fajlkezeles-II.pdb
+Z:\Programozas_C\12\fajlkezeles-II\fajlkezeles-II\obj\Debug\fajlkezeles-II.csprojAssemblyReference.cache
+Z:\Programozas_C\12\fajlkezeles-II\fajlkezeles-II\obj\Debug\fajlkezeles-II.exe
+Z:\Programozas_C\12\fajlkezeles-II\fajlkezeles-II\obj\Debug\fajlkezeles-II.pdb
