@@ -1,0 +1,6 @@
+Z:\Programozas_C\12\JanosVitez_KM\JanosVitez_KM\bin\Debug\JanosVitez_KM.exe.config
+Z:\Programozas_C\12\JanosVitez_KM\JanosVitez_KM\bin\Debug\JanosVitez_KM.exe
+Z:\Programozas_C\12\JanosVitez_KM\JanosVitez_KM\bin\Debug\JanosVitez_KM.pdb
+Z:\Programozas_C\12\JanosVitez_KM\JanosVitez_KM\obj\Debug\JanosVitez_KM.csprojAssemblyReference.cache
+Z:\Programozas_C\12\JanosVitez_KM\JanosVitez_KM\obj\Debug\JanosVitez_KM.exe
+Z:\Programozas_C\12\JanosVitez_KM\JanosVitez_KM\obj\Debug\JanosVitez_KM.pdb
