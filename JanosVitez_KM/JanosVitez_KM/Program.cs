@@ -39,6 +39,9 @@ namespace JanosVitez_KM
             int hasonloBetuSzoban = 0;
             string hasonloBetuvelRendSzo = "";
             int szoSzamlalo = 0;
+            string versHatulrol = "";
+            string versRitkitva = "";
+
 
             for (int i = 0; i < darabol.Length; i++)
             {
@@ -130,11 +133,74 @@ namespace JanosVitez_KM
 
             }
 
-            Console.WriteLine($"2.a.feladat: Összesen ennyi betű van a kért betűböl a versben: {hasonloBetuOssz}");
+            Console.WriteLine($"\n2.a.feladat: Összesen ennyi betű van a kért betűböl a versben: {hasonloBetuOssz}");
 
-            Console.WriteLine($"2.b.feladat: A bekért betű a {hasonloBetuSzoban}. szóban található, és ez a szó a(z) '{hasonloBetuvelRendSzo}'");
-        
-            
+            Console.WriteLine($"\n2.b.feladat: A bekért betű a {hasonloBetuSzoban}. szóban található, és ez a szó a(z) '{hasonloBetuvelRendSzo}'");
+
+
+            for (int i = darabol.Length; i > 0; i--)
+            {
+                foreach (var betu in darabol[i-1])
+                {
+                    versHatulrol = versHatulrol + betu;
+                }
+                versHatulrol = versHatulrol + " ";
+                
+            }
+
+
+            Console.WriteLine($"\n2.c.feladat: A vers hátulról: \n{versHatulrol}\n");
+
+            for (int i = 0; i < darabol.Length; i++)
+            {
+                foreach (var betu in darabol[i])
+                {
+                    versRitkitva = versRitkitva + " " +  betu;
+                }
+            }
+
+            Console.WriteLine($"\n2.d.feladat: a vers ritkítva: \n {versRitkitva}");
+
+
+            Console.WriteLine("\n2.e.feladat: a vers kiírása függőlegesen egy jegyzetbe.");
+            Console.WriteLine("\nFáj beírása...");
+            StreamWriter irocsatorna = new StreamWriter(@"Z:\Programozas_C\12\JanosVitez_KM\JanosVitez_KM\JanosVitezFuggoleges.txt", false);
+
+           
+
+            /*for (int i = 0; i < darabol.Length; i++)
+            {
+                irocsatorna.WriteLine(darabol[i]);
+
+                foreach (var betu in darabol[i])
+                {
+                    irocsatorna.WriteLine($"\t{betu}");
+                }
+            }*/
+
+            irocsatorna.WriteLine("Szavanként:\n");
+            for (int i = 0; i < darabol.Length; i++)
+            {
+                irocsatorna.WriteLine(darabol[i]);
+
+            }
+
+            irocsatorna.WriteLine("\nBetűnként:\n");
+
+            for (int i = 0; i < darabol.Length; i++)
+            {
+                foreach (var betu in darabol[i])
+                {
+                    irocsatorna.WriteLine(betu);
+                }
+            }
+
+
+
+
+            Console.WriteLine("Sikeres fájlba írás. \nFájl bezárása.");
+            irocsatorna.Close();
+
         }
     }
 }
