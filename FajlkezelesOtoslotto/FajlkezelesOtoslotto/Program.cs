@@ -44,15 +44,22 @@ namespace FajlkezelesOtoslotto
             StreamReader olvasocsatorna = new StreamReader(@"Z:\Programozas_C\12\FajlkezelesOtoslotto\FajlkezelesOtoslotto\lottoszamok.csv");
 
             string het = olvasocsatorna.ReadLine();
+            Console.WriteLine(het);
 
-            string[,] darabol = new string[51,5];
+
+            int[,] darabol = new int[51,5];
             int sor = 0;
 
             for (int i = 0; i < darabol.GetLength(0); i++)
             {
-                            
-                darabol[i, sor] = het;
-                het = olvasocsatorna.ReadLine();
+
+                for (int f = 0; f < darabol.GetLength(1); f++)
+                {
+                    darabol[i, sor] = Convert.ToInt32(het);
+                    het = olvasocsatorna.ReadLine();
+                }
+                
+                
 
                 if (sor == 4)
                 {
@@ -63,10 +70,58 @@ namespace FajlkezelesOtoslotto
 
             olvasocsatorna.Close();
 
-            Console.WriteLine("4.feladat: Kérlek írj be egy számot 1 és 51 között.");
+            Console.Write("\n4.feladat: Kérlek írj be egy számot 1 és 51 között.");
+
+            int bekertSzam = Convert.ToInt32(Console.ReadLine());
+
+
+
+            Console.WriteLine("\n5.feladat: A beírt szám heti húzásai.\n");
+
+            for (int i = 0; i < darabol.GetLength(1); i++)
+            {
+                Console.Write($"{darabol[bekertSzam-1, i]} ");
+            }
+
+
+
+            Console.WriteLine("\n6.feladat: Volt-e olyan szám amit egyszer sem húztak ki?");
+
+            //HashSet<string> kihuzottSzamok = new HashSet<string>();
+
+
+            /*for (int i = 0; i < darabol.GetLength(0); i++)
+            {
+                for (int f = 0; f < 5; f++)
+                {
+                    //kihuzottSzamok.Add(Convert.ToChar(darabol[i,f]));
+                    Console.WriteLine(Convert.ToInt32(darabol[0, 4]));
+
+                }
+                
+                    
+                    
+                
+            }*/
 
             
 
+            for (int i = 0; i < darabol.GetLength(0); i++)
+            {
+                for (int b = 0; b < darabol.GetLength(1); b++)
+                {
+                    Console.WriteLine($"{i}.{b}/ {darabol[i, b]}");
+                }
+            }
+
+            
+
+            /*Console.WriteLine(kihuzottSzamok.Count());
+
+            if (kihuzottSzamok.Count() != 90)
+            {
+                Console.WriteLine("Volt olyan szám amit egyszer sem húztak ki.");
+            }*/
         }
     }
 }
