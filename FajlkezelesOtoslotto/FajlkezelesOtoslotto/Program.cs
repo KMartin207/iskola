@@ -38,39 +38,36 @@ namespace FajlkezelesOtoslotto
             foreach (var szam in het52)
             {
                 Console.Write($"{szam} ");
-            }
 
+            }
+            Console.WriteLine();
 
             StreamReader olvasocsatorna = new StreamReader(@"Z:\Programozas_C\12\FajlkezelesOtoslotto\FajlkezelesOtoslotto\lottoszamok.csv");
 
-            string het = olvasocsatorna.ReadLine();
-            Console.WriteLine(het);
-
+            string[] het = olvasocsatorna.ReadLine().Split(' ');
+            
 
             int[,] darabol = new int[51,5];
-            int sor = 0;
 
             for (int i = 0; i < darabol.GetLength(0); i++)
             {
 
                 for (int f = 0; f < darabol.GetLength(1); f++)
                 {
-                    darabol[i, sor] = Convert.ToInt32(het);
-                    het = olvasocsatorna.ReadLine();
+                    darabol[i, f] = Convert.ToInt32(het[f]);
+                    Console.Write($"{het[f]} ");
                 }
-                
-                
-
-                if (sor == 4)
+                Console.WriteLine();
+                if (!olvasocsatorna.EndOfStream)
                 {
-                    sor = -1;
+                    het = olvasocsatorna.ReadLine().Split(' ');
                 }
-                sor++;
+                
             }
 
             olvasocsatorna.Close();
 
-            Console.Write("\n4.feladat: Kérlek írj be egy számot 1 és 51 között.");
+            Console.Write("\n4.feladat: Kérlek írj be egy számot 1 és 51 között.\n");
 
             int bekertSzam = Convert.ToInt32(Console.ReadLine());
 
@@ -87,41 +84,105 @@ namespace FajlkezelesOtoslotto
 
             Console.WriteLine("\n6.feladat: Volt-e olyan szám amit egyszer sem húztak ki?");
 
-            //HashSet<string> kihuzottSzamok = new HashSet<string>();
+            HashSet<int> kihuzottSzamok = new HashSet<int>();
 
-
-            /*for (int i = 0; i < darabol.GetLength(0); i++)
-            {
-                for (int f = 0; f < 5; f++)
-                {
-                    //kihuzottSzamok.Add(Convert.ToChar(darabol[i,f]));
-                    Console.WriteLine(Convert.ToInt32(darabol[0, 4]));
-
-                }
-                
-                    
-                    
-                
-            }*/
-
-            
 
             for (int i = 0; i < darabol.GetLength(0); i++)
             {
-                for (int b = 0; b < darabol.GetLength(1); b++)
+                for (int f = 0; f < darabol.GetLength(1); f++)
                 {
-                    Console.WriteLine($"{i}.{b}/ {darabol[i, b]}");
+                    kihuzottSzamok.Add(darabol[i,f]);
+                    Console.WriteLine(Convert.ToInt32(darabol[i,f]));
+
                 }
+
+                Console.WriteLine(); 
+                
             }
 
-            
+            Console.WriteLine();
 
-            /*Console.WriteLine(kihuzottSzamok.Count());
+            Console.WriteLine(kihuzottSzamok.Count());
 
             if (kihuzottSzamok.Count() != 90)
             {
                 Console.WriteLine("Volt olyan szám amit egyszer sem húztak ki.");
+            }
+
+            /*kihuzottSzamok.Sort();
+
+            foreach (var szam in kihuzottSzamok)
+            {
+
             }*/
+
+            //7.feladat
+
+            int paratlanSzamok = 0;
+
+            for (int i = 0; i < darabol.GetLength(0); i++)
+            {
+                for (int f = 0; f < darabol.GetLength(1); f++)
+                {
+                    if (darabol[i,f] % 2 != 0)
+                    {
+                        paratlanSzamok++;
+                    }
+                }
+            }
+
+
+            Console.WriteLine($"\n7.feladat: Páratlan kihúzott számok mennyisége: {paratlanSzamok}");
+
+
+            //8.feladat
+
+            Console.WriteLine($"\n8.feladat: Lottó számok és a bekért számok kiírása egy jegyzetbe.");
+
+            StreamWriter irocsatorna = new StreamWriter(@"Z:\Programozas_C\12\FajlkezelesOtoslotto\FajlkezelesOtoslotto\lotto52.txt", false);
+
+            for (int i = 0; i < darabol.GetLength(0); i++)
+            {
+                for (int f = 0; f < darabol.GetLength(1); f++)
+                {
+                    irocsatorna.Write($"{darabol[i,f]} ");
+                }
+                irocsatorna.WriteLine();
+            }
+
+            foreach (var szam in het52)
+            {
+                irocsatorna.Write($"{szam} ");
+            }
+            
+
+
+            irocsatorna.Close();
+
+
+            //9.feladat
+
+            Console.WriteLine($"\n9.feladat: A kihúzott számok megszámlálása 1től 90ig.");
+
+            List<int> lottoSzamok = new List<int>();
+
+            for (int i = 0; i < darabol.GetLength(0); i++)
+            {
+                for (int f = 0; f < darabol.GetLength(1); f++)
+                {
+                    lottoSzamok.Add(darabol[i, f]);
+                }
+            }
+
+            lottoSzamok.Sort();
+
+            for (int i = 0; i < lottoSzamok.Count; i++)
+            {
+                Console.Write($"{lottoSzamok[i]} ");
+            }
+
+
+
         }
     }
 }
