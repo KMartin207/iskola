@@ -55,9 +55,7 @@ namespace FajlkezelesOtoslotto
                 for (int f = 0; f < darabol.GetLength(1); f++)
                 {
                     darabol[i, f] = Convert.ToInt32(het[f]);
-                    Console.Write($"{het[f]} ");
                 }
-                Console.WriteLine();
                 if (!olvasocsatorna.EndOfStream)
                 {
                     het = olvasocsatorna.ReadLine().Split(' ');
@@ -67,7 +65,7 @@ namespace FajlkezelesOtoslotto
 
             olvasocsatorna.Close();
 
-            Console.Write("\n4.feladat: Kérlek írj be egy számot 1 és 51 között.\n");
+            Console.Write("\n4.feladat: Kérlek írj be egy számot 1 és 51 között:");
 
             int bekertSzam = Convert.ToInt32(Console.ReadLine());
 
@@ -82,7 +80,7 @@ namespace FajlkezelesOtoslotto
 
 
 
-            Console.WriteLine("\n6.feladat: Volt-e olyan szám amit egyszer sem húztak ki?");
+            Console.WriteLine("\n\n6.feladat: Volt-e olyan szám amit egyszer sem húztak ki?");
 
             HashSet<int> kihuzottSzamok = new HashSet<int>();
 
@@ -92,22 +90,46 @@ namespace FajlkezelesOtoslotto
                 for (int f = 0; f < darabol.GetLength(1); f++)
                 {
                     kihuzottSzamok.Add(darabol[i,f]);
-                    Console.WriteLine(Convert.ToInt32(darabol[i,f]));
-
                 }
-
-                Console.WriteLine(); 
-                
             }
 
             Console.WriteLine();
 
-            Console.WriteLine(kihuzottSzamok.Count());
+            //Console.WriteLine(kihuzottSzamok.Count());
+
+            int szamlalo = 0;
+            List<int> nemKihuzottSzamok = new List<int>();
+
+
+            for (int i = 0; i < darabol.GetLength(0); i++)
+            {
+                for (int f = 0; f < darabol.GetLength(1); f++)
+                {
+                    szamlalo++;
+                    if (szamlalo < 91)
+                    {
+                        if (!kihuzottSzamok.Contains(szamlalo))
+                        {
+                            nemKihuzottSzamok.Add(szamlalo);
+                        }
+                    }
+                    
+                    
+                }
+            }
+
+            nemKihuzottSzamok.Sort();
 
             if (kihuzottSzamok.Count() != 90)
             {
-                Console.WriteLine("Volt olyan szám amit egyszer sem húztak ki.");
+                Console.WriteLine("Volt olyan szám amit egyszer sem húztak ki.\n");
+                for (int i = 0; i < nemKihuzottSzamok.Count; i++)
+                {
+                    Console.Write($"{nemKihuzottSzamok[i]} ");
+                }
+                Console.WriteLine("\n\n");
             }
+            
 
             /*kihuzottSzamok.Sort();
 
@@ -162,27 +184,27 @@ namespace FajlkezelesOtoslotto
 
             //9.feladat
 
-            Console.WriteLine($"\n9.feladat: A kihúzott számok megszámlálása 1től 90ig.");
+            //Console.WriteLine($"\n9.feladat: A kihúzott számok megszámlálása 1től 90ig.\n");
 
-            List<int> lottoSzamok = new List<int>();
+            
 
-            for (int i = 0; i < darabol.GetLength(0); i++)
+
+            //10.feladat
+
+            Console.WriteLine("\n10.feladat: Nem kihúzott prímszámok.");
+
+            List<int> nemKihuzottPrim = new List<int>() { 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89 };
+            Console.WriteLine();
+
+            for (int i = 1; i < nemKihuzottPrim.Count; i++)
             {
-                for (int f = 0; f < darabol.GetLength(1); f++)
+                if (!kihuzottSzamok.Contains(nemKihuzottPrim[i]))
                 {
-                    lottoSzamok.Add(darabol[i, f]);
+                    Console.Write($"{nemKihuzottPrim[i]} ");
+                    
                 }
             }
-
-            lottoSzamok.Sort();
-
-            for (int i = 0; i < lottoSzamok.Count; i++)
-            {
-                Console.Write($"{lottoSzamok[i]} ");
-            }
-
-
-
+            Console.WriteLine("\n");
         }
     }
 }
