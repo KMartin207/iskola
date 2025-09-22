@@ -1,0 +1,42 @@
+Enter privileged EXEC mode using the enable command.
+
+Switch>enable
+Return to user EXEC mode using the disable command.
+
+Switch#disable
+Re-enter privileged EXEC mode.
+
+Switch>enable
+Enter global configuration mode using the configure terminal command.
+
+Switch#configure terminal
+Exit global configuration mode and return to privileged EXEC mode using the exit command.
+
+Switch(config)#exit
+Re-enter global configuration mode.
+
+Switch#configure terminal
+Enter line subconfiguration mode for the console port using the line console 0 command.
+
+Switch(config)#line console 0
+Return to global configuration mode using the exit command.
+
+Switch(config-line)#exit
+Enter VTY line subconfiguration mode using the line vty 0 15 command.
+
+Switch(config)#line vty 0 15
+Return to global configuration mode.
+
+Switch(config-line)#exit
+Enter the VLAN 1 interface subconfiguration mode using the interface vlan 1 command.
+
+Switch(config)#VLAN 1
+You must enter the exact and full command.
+Switch(config)#interface vlan 1
+From interface configuration mode, switch to line console subconfiguration mode using the line console 0 global configuration command.
+
+Switch(config-if)#line console 0
+Return to privileged EXEC mode using the end command.
+
+Switch(config-line)#end
+You successfully navigated between the various IOS command line modes.
