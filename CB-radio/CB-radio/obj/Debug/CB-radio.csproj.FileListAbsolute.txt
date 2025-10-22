@@ -1,0 +1,6 @@
+Z:\Programozas_C\CB-radio\CB-radio\bin\Debug\CB-radio.exe.config
+Z:\Programozas_C\CB-radio\CB-radio\bin\Debug\CB-radio.exe
+Z:\Programozas_C\CB-radio\CB-radio\bin\Debug\CB-radio.pdb
+Z:\Programozas_C\CB-radio\CB-radio\obj\Debug\CB-radio.csprojAssemblyReference.cache
+Z:\Programozas_C\CB-radio\CB-radio\obj\Debug\CB-radio.exe
+Z:\Programozas_C\CB-radio\CB-radio\obj\Debug\CB-radio.pdb
