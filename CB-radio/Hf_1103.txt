@@ -1,0 +1,1 @@
+átalakítás hashsetre a cb-radio kódot
