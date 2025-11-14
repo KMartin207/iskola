@@ -1,0 +1,23 @@
+1 Alya A12345 Hím Plüssmacska-Boa keverék Kitűnő 1 2
+2 Farkas B67890 Nőstény Csillagpatkány-Hangyaboly keverék Megfelelő Rágcsáló típusú 1 1,5
+3 Zafír C54321 Hím Tűznyelő Sárkány Tűzokádó 500 1
+4 Cicó D98765 Nőstény Csevegő Cica-Kék Papagáj keverék Jó Rendben van 3 1
+5 Sárga E23456 Hím Villámteknős Nincs fog 0 10
+6 Boci F34567 Nőstény Kék Szárnyas Egyszarvú Kitűnő 1 5
+7 Zara G45678 Hím Aranyhörcsög-Papírsárkány keverék Jó Egészséges 2 2
+8 Tigris H56789 Nőstény Hóleopárd-Tüzes Farkas keverék Közepes Éles 4
+9 Macska I67890 Nőstény Tarka Tengeri Teknős Kitűnő 1 8
+10 Róka J78901 Hím Aranyszőrű Sas Kékvirágú Nyúl keverék Különleges Rendben van 3
+11 Mókus K89012 Hím Csokoládé Barna Sündisznó-Fügefa keverék Kitűnő 1 2
+12 Pengő L90123 Nőstény Lila Pillangó-Mogyoróbagoly keverék Különleges Éles 1,5
+13 Zöldike M01234 Hím Aranyhal-Kaktusz keverék Kiváló 0 1
+14 Ezüst N12345 Nőstény Ezüstróka-Szivárvány Lepke keverék Játékos 1 4
+15 Pompom O23456 Hím Tarka Tigris-Bambusz keverék Kitűnő 1 3
+16 Csillag P34567 Nőstény Füstös Teknős-Kristály Pillangó keverék Elegáns 1 2
+17 Kukucs Q45678 Hím Kukac-Kacsa keverék Kiváló 1 1
+18 Tűzgyűrű R56789 Nőstény Tűztigris-Magma Sárkány keverék Kitűnő 1 6
+19 Málna S67890 Hím Szeder Sas-Málnabokor keverék Éber 1 2
+20 Hópelyhes T78901 Nőstény Hóleopárd-Jégmedve keverék Játékos 1 4lil 2343 no 23 1421 lil 63524 hím 6 14
+21 lil 34652 hím 3 14
+22 Pamut E716254 Hím 4 1423 geri e6354 nő 20 14
+23 1 1 1 1 14

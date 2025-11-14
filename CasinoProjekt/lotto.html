@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lottószám Generátor</title>
+    <style>
+        .number {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            margin: 5px;
+            background-color: #f0f0f0;
+            cursor: pointer;
+        }
+        .selected {
+            background-color: #ff0000;
+            color: #ffffff;
+        }
+        .nemtalalt {
+            background-color: yellow;
+            color: #ffffff;
+        }
+        .talalt {
+            background-color: green;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lottószám Generátor</h1>
+    <p>Válassz ki 5 számot a lottóhúzásra:</p>
+    <div id="numbers">
+        <!-- A számokat generáljuk dinamikusan JavaScript segítségével -->
+    </div>
+    <button id="drawButton" onclick="drawNumbers()" disabled>Sorsolás</button>
+    <p id="result"></p>
+    <script>
+        var selectedNumbers = [];
+        var winningNumbers = [];
+
+        // Függvény a számok generálására
+        function generateNumbers() {
+            var container = document.getElementById("numbers");
+            container.innerHTML = "";
+            for (var i = 1; i <= 90; i++) {
+                var numberDiv = document.createElement("div");
+                numberDiv.classList.add("number");
+                numberDiv.textContent = i;
+                numberDiv.addEventListener("click", function() {
+                    this.classList.toggle("selected");
+                    if (this.classList.contains("selected")) {
+                        selectedNumbers.push(parseInt(this.textContent));
+                    } else {
+                        selectedNumbers.splice(selectedNumbers.indexOf(parseInt(this.textContent)), 1);
+                    }
+                    updateDrawButton();
+                });
+                container.appendChild(numberDiv);
+            }
+        }
+
+        // Generáljuk az oldal betöltésekor
+        window.onload = generateNumbers;
+
+        // A Sorsolás gomb frissítése a kiválasztott számok alapján
+        function updateDrawButton() {
+            var drawButton = document.getElementById("drawButton");
+            if (selectedNumbers.length === 5) {
+                drawButton.disabled = false;
+            } else {
+                drawButton.disabled = true;
+            }
+        }
+
+        // Függvény a nyerőszámok sorsolására
+        function drawNumbers() {
+            winningNumbers = [];
+            var drawnNumbers = [];
+            while (winningNumbers.length < 5) {
+                var randomNumber = Math.floor(Math.random() * 90) + 1;
+                if (!drawnNumbers.includes(randomNumber)) {
+                    winningNumbers.push(randomNumber);
+                    drawnNumbers.push(randomNumber);
+                }
+            }
+            evaluateResult();
+        }
+
+        // Eredmény kiértékelése
+        function evaluateResult() {
+            var correctNumbers = 0;
+            for (var i = 0; i < selectedNumbers.length; i++) {
+                if (winningNumbers.includes(selectedNumbers[i])) { 
+                    winningNumbers.includes(selectedNumbers[i]).toggle("talalt")
+                    correctNumbers++;
+                }
+                
+            }
+
+            
+
+            var resultElement = document.getElementById("result");
+            resultElement.textContent = "Az Ön által választott számok közül " + correctNumbers + " db találat a nyerőszámok közül: " + winningNumbers.join(", ");
+        }
+    </script>
+</body>
+</html>

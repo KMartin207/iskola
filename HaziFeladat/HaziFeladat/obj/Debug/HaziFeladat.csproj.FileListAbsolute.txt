@@ -1,0 +1,14 @@
+C:\Users\kothencz.martin\source\repos\HaziFeladat\HaziFeladat\bin\Debug\HaziFeladat.exe.config
+C:\Users\kothencz.martin\source\repos\HaziFeladat\HaziFeladat\bin\Debug\HaziFeladat.exe
+C:\Users\kothencz.martin\source\repos\HaziFeladat\HaziFeladat\bin\Debug\HaziFeladat.pdb
+C:\Users\kothencz.martin\source\repos\HaziFeladat\HaziFeladat\obj\Debug\HaziFeladat.csproj.AssemblyReference.cache
+C:\Users\kothencz.martin\source\repos\HaziFeladat\HaziFeladat\obj\Debug\HaziFeladat.csproj.CoreCompileInputs.cache
+C:\Users\kothencz.martin\source\repos\HaziFeladat\HaziFeladat\obj\Debug\HaziFeladat.exe
+C:\Users\kothencz.martin\source\repos\HaziFeladat\HaziFeladat\obj\Debug\HaziFeladat.pdb
+Z:\HaziFeladat\HaziFeladat\bin\Debug\HaziFeladat.exe.config
+Z:\HaziFeladat\HaziFeladat\bin\Debug\HaziFeladat.exe
+Z:\HaziFeladat\HaziFeladat\bin\Debug\HaziFeladat.pdb
+Z:\HaziFeladat\HaziFeladat\obj\Debug\HaziFeladat.csproj.AssemblyReference.cache
+Z:\HaziFeladat\HaziFeladat\obj\Debug\HaziFeladat.csproj.CoreCompileInputs.cache
+Z:\HaziFeladat\HaziFeladat\obj\Debug\HaziFeladat.exe
+Z:\HaziFeladat\HaziFeladat\obj\Debug\HaziFeladat.pdb
