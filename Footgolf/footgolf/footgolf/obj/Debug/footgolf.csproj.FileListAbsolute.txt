@@ -1,0 +1,6 @@
+Z:\Programozas_C\Footgolf\footgolf\footgolf\bin\Debug\footgolf.exe.config
+Z:\Programozas_C\Footgolf\footgolf\footgolf\bin\Debug\footgolf.exe
+Z:\Programozas_C\Footgolf\footgolf\footgolf\bin\Debug\footgolf.pdb
+Z:\Programozas_C\Footgolf\footgolf\footgolf\obj\Debug\footgolf.csprojAssemblyReference.cache
+Z:\Programozas_C\Footgolf\footgolf\footgolf\obj\Debug\footgolf.exe
+Z:\Programozas_C\Footgolf\footgolf\footgolf\obj\Debug\footgolf.pdb

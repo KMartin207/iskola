@@ -1,0 +1,6 @@
+Z:\Programozas_C\Szovegkezeles\Szovegkezeles\bin\Debug\Szovegkezeles.exe.config
+Z:\Programozas_C\Szovegkezeles\Szovegkezeles\bin\Debug\Szovegkezeles.exe
+Z:\Programozas_C\Szovegkezeles\Szovegkezeles\bin\Debug\Szovegkezeles.pdb
+Z:\Programozas_C\Szovegkezeles\Szovegkezeles\obj\Debug\Szovegkezeles.exe
+Z:\Programozas_C\Szovegkezeles\Szovegkezeles\obj\Debug\Szovegkezeles.pdb
+Z:\Programozas_C\Szovegkezeles\Szovegkezeles\obj\Debug\Szovegkezeles.csprojAssemblyReference.cache

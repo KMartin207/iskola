@@ -22,6 +22,27 @@ namespace CB_radio
         static void Main(string[] args)
         {
 
+            //1p
+
+            //1p
+            //1p
+            //1p
+            //0p
+
+            //1p, 1p, 1p, 1p (4p)
+
+            
+            //1p, 1p, 1p, 1p, 1p, 1p (6p)
+
+
+            //1p, 1p, 1p, 1p, 1p (5p)
+
+            //1p, 1p, 1p, 1p, 1p (5p)
+
+            //1p, 1p, 1p, 1p, 1p (5p)
+
+            //1p, 0p, 0p
+
             adatbeolvasas();
 
             osszbejegyzes();

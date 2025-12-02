@@ -1,0 +1,7 @@
+Z:\Programozas_C\SzamlaloCiklus\SzamlaloCiklus\bin\Debug\SzamlaloCiklus.exe.config
+Z:\Programozas_C\SzamlaloCiklus\SzamlaloCiklus\bin\Debug\SzamlaloCiklus.exe
+Z:\Programozas_C\SzamlaloCiklus\SzamlaloCiklus\bin\Debug\SzamlaloCiklus.pdb
+Z:\Programozas_C\SzamlaloCiklus\SzamlaloCiklus\obj\Debug\SzamlaloCiklus.csproj.AssemblyReference.cache
+Z:\Programozas_C\SzamlaloCiklus\SzamlaloCiklus\obj\Debug\SzamlaloCiklus.csproj.CoreCompileInputs.cache
+Z:\Programozas_C\SzamlaloCiklus\SzamlaloCiklus\obj\Debug\SzamlaloCiklus.exe
+Z:\Programozas_C\SzamlaloCiklus\SzamlaloCiklus\obj\Debug\SzamlaloCiklus.pdb

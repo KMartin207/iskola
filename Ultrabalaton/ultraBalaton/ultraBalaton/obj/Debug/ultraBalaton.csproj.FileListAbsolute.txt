@@ -1,0 +1,6 @@
+Z:\Programozas_C\Ultrabalaton\ultraBalaton\ultraBalaton\obj\Debug\ultraBalaton.csprojAssemblyReference.cache
+Z:\Programozas_C\Ultrabalaton\ultraBalaton\ultraBalaton\bin\Debug\ultraBalaton.exe.config
+Z:\Programozas_C\Ultrabalaton\ultraBalaton\ultraBalaton\bin\Debug\ultraBalaton.exe
+Z:\Programozas_C\Ultrabalaton\ultraBalaton\ultraBalaton\bin\Debug\ultraBalaton.pdb
+Z:\Programozas_C\Ultrabalaton\ultraBalaton\ultraBalaton\obj\Debug\ultraBalaton.exe
+Z:\Programozas_C\Ultrabalaton\ultraBalaton\ultraBalaton\obj\Debug\ultraBalaton.pdb
