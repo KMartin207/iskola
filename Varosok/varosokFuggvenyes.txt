@@ -1,0 +1,30 @@
+1.)
+
+2.)
+SELECT mnev, AVG(nepesseg) AS Átlag
+	FROM varos INNER JOIN megye ON varos.megyeid = megye.id
+    WHERE vnev <> 'Budapest'
+    GROUP BY mnev
+    ORDER BY Átlag ASC;
+
+3.)
+SELECT mnev, CONCAT(AVG(nepesseg), ' fő') AS Átlag
+	FROM varos INNER JOIN megye ON varos.megyeid = megye.id
+    WHERE vnev <> 'Budapest'
+    GROUP BY mnev
+    ORDER BY Átlag ASC;
+
+4.)
+SELECT mnev, COUNT(varos.id) AS Településszám
+	FROM varos INNER JOIN megye ON varos.megyeid = megye.id
+    WHERE vnev <> 'Budapest' AND LENGTH(mnev) = 5
+    GROUP BY mnev 
+    ORDER BY COUNT(varos.id) DESC
+
+5.)
+SELECT mnev, CONCAT('-', ROUND(SUM(terulet)), ' km2') AS Terület
+	FROM varos INNER JOIN megye ON varos.megyeid = megye.id
+    WHERE vnev <> 'Budapest'
+    GROUP BY mnev
+    ORDER BY ROUND(SUM(terulet)) DESC
+    LIMIT 3;
