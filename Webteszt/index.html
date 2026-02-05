@@ -1,0 +1,148 @@
+<style> 
+
+    p.valaszok
+    {
+         padding-left   : 54px; 
+         padding-bottom : 24px;
+    }
+
+</style>
+
+
+
+<form name='teszt'>
+
+      <b>1. Milyen színt jelöl a <i> #000010</i> ? </b>
+
+         <p class='valaszok'>
+            <input type=radio name='k1'> Világoskék     <br>
+            <input type=radio name='k1'> Világoszöld    <br>
+            <input type=radio name='k1'> Majdnem fehér  <br>
+            <input type=radio name='k1'> Majdnem fekete <br>
+         </p>
+
+
+      <b>2. Melyik <i>html-tag</i> képes sorszámozott listát megjeleníteni? </b>
+
+         <p class='valaszok'>
+            <input type=radio name='k2'> <font face='courier'>&lt;hl&gt;  </font><br>
+            <input type=radio name='k2'> <font face='courier'>&lt;il&gt;  </font><br>
+            <input type=radio name='k2'> <font face='courier'>&lt;ol&gt;  </font><br>
+            <input type=radio name='k2'> <font face='courier'>&lt;ul&gt;  </font><br>
+         </p>
+
+
+      <b>3. Melyik a többsoros szövegbekérő párbeszédelem? </b>
+
+         <p class='valaszok'>
+            <input type=radio name='k3'> <font face='courier'>&lt;input type='select'&gt;        </font><br>
+            <input type=radio name='k3'> <font face='courier'>&lt;input type='textarea'&gt;      </font><br>
+            <input type=radio name='k3'> <font face='courier'>&lt;textarea&gt;&lt;/textarea&gt;  </font><br>
+            <input type=radio name='k3'> <font face='courier'>&lt;select&gt;&lt;/select&gt;      </font><br>
+         </p>
+
+
+      <b>4. Mi a helyes CSS szintaxis egy elem szélességének megadásához? </b>
+
+         <p class='valaszok'>
+            <input type=radio name='k4'> <font face='courier'>width = 250px ;   </font><br>
+            <input type=radio name='k4'> <font face='courier'>width : 250px ;   </font><br>
+            <input type=radio name='k4'> <font face='courier'>width = 250 px ;  </font><br>
+            <input type=radio name='k4'> <font face='courier'>width : 250 px ;  </font><br>
+         </p>
+
+
+      <b>5. Melyik az a tulajdonság, aminek átírásával JS-ből frissíthető egy elem tartalma? </b>
+
+         <p class='valaszok'>
+            <input type=radio name='k5'> setInterval <br>
+            <input type=radio name='k5'> setTimeout  <br>
+            <input type=radio name='k5'> innerHTML   <br>
+            <input type=radio name='k5'> src         <br>
+         </p>
+        
+      <b>6. Hogyan lehet CSS forráskódban kommentet elhelyezni?</b>
+
+         <p class='valaszok'>
+            <input type=radio name='k6'> /* komment */     <br>
+            <input type=radio name='k6'> // komment        <br>
+            <input type=radio name='k6'> // komment //     <br>
+            <input type=radio name='k6'> &lt;!-- komment --&gt;<br>
+         </p>
+
+
+      <b>7. Hogy hívják a szöveg betűszínét változtatni képes CSS tulajdonságot? </b>
+
+         <p class='valaszok'>
+            <input type=radio name='k7'> <font face='courier'>text-color  </font><br>
+            <input type=radio name='k7'> <font face='courier'>font-color  </font><br>
+            <input type=radio name='k7'> <font face='courier'>font color  </font><br>
+            <input type=radio name='k7'> <font face='courier'>color  </font><br>
+         </p>
+
+
+      <b>8. Hogyan kell JS-ben előállítani egy 1 és 90 közötti véletlen egész számot? </b>
+
+         <p class='valaszok'>
+            <input type=radio name='k8'> <font face='courier'>Math.floor(Math.random()*90)        </font><br>
+            <input type=radio name='k8'> <font face='courier'>Math.floor(Math.random()*90)+1      </font><br>
+            <input type=radio name='k8'> <font face='courier'>Math.floor(Math.random(90))+1  </font><br>
+            <input type=radio name='k8'> <font face='courier'>Math.floor(Math.random(1,90))      </font><br>
+         </p>
+
+
+      <b>9. Melyik taggal lehet bekezdést írni? </b>
+
+         <p class='valaszok'>
+            <input type=radio name='k9'> <font face='courier'>&lt;p&gt;&lt;/p&gt;   </font><br>
+            <input type=radio name='k9'> <font face='courier'>&lt;h1&gt;&lt;/h1&gt;   </font><br>
+            <input type=radio name='k9'> <font face='courier'>&lt;head&gt;&lt;/head&gt;   </font><br>
+            <input type=radio name='k9'> <font face='courier'>&lt;h5&gt;&lt;/h5&gt;   </font><br>
+         </p>
+
+         
+      <b>10. Hogyan kell középre igazítani egy szöveget? </b>
+
+         <p class='valaszok'>
+            <input type=radio name='k10'>text-align : middle;  <br>
+            <input type=radio name='k10'> text : middle;  <br>
+            <input type=radio name='k10'> align : center;   <br>
+            <input type=radio name='k10'> text-align : center;         <br>
+         </p>
+
+
+      <hr align=left>
+
+         <p align='center'>
+            <input type=button name='gomb' value='Értékel' onclick=' ertekel(); '>
+         </p>
+
+</form>
+
+
+
+<script language='javascript'>
+
+
+      function ertekel()
+      {
+         jo = 0
+
+         if( document.teszt.k1[3].checked )   jo = jo + 10
+         if( document.teszt.k2[2].checked )   jo = jo + 10
+         if( document.teszt.k3[2].checked )   jo = jo + 10
+         if( document.teszt.k4[1].checked )   jo = jo + 10
+         if( document.teszt.k5[2].checked )   jo = jo + 10
+         if( document.teszt.k6[3].checked )   jo = jo + 10
+         if( document.teszt.k7[3].checked )   jo = jo + 10
+         if( document.teszt.k8[1].checked )   jo = jo + 10
+         if( document.teszt.k9[0].checked )   jo = jo + 10
+         if( document.teszt.k10[3].checked )  jo = jo + 10
+
+         alert( 'Helyes válaszaid száma: ' + jo + '%' )
+      }
+
+
+</script>
+
+

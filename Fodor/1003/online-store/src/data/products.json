@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Apple",
+        "price": 300,
+        "description": "Fresh and juicy apples."
+    },
+    {
+        "id": 2,
+        "name": "Banana",
+        "price": 600,
+        "description": "Sweet and ripe bananas."
+    },
+    {
+        "id": 3,
+        "name": "Orange",
+        "price": 1000,
+        "description": "Citrusy and refreshing oranges."
+    },
+    {
+        "id": 4,
+        "name": "Grapes",
+        "price": 800,
+        "description": "Delicious and healthy grapes."
+    }
+]

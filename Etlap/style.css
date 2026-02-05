@@ -1,0 +1,62 @@
+html {
+    background-color: #EEFF66;
+}
+
+.arak {
+    font-family: Courier;
+    font-size: 20px;
+}
+
+.vonal {
+    border: 1px solid red;
+    margin-left: 10px;
+    margin: 10px;
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+    color: #000066;
+    font-family: Monotype Corsiva;
+}
+
+h2 {
+    color: #000066;
+    font-family: Monotype Corsiva;
+}
+
+p {
+    color: #000066;
+    font-family: Monotype Corsiva;
+}
+
+.left {
+    float: left;
+    margin-left: 10px;
+}
+
+.right {
+    float: right;
+    margin-right: 10px;
+}
+
+.het {
+    text-align: center;
+}
+
+a {
+    font-family: Monotype Corsiva;
+}
+
+img {
+    float: right;
+    width: 25%;
+}
+
+.tanyer_left {
+    float: left;
+}
+
+.t_right {
+    float: right;
+}

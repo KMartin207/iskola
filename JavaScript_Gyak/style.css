@@ -1,0 +1,15 @@
+#tablazat {
+    border: 2px solid red;
+}
+
+.honap {
+    text-align: center;
+}
+
+.nap {
+    background-color: blue;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px;
+}

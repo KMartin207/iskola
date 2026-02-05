@@ -1,0 +1,32 @@
+.fobox {
+    width: 700px;
+    margin: auto;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+
+@media screen {
+    p.nyomtatni {
+        display: none;
+    }
+
+    #datum {
+        display: none;
+    }
+}
+
+@media print
+{
+    input[type=button]
+	{
+	    display :  none ;
+	}
+    
+    a.navlink {
+        display: none;
+    }
+
+}

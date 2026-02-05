@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="script.js" defer></script>
+
+    <style>
+        #checkInputBox {
+            
+            margin: auto;
+            padding: 5px;
+            text-align: center;
+            margin-top: 20%;
+        }
+        #text {
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div id="checkInputBox">
+            <p id="text">Ellenőrzés</p>
+            <label for="a">a:</label>
+            <input type="number" name="a" id="a" min="1">
+            <br><br>
+            <label for="b">b:</label>
+            <input type="number" name="b" id="b" min="1">
+            <br><br>
+            <label for="c">c:</label>
+            <input type="number" name="c" id="c" min="1">
+            <br><br>
+            
+            <input type="button" value="Küldés" onclick="adatker()">
+            <br><br>
+            <label for="kiir" id="kiir">Szerkesztés</label>
+        </div>
+    </form>
+
+    <form>
+        <div id="checkInputBox">
+            <label for="sugar">Sugár:</label>
+            <input type="number" name="sugar" id="sugar" min="1">
+            <br><br>
+            
+            <input type="button" value="Küldés" onclick="adatsugarLeker()">
+            <br><br>
+            <p name="kerulet">Kerület:</p>
+            <label for="kerulet" id="kerulet">.</label>
+            <br>
+            <p name="terulet">Terület:</p>
+            <label for="terulet" id="terulet">.</label>
+        </div>
+
+    </form>
+
+
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="nav">
+        <div class="box">
+            <h1>Regisztrálás</h1>
+            <label>Vezetéknév</label><input type="text" placeholder="Vezetéknév" class="adat"><br><br>
+            <label>Keresztnév</label><input type="text" placeholder="Keresztnév" class="adat"><br><br>
+            <label>Felhasználónév</label><input type="text" placeholder="Felhasználónév" class="adat"><br><br>
+            <label>Jelszó</label><input type="text" placeholder="Jelszó" class="adat"><br><br>
+            <label>Email</label><input type="email" placeholder="Email" class="adat"><br><br>
+            
+            <label>Korod</label><input type="number" placeholder="Kor" min="1" max="100" class="adat"><br><br>
+            
+            <div class="center">
+                <p>Nem:</p>
+                <input type='radio' name='gender'> fiú
+                <input type='radio' name='gender'> lány <br><br>
+                <label>Mi a kedvenc színed? </label><br><input type="color"><br><br>
+                <label>Mi a kevenc órád? </label><br><select>
+                    <option>Biológia</option>
+                    <option>Fizika</option>
+                    <option>Matek</option>
+                    <option>Tesi</option>
+                    <option>Magyar</option>
+                </select>
+            </div>
+
+            
+
+            <input type="checkbox"><label>Elfogadom</label><br><br>
+            <input type="button" value="Beküldés" class="gomb">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "name": "Wireless Headphones",
+        "description": "High-quality wireless headphones with noise cancellation.",
+        "price": 89.99,
+        "image": "images/headphones.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Smart Watch",
+        "description": "A smart watch with fitness tracking and notifications.",
+        "price": 199.99,
+        "image": "images/smartwatch.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Bluetooth Speaker",
+        "description": "Portable Bluetooth speaker with excellent sound quality.",
+        "price": 49.99,
+        "image": "images/speaker.jpg"
+    },
+    {
+        "id": 4,
+        "name": "4K Ultra HD TV",
+        "description": "55-inch 4K Ultra HD Smart TV with HDR.",
+        "price": 599.99,
+        "image": "images/tv.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Gaming Laptop",
+        "description": "High-performance gaming laptop with powerful graphics.",
+        "price": 1299.99,
+        "image": "images/laptop.jpg"
+    }
+]

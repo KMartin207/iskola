@@ -1,0 +1,94 @@
+<style>
+
+	div#szinhazterem
+	{
+		max-width         :  620px           ;
+		margin            :  0 auto          ;	
+	}
+
+	span.helyar
+	{
+		display           :  inline-block    ;
+		float             :  right           ;
+		margin            :  40px -24px 0 0  ;
+		width             :  128px           ;
+		height            :   60px           ;
+		line-height       :   60px           ;
+		background-color  :  #AAF            ;
+		text-align        :  center          ;
+		font-size         :  16px            ;
+		font-weight       :  bold            ;
+		transform         :  rotate(-90deg)  ;
+	}
+
+	span.sorszam
+	{
+		display           :  inline-block    ;
+		width             :  24px            ;
+		height            :  14px            ;
+		margin-right      :   8px            ;
+		text-align        :  right           ;
+	}
+
+	span.szek
+	{
+		display           :  inline-block    ;
+		margin            :  6px 2px         ;
+		width             :  14px            ;
+		height            :  14px            ;
+		border-radius     :   2px            ;
+		text-align        :  center          ;
+		line-height       :  14px            ;
+		font-size         :   9px            ;
+		color             :  #333            ;
+	}
+
+	span.foglalt
+	{
+		border            :  solid 1px #844  ; 
+		background-color  :  #FAA            ;
+		color             :  #600            ;
+	}
+
+	span.szabad
+	{
+		border            :  solid 1px #484  ; 
+		background-color  :  #8D8            ;
+		color             :  #040            ;
+	}
+
+</style>
+
+<div id='szinhazterem'>
+
+  <script>
+
+	hely = new Array()
+	for( i=1; i<=15; i++ )
+	{
+		if(i== 1)  document.write("<span class='helyar'>7500.- Ft</span>")
+		if(i== 6)  document.write("<span class='helyar'>5900.- Ft</span>")
+		if(i==11)  document.write("<span class='helyar'>4500.- Ft</span>")
+
+		hely[i] = new Array()
+		document.write("<span class='sorszam'>" + i + ".</span>")
+		for( j=1; j<=24; j++ )
+		{
+			hely[i][j] = Math.floor( (1-Math.random()*Math.random())*2 )     
+			if( hely[i][j]==1 )
+			{
+			    document.write("<span class='szek foglalt' title='hely[" + i + "][" + j + "] = " + hely[i][j] + "'>" + j + "</span>")
+			}
+			else
+			{
+			    document.write("<span class='szek szabad'  title='hely[" + i + "][" + j + "] = " + hely[i][j] + "'>" + j + "</span>")
+			}
+		}
+		document.write("<br>")
+		if(i%5==0) document.write("<hr size=1 color=#880000>")
+	}
+
+  </script>
+
+</div>
+

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Többesemény</title>
+</head>
+<body>
+    <button id="gomb">Kattints ide</button>
+    <div id="eredmeny"></div>
+    <div class="osztaly"></div>
+
+
+    <script>
+        function kattintas() {
+            document.getElementById("eredmeny").innerText += "OnClick"
+        }
+        function folevisz() {
+            document.getElementById("eredmeny").innerText += "Onmouseover"
+        }
+        function lehuz() {
+            document.getElementById("eredmeny").innerText += "Onmouseout"
+        }
+        
+        document.getElementById("gomb").addEventListener("click", kattintas)
+        document.getElementById("gomb").addEventListener("mouseover", folevisz)
+        document.getElementById("gomb").addEventListener("mouseout", lehuz)
+
+    </script>
+</body>
+</html>

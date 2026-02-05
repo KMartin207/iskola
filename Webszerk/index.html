@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="teszt"></form>
+    <table>
+        <tr>
+            <td></td>
+            <td>igen</td>
+            <td>nem</td>
+        </tr>
+
+        <tr>
+            <td>férfi vagy?</td>
+            <td><input type="radio" name="k1"></td>
+            <td><input type="radio" name="k1"></td>
+        </tr>
+
+        <tr>
+            <td>Nő vagy?</td>
+            <td><input type="radio" name="k2"></td>
+            <td><input type="radio" name="k2"></td>
+        </tr>
+
+        <tr>
+            <td>30 és 40 közötti vagy?</td>
+            <td><input type="radio" name="k3"></td>
+            <td><input type="radio" name="k3"></td>
+        </tr>
+
+        <tr>
+            <td>40 és 50 közötti vagy?</td>
+            <td><input type="radio" name="k4"></td>
+            <td><input type="radio" name="k4"></td>
+        </tr>
+
+        <tr>
+            <td>50 és 70 közötti vagy?</td>
+            <td><input type="radio" name="k5"></td>
+            <td><input type="radio" name="k5"></td>
+        </tr>
+
+        <tr>
+            <td>70 évesnél idősebb vagy?</td>
+            <td><input type="radio" name="k6"></td>
+            <td><input type="radio" name="k6"></td>
+        </tr>
+
+        <tr>
+            <td>65 évesnél idősebb vagy és még dolgozol?</td>
+            <td><input type="radio" name="k7"></td>
+            <td><input type="radio" name="k7"></td>
+        </tr>
+
+        <tr>
+            
+
+            <td><p align='center'>
+                <input type=button name='gomb' value='Értékel' onclick=' korszamlalo(); '>
+            </p></td>
+        </tr>
+        
+
+        
+    </table>
+
+    <script>
+        function korszamlalo() 
+        {
+            kor = 72
+
+            if( document.teszt.k1[1].checked )   kor = kor - 3
+            
+            document.write(kor)
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+table {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+tr {
+    background-color: #EEEEEE;
+    color: #2222FF;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+td {
+    padding: 3px;
+}
+
+.valasz {
+    margin: auto;
+}
+
+input {
+    width: 50%;
+}

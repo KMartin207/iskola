@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<p style="margin: 50px; font-size: 20px">1. Az űrmérték - vagyis a térfogat</p>
+<form name="terfogat" style=' width: 320px; margin:32px auto; '>
+
+    <input type="text" name="pint" size="5" onFocus = 'document.terfogat.reset()' onblur = 'szamol("pintből")'   > pint
+
+
+    <input type="button" value="<--->" style = 'margin:24px;'>
+
+
+    <input type="text" name="liter" size="5" onFocus = 'document.terfogat.reset()' onblur = 'szamol("literből")'   > liter
+</form>
+
+    
+
+
+
+<script>
+
+    function szamol(mibol)
+    {
+
+        pint  = parseFloat( document.terfogat.pint.value  )
+        liter = parseFloat( document.terfogat.liter.value )
+
+        if( mibol=="pintből"  && pint > 0 )
+        {
+            document.terfogat.liter.value = pint  * 0.473
+        }
+
+        if( mibol=="literből" && liter > 0 )
+        {
+            document.terfogat.pint.value  = liter / 0.473
+        }
+
+    }
+
+</script>
+
+<p style="margin: 50px; font-size: 20px">2. A súlymérték</p>
+
+<form name="sulymertek" style=' width: 400px; margin:32px auto; '>
+
+    <input type="text" name="uncia"  size="5" onFocus = 'document.sulymertek.reset()' onblur = 'sulymertekszamol("uncból")'> unciából
+
+    <input type="button" value="<--->">
+
+    <input type="text" name="gramm" size="5" onFocus = 'document.sulymertek.reset()' onblur = 'sulymertekszamol("pintből")' > grammból
+</form>
+
+<script>
+    function sulymertekszamol(mibol) {
+        uncia = parseFloat( document.sulymertek.uncia.value )
+        gramm = parseFloat( document.sulymertek.gramm.value )
+
+        if( mibol=="unciából" && mibol > 0 )
+        {
+            document.sulymertek.gramm.value = uncia * 28.35
+        }
+    }
+</script>
+
+
+</body>
+</html>

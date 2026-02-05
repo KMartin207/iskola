@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>JavaScript</h1>
+
+    <script>
+        /*document.write("Hello World!<br>")
+        document.write("Szoszi <hr>")
+        /*
+        i = 1
+
+        document.write(i, ' ')
+
+        i = i + 1 
+
+        document.write(i, ' ')
+
+        i = i + 1 
+
+        document.write(i, ' ')
+        
+        document.write('<table border=2>')
+
+        for( i=1 ; i<=20 ; i=i+1 )
+        {
+            document.write('<tr>')
+    
+            for( a=1 ; a<=20 ; a=a+1 )
+            {
+                
+                document.write('<td title="', a, '*', i, '">', a * i, '</td>')
+                
+                
+                
+            }
+            document.write('</tr>')
+        }
+        document.write('</table>')
+
+        document.writeln('<hr>')
+
+
+        for(i = 1; i <= 20 ; i += 1)
+        {
+            document.write(i, ' ')
+        }
+
+        document.writeln('<hr>')
+
+        for(i = 2; i <= 20 ; i += 2)
+        {
+            document.write(i, ' ')
+        }
+
+        document.write('<hr>')
+
+        for(i=30 ; i <= 100; i += 7)
+        {
+            document.write(i, ' ')
+        }
+
+        document.write('<hr>')
+
+        for(i=112 ; i >= 2; i -= 11)
+        {
+            document.write(i, ' ')
+        }
+        
+        document.write('<hr>')
+
+        for(i=-90 ; i <= 90; i += 5)
+        {
+            document.write(i, ' ')
+        }
+
+        document.write('<hr>')
+
+        for(i=-90 ; i <= 90; i += 5)
+        {
+            document.write(i, ' ')
+        }
+
+        /*for(i=1 ; i<=10; i += 1)
+        {
+            for(b=0; b <= 10; b += 1)
+            {
+                if (i + b == 10)
+                    document.write(i, b, ' ')
+            }
+        }
+
+        document.write('<hr>')
+
+        for(i=1; i<=9 ; i+=1)
+        {
+            b = 10-i
+            document.write(i, b, ' ')
+        }
+
+        document.write('<hr>')
+
+        for(i=1; i<=9 ; i+=1)
+        {
+            b = 18-i
+            document.write(i, '-', b, ' ')
+        }
+
+        document.write('<hr>')
+
+
+        for(i=1; i<=10; i++)
+        {
+            b = 8
+            document.write(i, ' * ', b, ' = ', i*b, '<br>')
+        }
+
+        document.write('<hr>')
+
+
+        for(i = 1; i<=15; i++)
+        {
+            b = i*i
+            document.write(b, ' ')
+        }
+
+        document.write('<hr>')
+
+        for(i=2022; i<=2041; i++)
+        {
+            if (!(i % 4 == 0))
+                document.write(i, ' ')     
+        }
+
+        document.write('<hr>')
+
+        for(i=1; i<=144; i++)
+        {
+            if (144%i == 0)
+            {
+                document.write(i, ' ')
+            }
+        }        
+
+        document.write('<hr>')
+
+        for(i=1; i<=20; i++)
+        {
+            document.write(2 ** i, ' ')
+        }
+
+        document.write('<hr>')
+
+        for(i=0; i<=1; i++)
+        {
+            for(b=1; b<=20; b++)
+            {
+                ossz = i + b
+                document.write(ossz, ' ')
+            }
+        }
+
+
+        document.write('<hr>')
+
+
+        for(i=1; i<=25; i++)
+        {
+            if (i == 1)
+            {
+                ertek_ad = 1
+                osszeg = 1
+            }
+            document.write(ertek_ad, ' ')
+            ertek_ad += i
+        }
+
+
+        document.write('<hr>')
+
+
+        for(i = 0; i<=17 ; i++)
+        {
+            if (i == 0)
+            {
+                elozo_elott = 1
+                elozo = 2
+                jelen = 1
+                
+            }
+
+            
+            elozo = jelen
+            document.write(jelen, ' ')
+            jelen = elozo + elozo_elott
+            elozo_elott = elozo
+            
+        }
+
+
+        document.write('<hr>')
+
+        for(i=8; i<=16; i++)
+        {
+            if (i<10)
+            {
+                document.write('0' ,i, ':15 ')
+            }
+            if (i >= 10)
+            {
+                document.write(i, ':15 ')
+            }
+            
+        }
+        document.write('<hr>')
+        document.write('<hr>')
+        
+        
+        
+        for(o=8; o<=11; o++)
+        {
+            for(p=0; p<=60; p+=20)
+            {
+
+                if (o<10)
+                {
+                    if (p==0)
+                    {
+                        document.write('0', o, ':', p, '0 ')
+                    }
+
+                    else
+                    {
+                        document.write('0', o, ':', p, ' ')
+                    }
+                }
+
+                else if (o>9)
+                {
+                    if (p==0)
+                    {
+                        document.write(o, ':', p, '0 ')
+                    }
+
+                    else
+                    {
+                        document.write(o, ':', p, ' ')
+                    }
+                }
+                
+            }
+
+        }
+        document.write('<hr>')
+        
+
+        for(i=8*60; i<=12*60; i+=20)
+        {
+            ora = Math.floor(i/60) ; if (ora<10){ora = '0'+ora}
+            perc = i % 60 ; if (perc < 10) {perc = '0' + perc + ' '}
+            document.write(ora, ':', perc, ' ')
+        }
+        document.write('<hr>')
+
+        document.write('<hr>')
+
+        for(i=8*60; i<=18*60; i+=50)
+        {
+            ora = Math.floor(i/60) ; if (ora<10){ora = '0'+ora}
+            perc = i % 60 ; if (perc < 10) {perc = '0' + perc + ' '}
+            document.write(ora, ':', perc, '<br>')
+        }
+
+        document.write('<hr>')
+        sorszam = 0
+        for(i=8*60; i<=15*60; i+=45)
+        {
+            sorszam = sorszam + 1
+            ora = Math.floor(i/60) ; if (ora<10){ora = '0'+ora}
+            perc = i % 60 ; if (perc < 10) {perc = '0' + perc + ' '}
+            document.write(sorszam, '.   ', ora, ':', perc, ' - ')
+            perc = perc + 10
+            document.write(ora, ':', perc, '<br>')
+        }
+
+
+        document.write('<hr>')
+
+        document.write('<table border=2 id=tablazat> <tr>')
+
+        for(s = 1; s<=90; s++)
+        {
+            document.write('<td>', s, '</td>')
+        
+            if ((s%10) == 0) document.write('</tr> <tr>')
+            
+        }
+        documet.write('</tr> </table>')
+
+        */
+        
+        document.write('<table class="honap"> <tr>')
+        for(sor=-3; sor<=31; sor++) 
+        {
+            if (sor < 1)
+            {
+                document.write('<td></td>')
+            }
+
+            else if (sor > 0)
+            {
+                document.write('<td class="nap">', sor, '</td>')
+                if ((sor % 7) == 3)
+                {
+                    document.write('</tr> <tr>')
+                }
+            }
+        }
+        document.write('</tr> </table>')
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI</title>
+</head>
+
+<body>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        table {
+            border: 1px solid black;
+            padding: 5px;
+            margin: auto;
+            margin-top:30%;
+        }
+        input {
+            color: red;
+        }
+
+    </style>
+
+    <h1>BMI Kalkulátor</h1>
+
+    <table>
+        <form>
+            <tr>
+                <td>Testsúlyod:</td>
+                <td><input onkeyup="szamol()" size="2" maxlength="3" id="tomeg"></td>
+                <td>kg</td>
+            </tr>
+            <tr>
+                <td>Magasságod:</td>
+                <td><input type="text" onkeyup="szamol()" size="2" maxlength="3" id="magassag"></td>
+                <td>cm</td>
+            </tr>
+            <tr>
+                <td>Testtmegindexed:</td>
+                <td><input type="text" class="szamol" size="5" disabled id="bmi"></td>
+                <td>kg / m2</td>
+            </tr>
+            <tr>
+                <td>Súlytöbbleted:</td>
+                <td><input type="text" class="szamol" size="5" disabled id="toblet"></td>
+                <td>kg</td>
+            </tr>
+        </form>
+    </table>
+
+    
+      
+      
+    <script>
+        
+        function szamol() {
+            let tomeg = document.getElementById('tomeg').value
+            let magassag = document.getElementById('magassag').value
+            let bmi = document.getElementById('bmi').value = tomeg / Math.pow(magassag / 100, 2)
+            document.getElementById('toblet').value = tomeg - 25 * Math.pow(magassag / 100, 2)
+
+            if (bmi < 18) {
+                document.getElementById('bmi').style.backgroundColor = 'yellow'
+            }
+            else if (bmi >= 18 && bmi <= 25) {
+                document.getElementById('bmi').style.backgroundColor = '#8F8'
+            }
+            else if (bmi >= 25) {
+                document.getElementById('bmi').style.backgroundColor = 'rgb(255, 130, 130)'
+            }
+        }
+    </script>
+</body>
+</html>

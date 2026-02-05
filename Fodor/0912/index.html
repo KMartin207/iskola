@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="main.js" defer></script>
+
+    <style>
+        #doboz {
+          width: 100px;
+          height: 100px;
+          background-color: gold;
+          position: absolute;
+          top: 50px;
+          left: 50px;
+          transition: all 0.5s ease;
+        }
+      </style>
+</head>
+<body>
+    <h1>Raspberry Pi Pico</h1>
+    <button onclick="kiir()">Kiiratás</button>
+    <button onclick="terulet(2, 5)">Terület</button>
+    <p id="eredmeny"></p>
+
+    <button onclick="kapcs(0)" id="fel">Mozgatás 1</button>
+<div id="doboz"></div>
+<button onclick="kapcs(1)" id="le">Mozgatás 2</button>
+
+<script>
+  function kapcs(a) {
+    const doboz = document.getElementById("doboz");
+    const maxX = window.innerWidth - 100; // doboz szélessége
+    const maxY = window.innerHeight - 100; // doboz magassága
+    const randX = Math.floor(Math.random() * maxX);
+    const randY = Math.floor(Math.random() * maxY);
+
+    doboz.style.left = randX + "px";
+    doboz.style.top = randY + "px";
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+{
+  "name": "online-store",
+  "version": "1.0.0",
+  "description": "An online store web application",
+  "main": "public/scripts/app.js",
+  "scripts": {
+    "start": "live-server public",
+    "build": "echo 'Build step not defined'",
+    "test": "echo 'Test step not defined'"
+  },
+  "keywords": [
+    "online",
+    "store",
+    "ecommerce"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/online-store.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/online-store/issues"
+  },
+  "homepage": "https://github.com/yourusername/online-store#readme"
+}

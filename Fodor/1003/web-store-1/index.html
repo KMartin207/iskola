@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Store</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Web Store</h1>
+        <nav>
+            <ul>
+                <li><a href="#items">Items</a></li>
+                <li><a href="#cart">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="items">
+            <h2>Available Items</h2>
+            <div id="item-list">
+                <div class="item">
+                    <h3>Item 1</h3>
+                    <p>Description of Item 1</p>
+                    <p>Price: $10.00</p>
+                    <button class="add-to-cart" data-name="Item 1" data-price="10.00">Add to Cart</button>
+                </div>
+                <div class="item">
+                    <h3>Item 2</h3>
+                    <p>Description of Item 2</p>
+                    <p>Price: $15.00</p>
+                    <button class="add-to-cart" data-name="Item 2" data-price="15.00">Add to Cart</button>
+                </div>
+                <div class="item">
+                    <h3>Item 3</h3>
+                    <p>Description of Item 3</p>
+                    <p>Price: $20.00</p>
+                    <button class="add-to-cart" data-name="Item 3" data-price="20.00">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+        <section id="cart">
+            <h2>Your Cart</h2>
+            <div id="cart-items">
+                <!-- Cart items will be displayed here -->
+            </div>
+            <div id="cart-total">
+                <!-- Total price will be displayed here -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Web Store</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
