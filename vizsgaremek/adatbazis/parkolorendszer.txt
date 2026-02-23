@@ -1,0 +1,65 @@
+CREATE DATABASE parkolorendszer
+	DEFAULT CHARACTER SET utf8
+    DEFAULT COLLATE utf8_hungarian_ci;
+
+
+CREATE TABLE kartya
+(
+    kid INT PRIMARY KEY,
+    kallapot tinyint
+);
+
+CREATE TABLE ember
+(
+    eid INT PRIMARY KEY,
+    enev varchar(50),
+    email varchar(50),
+    etel varchar(12),
+    estatuszdolg tinyint,
+    ekomment varchar(100)
+);
+
+CREATE TABLE jarmu
+(
+    jid INT PRIMARY KEY,
+    jrendszam varchar(8),
+    jtipus varchar(20),
+    jszin varchar(20),
+    jkomment varchar(100)
+);
+
+
+CREATE TABLE kartyaember
+(
+    keid INT PRIMARY KEY,
+    FOREIGN KEY (kid) REFERENCES kartya(kid),
+    FOREIGN KEY (eid) REFERENCES ember(eid)
+);
+
+CREATE TABLE emberjarmu
+(
+    ejid INT PRIMARY KEY,
+    FOREIGN KEY (eid) REFERENCES ember(eid),
+    FOREIGN KEY (jid) REFERENCES jarmu(jid) 
+);
+
+CREATE TABLE naplo
+(
+    nid INT PRIMARY KEY,
+    FOREIGN KEY (keid) REFERENCES kartyaember(keid),
+    FOREIGN KEY (ejid) REFERENCES emberjarmu(ejid),
+    nstatusz tinyint,
+    ndatumtol date,
+    nidotol datetime,
+    ndatumig date,
+    nidoig datetime,
+    nparkhely INT
+);
+
+
+ALTER TABLE kartyaember
+ADD aid int;
+ALTER TABLE emberjarmu
+ADD aid int;
+
+

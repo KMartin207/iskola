@@ -1,0 +1,435 @@
+/* Alapstílusok - FIXED LAYOUT */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* Letiltjuk a teljes oldal scrollozását */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #ffffff;
+    color: #333;
+    line-height: 1.5;
+    font-size: 16px;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  /* NAVBAR - FIXED */
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background: #003366;
+    color: white;
+    gap: 1rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    flex-shrink: 0;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    left: 0;
+    right: 0;
+  }
+  
+  .navbar h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 0.5rem;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .navbar li {
+    flex: 1;
+  }
+  
+  .navbar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem 0.5rem;
+    border-radius: 6px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
+  }
+  
+  .navbar a:hover,
+  .navbar a.active {
+    background: rgba(255, 255, 255, 0.25);
+    font-weight: 700;
+    border-color: rgba(255, 255, 255, 0.4);
+  }
+  
+  /* KONTÉNER - SCROLLELHETŐ */
+  .container {
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden; /* KIKAPCSOLJUK A VÍZSZINTES SCROLLT */
+    -webkit-overflow-scrolling: touch;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 0;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    left: 0;
+    right: 0;
+  }
+  
+  /* KÁRTYA - FIX SZÉLESSÉG */
+  .card {
+    background: white;
+    margin: 0 auto;
+    padding: 2rem;
+    width: 100%;
+    max-width: 450px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border: 1px solid #e0e0e0;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    position: relative;
+    left: 0;
+    right: 0;
+  }
+  
+  .card h3 {
+    margin: 0 0 1.5rem 0;
+    color: #003366;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    width: 100%;
+  }
+  
+  /* FORM - NINCS TÚLCSORDULÁS */
+  form {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  input, button {
+    display: block;
+    width: 100%;
+    margin: 0.8rem 0;
+    padding: 0.8rem;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  
+  input {
+    background: #fff;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #003366;
+    box-shadow: 0 0 0 2px rgba(0, 51, 102, 0.1);
+  }
+  
+  button {
+    background: #003366;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-weight: 500;
+    margin-top: 1rem;
+    font-size: 1rem;
+    padding: 1rem;
+  }
+  
+  button:hover {
+    background: #004080;
+  }
+  
+  /* ÜZENETEK */
+  .success, .error, .info {
+    padding: 1rem;
+    border-radius: 4px;
+    margin: 1rem 0;
+    font-weight: 500;
+    line-height: 1.4;
+    font-size: 0.9rem;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .success {
+    color: #155724;
+    background: #d4edda;
+    border: 1px solid #c3e6cb;
+  }
+  
+  .error {
+    color: #721c24;
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+  }
+  
+  .info {
+    color: #0c5460;
+    background: #d1ecf1;
+    border: 1px solid #bee5eb;
+  }
+  
+  /* GOMB CSOPORT */
+  .button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 1.5rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .button-group button {
+    margin: 0;
+    padding: 0.8rem;
+    width: 100%;
+  }
+  
+  button[name="stay"] {
+    background: #28a745;
+  }
+  
+  button[name="stay"]:hover {
+    background: #218838;
+  }
+  
+  button[name="leave"] {
+    background: #dc3545;
+  }
+  
+  button[name="leave"]:hover {
+    background: #c82333;
+  }
+  
+  /* LABEL */
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #003366;
+    font-size: 0.9rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* TOOLTIP */
+  .tooltip {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #3498db;
+    color: white;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    font-size: 12px;
+    cursor: help;
+    margin-left: 0.5rem;
+  }
+  
+  .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 0.5rem;
+    position: absolute;
+    z-index: 1000;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 0.8rem;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  /* MOBIL OPTIMALIZÁLÁS */
+  @media (max-width: 480px) {
+    body {
+      font-size: 14px;
+    }
+    
+    .container {
+      padding: 0.5rem;
+      overflow-x: hidden; /* MOBILON IS KIKAPCSOLVA */
+    }
+    
+    .card {
+      padding: 1.5rem;
+      margin: 0;
+      width: 100%;
+      max-width: none;
+    }
+    
+    .card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 1.2rem;
+    }
+    
+    input, button {
+      padding: 0.8rem;
+      margin: 0.6rem 0;
+      font-size: 16px;
+    }
+    
+    button {
+      margin-top: 0.8rem;
+    }
+    
+    .navbar {
+      padding: 0.8rem;
+    }
+    
+    .navbar h1 {
+      font-size: 1.3rem;
+    }
+    
+    .navbar a {
+      padding: 0.7rem 0.4rem;
+      font-size: 0.85rem;
+    }
+    
+    .success, .error, .info {
+      padding: 0.8rem;
+      margin: 0.8rem 0;
+      font-size: 0.85rem;
+    }
+  }
+  
+  /* TABLET ÉS NAGYOBB */
+  @media (min-width: 768px) {
+    .navbar {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+    
+    .navbar h1 {
+      font-size: 1.4rem;
+    }
+    
+    .navbar ul {
+      width: auto;
+      max-width: none;
+      gap: 1rem;
+    }
+    
+    .navbar li {
+      flex: none;
+    }
+    
+    .navbar a {
+      padding: 0.6rem 1.2rem;
+      font-size: 0.9rem;
+    }
+    
+    .button-group {
+      flex-direction: row;
+    }
+    
+    .button-group button {
+      flex: 1;
+    }
+    
+    .card {
+      max-width: 400px;
+    }
+  }
+  
+  /* EXTRA BIZTOSÍTÉK A CSÚSZÁS ELLEN */
+  * {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    user-select: none;
+  }
+  
+  input, textarea {
+    -webkit-user-select: text;
+    user-select: text;
+  }
+  
+  /* VIEWPORT FIX */
+  @viewport {
+    width: device-width;
+    zoom: 1.0;
+  }
+  
+  @-ms-viewport {
+    width: device-width;
+  }
+  
+  /* iOS SAFARI FIX */
+  @supports (-webkit-touch-callout: none) {
+    .container {
+      padding-bottom: env(safe-area-inset-bottom);
+      overflow-x: hidden;
+    }
+  }
+  
+  /* TOUCH OPTIMALIZÁLÁS */
+  @media (hover: none) and (pointer: coarse) {
+    .navbar a,
+    button {
+      min-height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .tooltip .tooltiptext {
+      display: none;
+    }
+  }
