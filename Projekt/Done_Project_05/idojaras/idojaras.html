@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html lang="hu">
+  <head>
+    <meta charset="utf-8">
+    <title>Weather</title>
+    <link rel="stylesheet" href="idojaras.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="idojaras.js" defer></script>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="flexrow-container_left">
+        <div ><a href="../php/logout.php" ><img src="../kepek/logout_ikon.png" class="user" alt="user"></a></div><!--logout-->
+        <div ><a href="../index.php" ><img src="../kepek/icon _home_.png" class="home" alt="home"></a></div>
+        <div ><a href="../idojaras/idojaras.html" ><img src="../kepek/icon _cloud_.png" class="home" alt="weather"></a></div>
+        <div ><a href="../naptar/naptar.html" ><img src="../kepek/icon _calendar_.png" class="home" alt="calendar"></a></div>
+        <div ><a href="../to-do/to-do.html" ><img src="../kepek/icon _list_.png" class="home" alt="to-do"></a></div>
+  
+          
+      </div>
+  
+      
+  
+      <div class="flexrow-container">
+        <input type="checkbox" class="theme-checkbox" id="themeSwitch" onclick="toggleColor()">
+    </div>
+
+    <h2><span id="time"></span></h2>
+ 
+  
+      
+    </div>
+    <div class="container">
+      
+      <div class="weather-data">
+        <div class="weather-input search">
+          <input class="city-input search-bar" type="text" placeholder="írj be egy város nevet">
+          <button class="search-btn " id="search-icon"><img src="https://cdn.icon-icons.com/icons2/3298/PNG/512/magnifying_glass_search_icon_208685.png" alt="search" width="31px" height="27px"></button>
+          <div class="separator"></div>
+          <button class="location-btn " id="search-icon"><img src="https://cdn.icon-icons.com/icons2/488/PNG/512/location_47717.png" alt="current location" width="31px" height="27px"></button>
+        </div>
+        <div class="current-weather">
+          <div class="details">
+            <h2>_______ ( ______ )</h2>
+            <h6>hő fok: __°C</h6>
+            <h6>szél: __ M/S</h6>
+            <h6>Páratartalom: __%</h6>
+          </div>
+        </div>
+        <div class="days-forecast">
+          <h2>5 napos előre jelzés:</h2>
+          <ul class="weather-cards">
+            <li class="card">
+              <h3>( ______ )</h3>
+              <h6>Temp: __C</h6>
+              <h6>szél: __ M/S</h6>
+              <h6>Páratartalom: __%</h6>
+            </li>
+            <li class="card">
+              <h3>( ______ )</h3>
+              <h6>hő fok: __C</h6>
+              <h6>szél: __ M/S</h6>
+              <h6>Páratartalom: __%</h6>
+            </li>
+            <li class="card">
+              <h3>( ______ )</h3>
+              <h6>hő fok: __C</h6>
+              <h6>szél: __ M/S</h6>
+              <h6>Páratartalom: __%</h6>
+            </li>
+            <li class="card">
+              <h3>( ______ )</h3>
+              <h6>hő fok: __C</h6>
+              <h6>szél: __ M/S</h6>
+              <h6>Páratartalom: __%</h6>
+            </li>
+            <li class="card">
+              <h3>( ______ )</h3>
+              <h6>hő fok: __C</h6>
+              <h6>szél: __ M/S</h6>
+              <h6>Páratartalom: __%</h6>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>

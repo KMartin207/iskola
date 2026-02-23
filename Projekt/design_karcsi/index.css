@@ -1,0 +1,256 @@
+body {
+  background: rgba(35,35,35,1);
+  margin:0px;
+  padding:0px;
+  display: flex;
+  flex-direction: column;
+
+}
+.nav {
+  width: 100%;
+  height: 95px;
+  background: rgba(58,58,58,1);
+  opacity: 1;
+  position: relative;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+.flexrow-container {
+  float: right;
+  align-items: right;
+  align-self: flex-start;
+  display: flex;
+  justify-content: space-around;
+  margin-right: 3%;
+  margin-top: 30px;
+}
+
+.flexrow-container_left{
+  float: left;
+  align-items: left;
+  align-self: flex-start;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-left: 3%;
+
+}
+
+.flexrow-container_center{
+  float: center;
+  align-items: center;
+  align-self: flex-start;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+
+}
+
+.ido{
+  color: white;
+  font-size: 50px;
+  margin-top: -1px;
+}
+
+.theme-selector {
+  border: 1px solid #d1dae3;
+  border-radius: 100%;
+  height: 35px;
+  margin: 0 8px;
+  transition: tranform 150ms ease-in-out, box-shadow 200ms ease-in-out;
+  width: 35px;
+}
+
+.theme-selector:hover { 
+  box-shadow: rgb(230, 230, 230) 0 0 8px;
+  cursor: pointer;
+  
+}
+
+.theme-selector:active {
+  transform: scale(0.95);
+}
+
+.light {
+  background-image: linear-gradient(100deg, #d4f1ff, #ffffff);
+  color: #1a150e;
+  transition: 0.3s linear;
+}
+
+.darker {
+  background-image: linear-gradient(100deg, #001214, #001f29);
+  color: white;
+  transition: 0.3s linear;
+}
+
+.light-theme {
+  background-image: linear-gradient(100deg, #d4f1ff, #ffffff);
+}
+
+.darker-theme {
+  background-image: linear-gradient(100deg, #001214, #001f29);
+}
+
+.home{
+   margin-left: 15px;
+   height: 47px;
+   width: 50px;
+}
+
+.user{
+  height: 50px;
+  width: 50px;
+
+}
+
+.more_news{
+  margin-top: -130px;
+ margin-left: 150px;
+ background-color: black;
+ padding: 10px;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ height: auto;
+ width: 3%;
+ border-radius: 20px;
+}
+
+.box_to-do_naptar{
+  width: 70%;
+  padding-top: 30px;
+  padding-bottom: 700px;
+  padding-left: 100px;
+  padding-right: 100px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: rgba(77,77,77,1);
+  text-align: center;
+  margin-top: 450px;
+  border-radius: 60px;
+  float: center;
+  align-items: center;
+  align-self: flex-start;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
+.idojaras_box{
+  width: 70%;
+  padding-top: 30px;
+  padding-bottom: 400px;
+  padding-left: 100px;
+  padding-right: 100px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: rgba(77,77,77,1);
+  text-align: center;
+  margin-top: 25px;
+  border-radius: 60px;
+
+}
+
+
+.hírek01{
+  width: 13%;
+  padding-top: 30px;
+  padding-bottom: 700px;
+  padding-left: 100px;
+  padding-right: 100px;
+  position: absolute;
+  top: 50%;
+  left: 22%;
+  transform: translate(-50%,-50%);
+  background: rgba(77,77,77,1);
+  text-align: left;
+  margin-top: 1550px;
+  border-radius: 60px;
+
+}
+
+.hírek02{
+  width: 13%;
+  padding-top: 30px;
+  padding-bottom: 700px;
+  padding-left: 100px;
+  padding-right: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: rgba(77,77,77,1);
+  text-align: center;
+  margin-top: 1550px;
+  border-radius: 60px;
+
+}
+
+.hírek03{
+  width: 13%;
+  padding-top: 30px;
+  padding-bottom: 700px;
+  padding-left: 100px;
+  padding-right: 100px;
+  position: absolute;
+  top: 50%;
+  left: 77%;
+  transform: translate(-50%,-50%);
+  background: rgba(77,77,77,1);
+  text-align: right;
+  margin-top: 1550px;
+  border-radius: 60px;
+
+}
+
+.footer{
+  width: 100%;
+  height: 400px;
+  background: rgba(58,58,58,1);
+  position: relative;
+  overflow: hidden;
+  margin-top: 800px;
+}
+
+
+/* Body light or darker themes */
+.standard {
+  background-image: linear-gradient(100deg, #575656, #062e3f);
+  color: #ffdfdb;
+  transition: 0.3s linear;
+  overflow: hidden;
+}
+
+.light {
+  background-image: linear-gradient(100deg, #d4f1ff, #ffffff);
+  color: #1a150e;
+  transition: 0.3s linear;
+}
+
+.darker {
+  background-image: linear-gradient(100deg, #001214, #001f29);
+  color: white;
+  transition: 0.3s linear;
+}
+
+#header, #form, #datetime {
+  margin: 0 1rem;
+  min-height: 10vh;
+  width: 100%;
+}
+
+#header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 3rem;
+  min-height: 25vh;
+  width: 100%;
+}

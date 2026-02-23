@@ -1,0 +1,165 @@
+html {
+    background: linear-gradient(#00e5ff,#1200ff);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #00ffed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    border: 5px solid black;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 95%;
+}
+
+h1 {
+    font-size: 50px;
+    border-bottom: 8px solid black;
+    box-shadow: 5px 5px 20px;
+    padding: 50px;
+    padding-bottom: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h2 {
+    margin-left: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h3 {
+    margin-left: 10px;
+}
+
+p {
+    margin-left: 15px;
+    font-family: 'PT Sans', sans-serif;
+} 
+
+img {
+    border-top-left-radius: 20px;
+}
+
+.sorolas li {
+	color: black;
+}
+
+#titkok {
+    background-color: darkslategray;
+    border: 3px outset black;
+    box-shadow: 5px 5px 20px;
+    margin: 20px;
+    margin-left: 4px;
+    padding-right: 20px;
+    text-align: center;
+    float: right;
+    width: 40%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+li, a, button {
+    font-family: "Montserrat"; sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header {
+    border: 3px solid black;
+    background-color: #9d00c6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+nav {
+    order: 1;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+.nav_links li a {
+    transition: all 0.8s ease 0s;
+}
+
+.cta {
+    order: 2;
+}
+
+button {
+    margin-left: 20px;
+	margin-right: 10px;
+    padding: 9px 25px;
+    background-color: darkslategray;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(0,136,169,0.8);
+}
+
+a:hover {
+    color: blue;
+}
+
+a [href="teteje"] {
+    color: black;
+    text-align: center;
+}
+
+table {
+	border-collapse:collapse;	
+	border:3px solid black;		
+	width:90%;					
+	max-width:800px;			
+    margin-left:auto;			
+    margin-right:auto;
+}	
+
+td,th {
+	border:1px solid black;		
+	padding:15px;				
+	}	
+
+th {
+	background-color:darkslategray;   
+	color:white;				
+}
+
+
+tr:nth-child(odd) {background-color:rgb(108, 124, 124);}  
+
+tr:nth-child(even) {background-color: #039e94;}
+
+caption {
+	background-color:black;	
+	color:white;			
+	padding:10px;		
+}
+
+
