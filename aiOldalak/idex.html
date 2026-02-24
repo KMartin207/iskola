@@ -1,0 +1,3582 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💎 BRAINROT OMEGA PRESTIGE 2.0 - THE FINAL BOSS RETURNS 💎</title>
+    <style>
+        /* CSS EXTREME OVERLOAD - BŐVÍTETT VÁLTOZAT */
+        :root {
+            --p-gold: #ffd700;
+            --p-purple: #9400d3;
+            --p-neon: #39ff14;
+            --p-red: #ff0000;
+            --p-blue: #00ffff;
+            --p-pink: #ff69b4;
+            --p-orange: #ff4500;
+            --p-rainbow: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+        }
+
+        @keyframes backgroundPanic {
+            0% { background-color: #000; filter: hue-rotate(0deg) blur(0px); }
+            25% { background-color: #0a0a0a; filter: hue-rotate(90deg) blur(1px); }
+            50% { background-color: #1a1a1a; filter: hue-rotate(180deg) blur(2px); }
+            75% { background-color: #0a0a0a; filter: hue-rotate(270deg) blur(1px); }
+            100% { background-color: #000; filter: hue-rotate(360deg) blur(0px); }
+        }
+
+        @keyframes glitch {
+            0% { transform: translate(0); text-shadow: 2px 0 red, -2px 0 blue; }
+            20% { transform: translate(-5px, 5px); text-shadow: 4px 0 red, -4px 0 blue; }
+            40% { transform: translate(-5px, -5px); text-shadow: 6px 0 lime, -6px 0 purple; }
+            60% { transform: translate(5px, 5px); text-shadow: 8px 0 yellow, -8px 0 cyan; }
+            80% { transform: translate(5px, -5px); text-shadow: 10px 0 white, -10px 0 black; }
+            100% { transform: translate(0); text-shadow: 2px 0 red, -2px 0 blue; }
+        }
+
+        @keyframes floatingMoney {
+            0% { top: 100%; opacity: 1; transform: rotate(0deg); }
+            50% { opacity: 0.8; transform: rotate(180deg); }
+            100% { top: -10%; opacity: 0; transform: rotate(360deg); }
+        }
+
+        @keyframes shake {
+            0% { transform: translate(1px, 1px) rotate(0deg); }
+            10% { transform: translate(-1px, -2px) rotate(-1deg); }
+            20% { transform: translate(-3px, 0px) rotate(1deg); }
+            30% { transform: translate(3px, 2px) rotate(0deg); }
+            40% { transform: translate(1px, -1px) rotate(1deg); }
+            50% { transform: translate(-1px, 2px) rotate(-1deg); }
+            60% { transform: translate(-3px, 1px) rotate(0deg); }
+            70% { transform: translate(3px, 1px) rotate(-1deg); }
+            80% { transform: translate(-1px, -1px) rotate(1deg); }
+            90% { transform: translate(1px, 2px) rotate(0deg); }
+            100% { transform: translate(1px, -2px) rotate(-1deg); }
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); filter: brightness(1.5); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes rainbow {
+            0% { color: red; }
+            14% { color: orange; }
+            28% { color: yellow; }
+            42% { color: green; }
+            57% { color: blue; }
+            71% { color: indigo; }
+            85% { color: violet; }
+            100% { color: red; }
+        }
+
+        @keyframes matrixRain {
+            0% { background-position: 0% 0%; }
+            100% { background-position: 0% 100%; }
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: #000;
+            color: #fff;
+            font-family: 'Impact', 'Arial Black', 'Comic Sans MS', cursive, sans-serif;
+            overflow-x: hidden;
+            animation: backgroundPanic 15s infinite linear;
+            cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><text x="0" y="30" font-size="30">💎</text></svg>') 16 16, auto;
+            position: relative;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: repeating-linear-gradient(0deg, rgba(0,255,0,0.03) 0px, rgba(0,0,0,0.3) 2px, transparent 3px);
+            pointer-events: none;
+            z-index: 9998;
+            animation: matrixRain 20s linear infinite;
+        }
+
+        /* Navigáció (EXTREME) */
+        nav {
+            background: linear-gradient(45deg, #000, #333, #000);
+            border-bottom: 5px solid var(--p-gold);
+            border-top: 5px solid var(--p-neon);
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 9999;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            box-shadow: 0 0 50px var(--p-blue);
+        }
+
+        .nav-item {
+            color: var(--p-neon);
+            text-decoration: none;
+            font-size: 24px;
+            text-shadow: 3px 3px #000, 0 0 10px var(--p-blue);
+            cursor: pointer;
+            padding: 5px 15px;
+            border-radius: 10px;
+            transition: all 0.3s;
+            animation: rainbow 5s infinite;
+        }
+
+        .nav-item:hover {
+            color: white;
+            animation: glitch 0.1s infinite, shake 0.5s infinite;
+            background: rgba(255,255,255,0.1);
+            transform: scale(1.2);
+        }
+
+        /* Hero szekció - ULTIMATE */
+        .hero {
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: url('https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJmZzR6NHR3eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/vE9elHKIYUpG/giphy.gif');
+            background-size: cover;
+            background-position: center;
+            border: 20px double var(--p-blue);
+            box-shadow: inset 0 0 200px #000, 0 0 100px var(--p-purple);
+            margin: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: "🔥🔥🔥 SIGMA 🔥🔥🔥";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 200px;
+            opacity: 0.1;
+            white-space: nowrap;
+            animation: spin 20s linear infinite;
+        }
+
+        .hero h1 {
+            font-size: 150px;
+            margin: 0;
+            background: var(--p-rainbow);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(10px 10px 0px #000) drop-shadow(0 0 20px white);
+            text-transform: uppercase;
+            animation: glitch 2s infinite, pulse 3s infinite;
+            letter-spacing: 10px;
+        }
+
+        .hero h1:hover {
+            animation: shake 0.1s infinite;
+            transform: scale(1.1);
+        }
+
+        .marquee-container {
+            background: rgba(0,0,0,0.8);
+            padding: 15px;
+            width: 100%;
+            border: 3px solid var(--p-gold);
+        }
+
+        marquee {
+            font-size: 30px;
+            color: var(--p-neon);
+            text-shadow: 2px 2px var(--p-purple);
+        }
+
+        /* Dashboard rács - BŐVÍTETT */
+        .dashboard {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 30px;
+            max-width: 2000px;
+            margin: 0 auto;
+        }
+
+        .panel {
+            background: rgba(10, 10, 20, 0.7);
+            border: 3px solid var(--p-purple);
+            padding: 20px;
+            position: relative;
+            transition: all 0.3s;
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            box-shadow: 0 0 30px rgba(148, 0, 211, 0.3);
+            overflow: hidden;
+        }
+
+        .panel::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,255,255,0.03) 10px, rgba(255,255,255,0.03) 20px);
+            animation: spin 30s linear infinite;
+            pointer-events: none;
+        }
+
+        .panel:hover {
+            transform: scale(1.03) translateY(-5px);
+            border-color: var(--p-neon);
+            box-shadow: 0 0 50px var(--p-neon), 0 0 100px var(--p-blue);
+            z-index: 100;
+        }
+
+        .panel h2 {
+            border-bottom: 3px solid var(--p-gold);
+            padding-bottom: 15px;
+            color: var(--p-gold);
+            font-size: 28px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: 0;
+            animation: rainbow 10s infinite;
+        }
+
+        /* Statisztikák */
+        .stat-val {
+            font-size: 45px;
+            color: var(--p-neon);
+            font-weight: bold;
+            text-shadow: 3px 3px #000, 0 0 20px var(--p-blue);
+            transition: all 0.2s;
+        }
+
+        .stat-val:hover {
+            transform: scale(1.1);
+            color: white;
+        }
+
+        .stat-label {
+            color: var(--p-gold);
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+
+        /* Gombok - EXTREME */
+        .btn-max {
+            width: 100%;
+            padding: 20px;
+            margin-top: 15px;
+            background: linear-gradient(180deg, #666, #111, #000);
+            color: white;
+            border: 3px solid var(--p-gold);
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 22px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-radius: 10px;
+            transition: all 0.2s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-max::before {
+            content: "💎";
+            position: absolute;
+            left: -30px;
+            top: 0;
+            height: 100%;
+            width: 30px;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transform: skewX(-20deg);
+            animation: slide 3s infinite;
+        }
+
+        @keyframes slide {
+            0% { left: -30px; }
+            100% { left: 110%; }
+        }
+
+        .btn-max:hover {
+            background: linear-gradient(180deg, #fff, var(--p-gold));
+            color: black;
+            box-shadow: 0 0 80px white, 0 0 150px var(--p-gold);
+            transform: scale(1.05);
+            border-color: white;
+        }
+
+        .btn-max:active {
+            transform: scale(0.95);
+        }
+
+        /* Shop */
+        .shop-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            border: 2px solid var(--p-purple);
+            margin-bottom: 10px;
+            background: rgba(0,0,0,0.7);
+            border-radius: 10px;
+            transition: all 0.2s;
+            font-size: 18px;
+        }
+
+        .shop-item:hover {
+            border-color: var(--p-neon);
+            background: rgba(57, 255, 20, 0.1);
+            transform: translateX(10px);
+        }
+
+        .shop-item button {
+            background: linear-gradient(135deg, var(--p-gold), orange);
+            border: none;
+            padding: 10px 20px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: all 0.2s;
+        }
+
+        .shop-item button:hover {
+            transform: scale(1.2);
+            box-shadow: 0 0 30px gold;
+        }
+
+        /* Mining Rig - FEJLESZTETT */
+        #mining-canvas {
+            width: 100%;
+            height: 150px;
+            background: #0a0a0a;
+            border: 2px solid var(--p-neon);
+            border-radius: 10px;
+            box-shadow: inset 0 0 30px #000;
+            cursor: cell;
+        }
+
+        /* GigaChad Overlay - ULTIMATE */
+        #gigachad-alert {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            z-index: 10000;
+            transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            text-align: center;
+        }
+
+        .show-chad {
+            transform: translate(-50%, -50%) scale(2) !important;
+        }
+
+        #gigachad-alert img {
+            border: 10px solid gold;
+            border-radius: 50%;
+            box-shadow: 0 0 200px gold;
+            animation: spin 2s linear infinite;
+        }
+
+        /* Ads (Brainrot stílusban) */
+        .fake-ad {
+            position: fixed;
+            width: 300px;
+            background: repeating-linear-gradient(45deg, yellow, orange, red);
+            color: black;
+            padding: 20px;
+            border: 8px dashed blue;
+            font-weight: bold;
+            z-index: 5000;
+            cursor: pointer;
+            font-size: 20px;
+            text-align: center;
+            border-radius: 20px;
+            box-shadow: 0 0 50px red;
+            animation: pulse 1s infinite;
+        }
+
+        .fake-ad:hover {
+            transform: rotate(5deg) scale(1.2);
+            z-index: 5001;
+        }
+
+        /* ChatBox - FEJLESZTETT */
+        #chat-window {
+            height: 200px;
+            overflow-y: auto;
+            background: #0a0a0a;
+            padding: 15px;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            color: var(--p-neon);
+            border: 2px solid var(--p-blue);
+            border-radius: 10px;
+            scroll-behavior: smooth;
+        }
+
+        #chat-window::-webkit-scrollbar {
+            width: 10px;
+            background: #000;
+        }
+
+        #chat-window::-webkit-scrollbar-thumb {
+            background: var(--p-neon);
+            border-radius: 5px;
+        }
+
+        /* Money Rain - Fokozott */
+        .money-rain {
+            position: fixed;
+            pointer-events: none;
+            z-index: 8000;
+            font-size: 40px;
+            animation: floatingMoney 3s linear forwards;
+            filter: drop-shadow(0 0 10px gold);
+        }
+
+        /* Leaderboard Table - EXTREME */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 18px;
+        }
+        th {
+            background: var(--p-purple);
+            color: white;
+            padding: 15px;
+            font-size: 22px;
+        }
+        td {
+            border: 2px solid var(--p-gold);
+            padding: 12px;
+            text-align: left;
+        }
+        tr:nth-child(even) { background: rgba(255,255,255,0.05); }
+        tr:hover { background: rgba(255,215,0,0.2); }
+
+        /* Progress Bars */
+        .progress-bar {
+            width: 100%;
+            height: 30px;
+            background: #333;
+            border-radius: 15px;
+            overflow: hidden;
+            margin: 10px 0;
+            border: 2px solid white;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--p-neon), var(--p-blue));
+            width: 0%;
+            transition: width 0.3s;
+            box-shadow: 0 0 20px var(--p-neon);
+        }
+
+        /* Prestige badge */
+        .prestige-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, gold, purple);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 30px;
+            font-size: 14px;
+            margin-left: 10px;
+            border: 2px solid white;
+        }
+
+        /* Achievement popup */
+        .achievement-popup {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: linear-gradient(135deg, gold, purple);
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            border: 3px solid white;
+            z-index: 9999;
+            animation: slideIn 0.5s;
+            box-shadow: 0 0 50px gold;
+        }
+
+        @keyframes slideIn {
+            from { transform: translateX(400px); }
+            to { transform: translateX(0); }
+        }
+
+        /* Inventory grid */
+        .inventory-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 5px;
+        }
+
+        .inventory-item {
+            background: rgba(255,255,255,0.1);
+            border: 1px solid var(--p-gold);
+            padding: 5px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        /* Mystery box */
+        .mystery-box {
+            width: 100%;
+            height: 100px;
+            background: repeating-linear-gradient(45deg, purple, gold);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            border-radius: 10px;
+            animation: pulse 2s infinite;
+        }
+
+        /* Countdown timer */
+        .countdown {
+            font-family: 'Digital', monospace;
+            font-size: 40px;
+            color: var(--p-neon);
+            text-align: center;
+            background: black;
+            padding: 10px;
+            border-radius: 10px;
+            border: 2px solid red;
+        }
+
+        /* Rizz meter special */
+        .rizz-meter {
+            width: 100%;
+            height: 40px;
+            background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
+            border-radius: 20px;
+            margin: 10px 0;
+            transition: width 0.3s;
+        }
+
+        /* =========================
+   RESPONSIVE + CLEANER UI PATCH
+   Tedd a CSS LEGALJÁRA
+   (body-t nem módosítja)
+        ========================= */
+
+        /* Globális alapok (body nélkül) */
+        *, *::before, *::after { box-sizing: border-box; }
+        img, video, canvas { max-width: 100%; height: auto; }
+        :where(input, button, textarea, select) { font: inherit; }
+
+        /* Központi layout korlát + kényelmes padding */
+        .hero,
+        .dashboard,
+        .panel {
+        max-width: min(1200px, 100%);
+        }
+
+        .dashboard {
+        width: min(1200px, 100%);
+        margin-inline: auto;
+        padding: clamp(12px, 2.5vw, 28px);
+        gap: clamp(12px, 2vw, 20px);
+
+        /* Auto-reszponzív grid: ennyi! */
+        grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
+        }
+
+        /* Nav legyen tényleg mobilbarát */
+        nav {
+        gap: 10px;
+        padding: 12px clamp(10px, 2vw, 18px);
+        }
+
+        .nav-item {
+        font-size: clamp(14px, 2.2vw, 18px);
+        padding: 8px 12px;
+        border-radius: 999px;
+        line-height: 1;
+        user-select: none;
+
+        /* Ne ugráljon óriásit hoverre mobilon */
+        transform: translateZ(0);
+        }
+        @media (hover: hover) {
+        .nav-item:hover { transform: scale(1.08); }
+        }
+
+        /* HERO: fix 150px helyett fluid, és ne lógjon ki */
+        .hero {
+        min-height: clamp(320px, 60vh, 720px);
+        margin: clamp(10px, 2vw, 20px);
+        border-width: clamp(6px, 1.6vw, 20px);
+        border-radius: 18px;
+        }
+
+        .hero::before {
+        /* 200px helyett fluid + mobilon kevésbé agresszív */
+        font-size: clamp(56px, 10vw, 160px);
+        opacity: 0.08;
+        }
+
+        .hero h1 {
+        font-size: clamp(40px, 8vw, 110px);
+        letter-spacing: clamp(1px, 0.8vw, 10px);
+        text-align: center;
+        padding-inline: 10px;
+        line-height: 0.95;
+        }
+
+        /* Marquee konténer ne legyen túl magas mobilon */
+        .marquee-container {
+        padding: 10px;
+        }
+        marquee {
+        font-size: clamp(16px, 2.6vw, 24px);
+        }
+
+        /* Panelek: egységesebb spacing + jobb olvashatóság */
+        .panel {
+        border-radius: 18px;
+        padding: clamp(14px, 2.2vw, 22px);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+        }
+
+        /* Panel címek: ne legyen óriási mobilon */
+        .panel h2 {
+        font-size: clamp(18px, 2.6vw, 26px);
+        padding-bottom: 10px;
+        }
+
+        /* Stat számok: clamp + ne törje szét a layoutot */
+        .stat-val {
+        font-size: clamp(28px, 4vw, 44px);
+        overflow-wrap: anywhere;
+        }
+
+        /* Gombok: jobb tap target + stabilabb */
+        .btn-max {
+        padding: 14px 16px;
+        font-size: clamp(14px, 2.2vw, 18px);
+        border-radius: 14px;
+        }
+
+        /* Shop item: mobilon törjön szépen */
+        .shop-item {
+        gap: 10px;
+        flex-wrap: wrap;
+        font-size: clamp(14px, 2vw, 18px);
+        }
+        .shop-item button {
+        font-size: clamp(14px, 2vw, 18px);
+        padding: 10px 14px;
+        }
+
+        /* Chat input sor: mobilon egymás alá */
+        #chat-window {
+        font-size: 14px;
+        }
+        #chat-input {
+        width: 100% !important;
+        margin-top: 10px !important;
+        }
+        #chat-input + button,
+        #chat-input + button + button {
+        width: 49%;
+        margin-top: 10px;
+        }
+        @media (max-width: 420px) {
+        #chat-input + button,
+        #chat-input + button + button {
+            width: 100%;
+        }
+        }
+
+        /* Canvas: fix magasság helyett fluid */
+        #mining-canvas {
+        height: clamp(140px, 18vh, 220px);
+        }
+
+        /* Táblázat: mobilon vízszintes scroll (különben szétesik) */
+        .panel table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        border-radius: 12px;
+        }
+
+        /* Inventory grid: auto-fit, ne legyen mindig 3 oszlop */
+        .inventory-grid {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 10px;
+        }
+
+        /* Fake ad: mobilon kisebb és ne lógjon ki */
+        .fake-ad {
+        width: min(300px, calc(100vw - 24px));
+        font-size: clamp(14px, 2.3vw, 18px);
+        }
+
+        /* GigaChad overlay: mobilon ne 2x-es gigantikus */
+        @media (max-width: 600px) {
+        .show-chad {
+            transform: translate(-50%, -50%) scale(1.15) !important;
+        }
+        #gigachad-alert img { width: min(260px, 70vw); }
+        }
+
+        /* Animációk tisztelete: ha valaki csökkentett mozgást kér */
+        @media (prefers-reduced-motion: reduce) {
+        * { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
+        body::before { animation: none !important; }
+        }
+
+        /* Kisebb képernyőn: a 2 oszlopos panel (TOP RIZZLERS) is essék vissza */
+        @media (max-width: 900px) {
+        .panel[style*="grid-column: span 2"] { grid-column: auto !important; }
+        .panel[style*="grid-row: span 2"] { grid-row: auto !important; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="nav-item" onclick="navigateTo('home')">🏠 HOME</div>
+    <div class="nav-item" onclick="navigateTo('crypto')">🪙 CRYPTO</div>
+    <div class="nav-item" onclick="navigateTo('aura')">🗿 AURA SHOP</div>
+    <div class="nav-item" onclick="navigateTo('news')">🚽 SKIBIDI NEWS</div>
+    <div class="nav-item" onclick="earnRealMoney()">🤑 FREE REAL MONEY (NO SCAM)</div>
+    <div class="nav-item" onclick="openPrestige()">⭐ PRESTIGE</div>
+    <div class="nav-item" onclick="openCasino()">🎰 SIGMA CASINO</div>
+    <div class="nav-item" onclick="openPvP()">⚔️ RIZZ ARENA</div>
+</nav>
+
+<div class="hero">
+    <h1>SKIBIDI OMEGA 2.0</h1>
+    <div class="marquee-container">
+        <marquee direction="right" scrollamount="20" behavior="alternate">🔥🔥🔥 $SIGMA COIN MOONING TO MARS 🔥🔥🔥 +999999 RIZZ DETECTED 🔥🔥🔥 BABY GRONK APPROVED 🔥🔥🔥</marquee>
+        <marquee direction="left" scrollamount="15" behavior="slide">💀 OHIO FINAL BOSS SKIBIDI TOILET GYATT 💀 FANUM TAX RIZZLER SIGMA</marquee>
+    </div>
+</div>
+
+<div class="dashboard">
+    <!-- Panel 1: SIGMA WALLET - BŐVÍTETT -->
+    <div class="panel">
+        <h2>💰 SIGMA WALLET</h2>
+        <div class="stat-label">BALANCE:</div>
+        <div id="balance" class="stat-val">$ 0</div>
+        <div class="stat-label">CRYPTO:</div>
+        <div id="crypto-val" style="color: var(--p-blue); font-size: 24px;">0.0000 DOGE</div>
+        <div class="stat-label">BITCOIN:</div>
+        <div id="btc-val" style="color: orange; font-size: 24px;">0.0000 BTC</div>
+        <div class="stat-label">ETH:</div>
+        <div id="eth-val" style="color: #627eea; font-size: 24px;">0.0000 ETH</div>
+        <div class="progress-bar">
+            <div id="wallet-progress" class="progress-fill" style="width: 0%;"></div>
+        </div>
+        <button class="btn-max" onclick="clickMoney()">KATTINTS A PÉNZÉRT 💵</button>
+        <p>Multiplier: <span id="mult-val" style="color: var(--p-neon); font-size: 30px;">1x</span></p>
+        <p>Passive Income: <span id="passive-val">$0</span>/sec</p>
+        <button class="btn-max" onclick="collectAll()">ÖSSZES BESZEDÉSE</button>
+    </div>
+
+    <!-- Panel 2: CRYPTO MINER v3.0 - BŐVÍTETT -->
+    <div class="panel">
+        <h2>⛏️ CRYPTO MINER v3.0</h2>
+        <canvas id="mining-canvas" width="400" height="150"></canvas>
+        <div class="stat-label">MINING SPEED:</div>
+        <div id="mining-speed" class="stat-val">1x</div>
+        <div class="progress-bar">
+            <div id="mining-progress" class="progress-fill" style="width: 0%;"></div>
+        </div>
+        <button class="btn-max" onclick="startMining()" id="mining-btn">BÁNYÁSZAT INDÍTÁSA</button>
+        <button class="btn-max" onclick="upgradeMining()">MINING FEJLESZTÉS ($1000)</button>
+        <div id="mining-status" style="font-size: 20px; text-align: center; color: red;">OFFLINE</div>
+        <div id="mining-stats">Összes bányászott: 0 DOGE</div>
+    </div>
+
+    <!-- Panel 3: MEGA UPGRADES - BŐVÍTETT -->
+    <div class="panel" style="grid-row: span 2;">
+        <h2>🛒 MEGA UPGRADES</h2>
+        <div class="shop-item">
+            <span>🤖 Auto-Clicker (Bot)</span>
+            <span id="auto-count">0</span>
+            <button onclick="buyUpgrade('auto', 50)">$50</button>
+        </div>
+        <div class="shop-item">
+            <span>👄 Mewing Támogatás</span>
+            <span id="mew-count">0</span>
+            <button onclick="buyUpgrade('mew', 250)">$250</button>
+        </div>
+        <div class="shop-item">
+            <span>🚽 Skibidi Előfizetés</span>
+            <span id="skibidi-count">0</span>
+            <button onclick="buyUpgrade('skibidi', 1000)">$1k</button>
+        </div>
+        <div class="shop-item">
+            <span>🏭 Ohio Szerverpark</span>
+            <span id="ohio-count">0</span>
+            <button onclick="buyUpgrade('ohio', 10000)">$10k</button>
+        </div>
+        <div class="shop-item">
+            <span>👑 Kai Cenat Rizz</span>
+            <span id="kai-count">0</span>
+            <button onclick="buyUpgrade('kai', 100000)">$100k</button>
+        </div>
+        <div class="shop-item">
+            <span>💀 Baby Gronk</span>
+            <span id="gronk-count">0</span>
+            <button onclick="buyUpgrade('gronk', 500000)">$500k</button>
+        </div>
+        <div class="shop-item">
+            <span>🌌 Gyatt Level 9000</span>
+            <span id="gyatt-count">0</span>
+            <button onclick="buyUpgrade('gyatt', 1000000)">$1M</button>
+        </div>
+        <div class="shop-item">
+            <span>⚡ Rizzler God Mode</span>
+            <span id="rizz-count">0</span>
+            <button onclick="buyUpgrade('rizz', 10000000)">$10M</button>
+        </div>
+        <div class="mystery-box" onclick="openMysteryBox()">
+            🎁 MYSTERY BOX 🎁
+        </div>
+    </div>
+
+    <!-- Panel 4: GLOBAL CHAT - BŐVÍTETT -->
+    <div class="panel">
+        <h2>💬 GLOBAL CHAT (LIVE)</h2>
+        <div id="chat-window">
+            [SYSTEM]: Welcome to the Void...<br>
+            [SYSTEM]: Sigma rules activated!<br>
+        </div>
+        <input type="text" id="chat-input" placeholder="Mondj valami sigmát..." style="width:70%; margin-top:5px; padding: 10px; border-radius: 5px;">
+        <button onclick="sendChat()" style="padding: 10px; background: var(--p-neon); border: none; font-weight: bold;">KÜLD</button>
+        <button onclick="clearChat()" style="padding: 10px; background: red; border: none; color: white;">TÖRÖL</button>
+        <div style="margin-top: 10px;">
+            <span class="stat-label">Online: </span>
+            <span id="online-count">69</span>
+        </div>
+    </div>
+
+    <!-- Panel 5: AURA METER - BŐVÍTETT -->
+    <div class="panel">
+        <h2>🗿 AURA METER</h2>
+        <div class="progress-bar">
+            <div id="aura-fill" class="progress-fill" style="width:10%;"></div>
+        </div>
+        <p id="aura-desc" style="font-size: 20px;">Status: Low Aura NPC</p>
+        <p>Aura Level: <span id="aura-level">1</span></p>
+        <div class="rizz-meter" id="rizz-meter" style="width: 10%;"></div>
+        <button class="btn-max" onclick="gambleAura()">🎲 AURA SZERENCSEJÁTÉK</button>
+        <button class="btn-max" onclick="meditateAura()">🧘 MEDITÁCIÓ (+10 AURA)</button>
+        <button class="btn-max" onclick="sacrificeAura()">🔥 AURA FELÁLDOZÁS (KOCKÁZATOS)</button>
+    </div>
+
+    <!-- Panel 6: TOP RIZZLERS - BŐVÍTETT -->
+    <div class="panel" style="grid-column: span 2;">
+        <h2>🏆 TOP RIZZLERS (WORLDWIDE)</h2>
+        <table>
+            <tr><th>Rank</th><th>Name</th><th>Aura</th><th>Rizz</th><th>Money</th><th>Prestige</th></tr>
+            <tr><td>1.</td><td>Baby Gronk</td><td>999M</td><td>GOD LEVEL</td><td>$999B</td><td>⭐ OMEGA</td></tr>
+            <tr><td>2.</td><td>The Rock (Sus)</td><td>500k</td><td>High</td><td>$50M</td><td>⭐ 5</td></tr>
+            <tr><td>3.</td><td>Kai Cenat</td><td>250k</td><td>Legendary</td><td>$25M</td><td>⭐ 4</td></tr>
+            <tr><td>4.</td><td>Skibidi Toilet</td><td>100k</td><td>Meme</td><td>$10M</td><td>⭐ 3</td></tr>
+            <tr><td>5.</td><td><span id="user-name-cell">You</span></td><td><span id="user-aura-cell">0</span></td><td id="user-rizz-cell">Low</td><td id="user-money-cell">$0</td><td id="user-prestige-cell">⭐ 0</td></tr>
+        </table>
+        <button class="btn-max" onclick="refreshLeaderboard()">🔄 FRISSÍTÉS</button>
+    </div>
+
+    <!-- Panel 7: INVENTORY - ÚJ -->
+    <div class="panel">
+        <h2>🎒 INVENTORY</h2>
+        <div class="inventory-grid" id="inventory-grid">
+            <div class="inventory-item">🧪 Potion: <span id="potion-count">0</span></div>
+            <div class="inventory-item">🔑 Key: <span id="key-count">0</span></div>
+            <div class="inventory-item">📦 Box: <span id="box-count">0</span></div>
+            <div class="inventory-item">💎 Crystal: <span id="crystal-count">0</span></div>
+            <div class="inventory-item">⚡ Boost: <span id="boost-count">0</span></div>
+            <div class="inventory-item">🎫 Ticket: <span id="ticket-count">0</span></div>
+        </div>
+        <button class="btn-max" onclick="usePotion()">🧪 HASZNÁLJ POTIÓT</button>
+        <button class="btn-max" onclick="openInventoryBox()">📦 NYISS DOBOZT</button>
+    </div>
+
+    <!-- Panel 8: DAILY REWARDS - ÚJ -->
+    <div class="panel">
+        <h2>📅 NAPI BÓNUSZ</h2>
+        <div id="daily-timer" class="countdown">24:00:00</div>
+        <button class="btn-max" onclick="claimDaily()">KÖVETELÉS</button>
+        <div id="daily-streak">Streak: 0 nap</div>
+        <div class="progress-bar">
+            <div id="daily-progress" class="progress-fill" style="width: 0%;"></div>
+        </div>
+    </div>
+
+    <!-- Panel 9: SIGMA CASINO - ÚJ -->
+    <div class="panel">
+        <h2>🎰 SIGMA CASINO</h2>
+        <div class="shop-item">
+            <span>KOCKÁZAT (2x)</span>
+            <button onclick="casinoGamble('double', 100)">$100</button>
+        </div>
+        <div class="shop-item">
+            <span>NAGY KOCKÁZAT (5x)</span>
+            <button onclick="casinoGamble('high', 500)">$500</button>
+        </div>
+        <div class="shop-item">
+            <span>ŐRÜLT KOCKÁZAT (10x)</span>
+            <button onclick="casinoGamble('crazy', 1000)">$1k</button>
+        </div>
+        <div class="shop-item">
+            <span>LEGENDA (100x)</span>
+            <button onclick="casinoGamble('legend', 10000)">$10k</button>
+        </div>
+        <div id="casino-result" style="font-size: 24px; text-align: center;">🎲</div>
+    </div>
+
+    <!-- Panel 10: RIZZ ARENA - ÚJ -->
+    <div class="panel">
+        <h2>⚔️ RIZZ ARENA PvP</h2>
+        <div class="shop-item">
+            <span>Ellenfél: NPC</span>
+            <span>Aura: 100</span>
+            <button onclick="fightNPC()">HARC!</button>
+        </div>
+        <div class="shop-item">
+            <span>Ellenfél: BOT</span>
+            <span>Aura: 500</span>
+            <button onclick="fightBot()">HARC!</button>
+        </div>
+        <div class="shop-item">
+            <span>Ellenfél: SIGMA</span>
+            <span>Aura: 5000</span>
+            <button onclick="fightSigma()">HARC!</button>
+        </div>
+        <div id="fight-result"></div>
+        <div class="progress-bar">
+            <div id="fight-progress" class="progress-fill" style="width: 0%;"></div>
+        </div>
+    </div>
+
+    <!-- Panel 11: STOCKS - ÚJ -->
+    <div class="panel">
+        <h2>📈 SIGMA STOCKS</h2>
+        <div id="stock-price" class="stat-val">$100</div>
+        <button class="btn-max" onclick="buyStock()">VÉTEL ($100)</button>
+        <button class="btn-max" onclick="sellStock()">ELADÁS</button>
+        <div id="stock-owned">Tulajdon: 0</div>
+        <div id="stock-chart" style="height: 50px; background: #111; margin-top: 10px;"></div>
+    </div>
+
+    <!-- Panel 12: ACHIEVEMENTS - ÚJ -->
+    <div class="panel">
+        <h2>🏆 ACHIEVEMENTS</h2>
+        <div id="achievements-list">
+            <div>💵 Első millió: ❌</div>
+            <div>⭐ Prestige 1: ❌</div>
+            <div>🗿 10k Aura: ❌</div>
+            <div>🤖 100 Auto-Clicker: ❌</div>
+        </div>
+        <div class="progress-bar">
+            <div id="achievement-progress" class="progress-fill" style="width: 0%;"></div>
+        </div>
+    </div>
+
+    <!-- Panel 13: WEATHER - ÚJ -->
+    <div class="panel">
+        <h2>🌤️ SIGMA IDŐJÁRÁS</h2>
+        <div id="weather-effect">☀️ Tiszta égbolt</div>
+        <div id="weather-bonus">Bónusz: +0%</div>
+        <button class="btn-max" onclick="changeWeather()">VÁLTOZTATÁS ($1000)</button>
+    </div>
+
+    <!-- Panel 14: PET SYSTEM - ÚJ -->
+    <div class="panel">
+        <h2>🐕 SIGMA PET</h2>
+        <div id="pet-name">Kis Skibidi</div>
+        <div id="pet-hunger">Éhség: 100%</div>
+        <div class="progress-bar">
+            <div id="pet-hunger-bar" class="progress-fill" style="width: 100%;"></div>
+        </div>
+        <button class="btn-max" onclick="feedPet()">ETETÉS ($50)</button>
+        <button class="btn-max" onclick="playWithPet()">JÁTSZÁS</button>
+    </div>
+
+    <!-- Panel 15: BLACK MARKET - ÚJ -->
+    <div class="panel">
+        <h2>💀 BLACK MARKET</h2>
+        <div class="shop-item">
+            <span>Illegális Multiplier</span>
+            <button onclick="buyBlackMarket('mult', 50000)">$50k</button>
+        </div>
+        <div class="shop-item">
+            <span>Dupla Aura</span>
+            <button onclick="buyBlackMarket('aura', 100000)">$100k</button>
+        </div>
+        <div class="shop-item">
+            <span>Insta Prestige</span>
+            <button onclick="buyBlackMarket('prestige', 1000000)">$1M</button>
+        </div>
+        <div id="black-market-warning" style="color: red;">⚠️ ILLEGÁLIS ⚠️</div>
+    </div>
+
+    <!-- Panel 16: TIME MACHINE - ÚJ -->
+    <div class="panel">
+        <h2>⏰ TIME MACHINE</h2>
+        <div id="time-travel-cost">Költség: $1M</div>
+        <button class="btn-max" onclick="timeTravel()">IDŐUTAZÁS</button>
+        <div id="time-paradox">Paradoxon: 0%</div>
+    </div>
+</div>
+
+<!-- Panel 17: SIGMA GYMNASIUM -->
+<div class="panel">
+    <h2>🏋️ SIGMA GYMNASIUM</h2>
+    <div class="stat-label">Erő:</div>
+    <div class="progress-bar">
+        <div id="strength-bar" class="progress-fill" style="width: 0%;"></div>
+    </div>
+    <div class="stat-label">Állóképesség:</div>
+    <div class="progress-bar">
+        <div id="stamina-bar" class="progress-fill" style="width: 0%;"></div>
+    </div>
+    <div class="shop-item">
+        <span>💪 Push-up edzés</span>
+        <button onclick="gymTrain('pushup', 100)">$100</button>
+    </div>
+    <div class="shop-item">
+        <span>🏃 Futópad</span>
+        <button onclick="gymTrain('run', 250)">$250</button>
+    </div>
+    <div class="shop-item">
+        <span>🏋️ Súlyemelés</span>
+        <button onclick="gymTrain('weight', 1000)">$1k</button>
+    </div>
+    <div id="gym-effect">Nincs aktív bónusz</div>
+</div>
+
+<!-- Panel 18: SIGMA NFT GALLERY -->
+<div class="panel">
+    <h2>🖼️ SIGMA NFT GALLERY</h2>
+    <div class="inventory-grid" id="nft-grid">
+        <div class="inventory-item" id="nft1">🔴 NFT #1</div>
+        <div class="inventory-item" id="nft2">🟢 NFT #2</div>
+        <div class="inventory-item" id="nft3">🔵 NFT #3</div>
+        <div class="inventory-item" id="nft4">🟡 NFT #4</div>
+        <div class="inventory-item" id="nft5">🟣 NFT #5</div>
+        <div class="inventory-item" id="nft6">⚪ NFT #6</div>
+    </div>
+    <div class="stat-label">NFT érték:</div>
+    <div id="nft-value" class="stat-val">$0</div>
+    <button class="btn-max" onclick="mintNFT()">🎨 ÚJ NFT VERÉSE ($5000)</button>
+    <button class="btn-max" onclick="sellNFTs()">💰 ÖSSZES NFT ELADÁSA</button>
+</div>
+
+<!-- Panel 19: SIGMA FARMING -->
+<div class="panel">
+    <h2>🌾 SIGMA FARM</h2>
+    <div class="inventory-grid">
+        <div class="inventory-item">🌽 Kukorica: <span id="corn-count">0</span></div>
+        <div class="inventory-item">🥕 Répa: <span id="carrot-count">0</span></div>
+        <div class="inventory-item">🍅 Paradicsom: <span id="tomato-count">0</span></div>
+        <div class="inventory-item">🌻 Napraforgó: <span id="sunflower-count">0</span></div>
+    </div>
+    <div class="progress-bar">
+        <div id="farm-progress" class="progress-fill" style="width: 0%;"></div>
+    </div>
+    <button class="btn-max" onclick="plantCrop('corn', 50)">🌽 Ültetés ($50)</button>
+    <button class="btn-max" onclick="harvestAll()">🌾 ARATÁS</button>
+</div>
+
+<!-- Panel 20: SIGMA LABORATÓRIUM -->
+<div class="panel">
+    <h2>🧪 SIGMA LAB</h2>
+    <div class="shop-item">
+        <span>🧪 Erő potion</span>
+        <button onclick="craftPotion('strength', 500)">$500</button>
+    </div>
+    <div class="shop-item">
+        <span>⚡ Gyors potion</span>
+        <button onclick="craftPotion('speed', 1000)">$1k</button>
+    </div>
+    <div class="shop-item">
+        <span>🧬 Mutáns potion</span>
+        <button onclick="craftPotion('mutant', 5000)">$5k</button>
+    </div>
+    <div id="lab-status">Kísérletek: 0</div>
+    <div class="progress-bar">
+        <div id="lab-progress" class="progress-fill" style="width: 0%;"></div>
+    </div>
+</div>
+
+<!-- Panel 21: SIGMA RACING -->
+<div class="panel">
+    <h2>🏎️ SIGMA RACING</h2>
+    <div class="stat-label">Autód:</div>
+    <div id="car-name">🚗 Toyota Corolla</div>
+    <div class="stat-label">Sebesség:</div>
+    <div id="car-speed">100 km/h</div>
+    <div class="progress-bar">
+        <div id="car-progress" class="progress-fill" style="width: 0%;"></div>
+    </div>
+    <button class="btn-max" onclick="upgradeCar()">🚀 FEJLESZTÉS ($10000)</button>
+    <button class="btn-max" onclick="startRace()">🏁 VERSENY INDÍTÁSA</button>
+    <div id="race-result"></div>
+</div>
+
+<!-- Panel 22: SIGMA ŰRPROGRAM -->
+<div class="panel">
+    <h2>🚀 SIGMA SPACE</h2>
+    <div class="stat-label">Rakéta szint:</div>
+    <div id="rocket-level">1</div>
+    <div class="progress-bar">
+        <div id="rocket-progress" class="progress-fill" style="width: 0%;"></div>
+    </div>
+    <button class="btn-max" onclick="launchRocket()">🚀 INDÍTÁS ($50000)</button>
+    <button class="btn-max" onclick="upgradeRocket()">🛸 FEJLESZTÉS ($100000)</button>
+    <div id="space-result">🌍 Föld körüli pályán</div>
+</div>
+
+<!-- Panel 23: SIGMA KONYHA -->
+<div class="panel">
+    <h2>🍳 SIGMA KITCHEN</h2>
+    <div class="shop-item">
+        <span>🍔 Szaftos burger</span>
+        <button onclick="cookFood('burger', 200)">$200</button>
+    </div>
+    <div class="shop-item">
+        <span>🍕 Rizz pizza</span>
+        <button onclick="cookFood('pizza', 500)">$500</button>
+    </div>
+    <div class="shop-item">
+        <span>🍣 Sigma sushi</span>
+        <button onclick="cookFood('sushi', 2000)">$2k</button>
+    </div>
+    <div id="food-buff">Aktív buff: Nincs</div>
+</div>
+
+<!-- Panel 24: SIGMA KÖNYVTÁR -->
+<div class="panel">
+    <h2>📚 SIGMA LIBRARY</h2>
+    <div class="shop-item">
+        <span>📖 "Hogyan legyünk Sigma"</span>
+        <button onclick="readBook('sigma', 300)">$300</button>
+    </div>
+    <div class="shop-item">
+        <span>📗 "Rizz tankönyv"</span>
+        <button onclick="readBook('rizz', 600)">$600</button>
+    </div>
+    <div class="shop-item">
+        <span>📘 "Mewing haladóknak"</span>
+        <button onclick="readBook('mewing', 1500)">$1.5k</button>
+    </div>
+    <div id="knowledge">Tudás szint: 0</div>
+</div>
+
+<!-- Panel 25: SIGMA ZENE STÚDIÓ -->
+<div class="panel">
+    <h2>🎵 SIGMA STUDIO</h2>
+    <div class="shop-item">
+        <span>🎤 "Skibidi remix"</span>
+        <button onclick="produceTrack('skibidi', 1000)">$1k</button>
+    </div>
+    <div class="shop-item">
+        <span>🎧 "Gyatt drop"</span>
+        <button onclick="produceTrack('gyatt', 2500)">$2.5k</button>
+    </div>
+    <div class="shop-item">
+        <span>🎼 "Omega symphony"</span>
+        <button onclick="produceTrack('omega', 10000)">$10k</button>
+    </div>
+    <div id="music-streams">Hallgatók: 0</div>
+</div>
+
+<!-- Panel 26: SIGMA MOZAIK -->
+<div class="panel">
+    <h2>🧩 SIGMA PUZZLE</h2>
+    <div class="stat-label">Mozaik darabok:</div>
+    <div id="puzzle-pieces">0/100</div>
+    <div class="progress-bar">
+        <div id="puzzle-progress" class="progress-fill" style="width: 0%;"></div>
+    </div>
+    <button class="btn-max" onclick="findPiece()">🔍 DARAB KERESÉSE ($100)</button>
+    <button class="btn-max" onclick="completePuzzle()">🧩 MOZAIK KIRAKÁSA</button>
+</div>
+
+<!-- Panel 27: SIGMA ÁLLATKERT -->
+<div class="panel">
+    <h2>🦁 SIGMA ZOO</h2>
+    <div class="inventory-grid">
+        <div class="inventory-item">🦁 Oroszlán: <span id="lion-count">0</span></div>
+        <div class="inventory-item">🐯 Tigris: <span id="tiger-count">0</span></div>
+        <div class="inventory-item">🐻 Medve: <span id="bear-count">0</span></div>
+        <div class="inventory-item">🦒 Zsiráf: <span id="giraffe-count">0</span></div>
+    </div>
+    <button class="btn-max" onclick="buyAnimal('lion', 10000)">🦁 VÉTEL ($10k)</button>
+    <button class="btn-max" onclick="feedAnimals()">🍖 ETETÉS</button>
+</div>
+
+<!-- Panel 28: SIGMA IDŐJÁRÁS KONTROLL -->
+<div class="panel">
+    <h2>🌪️ IDŐJÁRÁS KONTROLL</h2>
+    <div class="shop-item">
+        <span>☀️ Napsütés</span>
+        <button onclick="controlWeather('sun', 5000)">$5k</button>
+    </div>
+    <div class="shop-item">
+        <span>🌧️ Eső</span>
+        <button onclick="controlWeather('rain', 3000)">$3k</button>
+    </div>
+    <div class="shop-item">
+        <span>⛈️ Vihar</span>
+        <button onclick="controlWeather('storm', 10000)">$10k</button>
+    </div>
+    <div class="shop-item">
+        <span>❄️ Hó</span>
+        <button onclick="controlWeather('snow', 7000)">$7k</button>
+    </div>
+</div>
+
+<!-- Panel 29: SIGMA MESTERSÉGES INTELLIGENCIA -->
+<div class="panel">
+    <h2>🤖 SIGMA AI</h2>
+    <div class="stat-label">AI szint:</div>
+    <div id="ai-level">1</div>
+    <div class="progress-bar">
+        <div id="ai-progress" class="progress-fill" style="width: 0%;"></div>
+    </div>
+    <button class="btn-max" onclick="trainAI()">🎓 TANÍTÁS ($20000)</button>
+    <button class="btn-max" onclick="askAI()">❓ KÉRDEZÉS</button>
+    <div id="ai-answer"></div>
+</div>
+
+<!-- Panel 30: SIGMA IDŐKAPSZULA -->
+<div class="panel">
+    <h2>⏳ IDŐKAPSZULA</h2>
+    <div class="stat-label">Eltemetve:</div>
+    <div id="capsule-value">$0</div>
+    <div class="stat-label">Napok hátra:</div>
+    <div id="capsule-days">7</div>
+    <button class="btn-max" onclick="buryCapsule()">📦 ELTEMETÉS</button>
+    <button class="btn-max" onclick="openCapsule()">🔓 FELNYITÁS</button>
+</div>
+
+<!-- GigaChad Overlay -->
+<div id="gigachad-alert">
+    <img src="https://media.giphy.com/media/CAYVZA5NRb529kKQUc/giphy.gif" width="400">
+    <h1 style="text-align:center; color:gold; background:black; font-size: 50px;">MEGA SIGMA UNLOCKED!</h1>
+</div>
+
+<!-- Achievement popup container -->
+<div id="achievement-popup" style="display: none;"></div>
+
+<script>
+    // ==================== ULTIMATE STATE MANAGEMENT ====================
+    let stats = {
+        money: 1000,
+        crypto: 0,
+        btc: 0,
+        eth: 0,
+        aura: 100,
+        multiplier: 1,
+        autoClickers: 0,
+        mewing: 0,
+        skibidi: 0,
+        ohio: 0,
+        kai: 0,
+        gronk: 0,
+        gyatt: 0,
+        rizz: 0,
+        isMining: false,
+        miningSpeed: 1,
+        totalMined: 0,
+        prestige: 0,
+        inventory: {
+            potion: 3,
+            key: 1,
+            box: 2,
+            crystal: 0,
+            boost: 1,
+            ticket: 0
+        },
+        dailyStreak: 0,
+        lastDaily: null,
+        stockPrice: 100,
+        stockOwned: 0,
+        achievements: {
+            firstMillion: false,
+            prestige1: false,
+            aura10k: false,
+            auto100: false,
+            // Extra achievementek
+            gymMaster: false,
+            nftCollector: false,
+            farmer: false,
+            scientist: false,
+            racer: false,
+            astronaut: false,
+            chef: false,
+            scholar: false,
+            musician: false,
+            puzzler: false,
+            zookeeper: false,
+            weatherGod: false,
+            aiGod: false,
+            timeTraveler: false
+        },
+        petHunger: 100,
+        weather: 'clear',
+        weatherBonus: 0,
+        timeParadox: 0,
+        blackMarketUsed: 0,
+        fightWins: 0,
+        casinoWins: 0,
+        
+        // BŐVÍTETT STATE - ÚJ RENDSZEREK
+        // Gym rendszer
+        strength: 0,
+        stamina: 0,
+        gymBonus: 0,
+        
+        // NFT rendszer
+        nfts: [false, false, false, false, false, false],
+        nftValue: 1000,
+        
+        // Farm rendszer
+        corn: 0,
+        carrot: 0,
+        tomato: 0,
+        sunflower: 0,
+        farmProgress: 0,
+        
+        // Labor rendszer
+        experiments: 0,
+        labProgress: 0,
+        potions: {
+            strength: 0,
+            speed: 0,
+            mutant: 0
+        },
+        
+        // Racing rendszer
+        carLevel: 1,
+        carSpeed: 100,
+        racesWon: 0,
+        
+        // Űrprogram
+        rocketLevel: 1,
+        rocketProgress: 0,
+        spaceMissions: 0,
+        
+        // Konyha
+        foodBuff: null,
+        foodBuffDuration: 0,
+        
+        // Könyvtár
+        knowledge: 0,
+        booksRead: 0,
+        
+        // Zene
+        musicStreams: 0,
+        tracksProduced: 0,
+        
+        // Mozaik
+        puzzlePieces: 0,
+        puzzleCompleted: false,
+        
+        // Állatkert
+        animals: {
+            lion: 0,
+            tiger: 0,
+            bear: 0,
+            giraffe: 0
+        },
+        
+        // AI
+        aiLevel: 1,
+        aiProgress: 0,
+        
+        // Időkapszula
+        capsuleBuried: false,
+        capsuleValue: 0,
+        capsuleDate: null
+    };
+
+    // --- AUDIO EFFECTS ---
+    const sounds = {
+        click: new Audio('https://www.soundjay.com/buttons/button-3.mp3'),
+        money: new Audio('https://www.soundjay.com/buttons/button-09.mp3'),
+        chad: new Audio('https://www.myinstants.com/media/sounds/can-you-feel-my-heart-mega-slowed.mp3'),
+        win: new Audio('https://www.soundjay.com/misc/sounds/bell-ringing-05.mp3'),
+        lose: new Audio('https://www.soundjay.com/misc/sounds/fail-buzzer-01.mp3')
+    };
+
+    // --- INITIALIZATION ---
+    window.onload = function() {
+        updateUI();
+        loadGame();
+        startGameLoops();
+        drawMiningGraph();
+        initStockChart();
+        initDailyTimer();
+        initWeather();
+        console.log("🔥 SIGMA OMEGA 2.0 BETÖLTVE 🔥");
+    };
+
+    // --- SAVE/LOAD SYSTEM ---
+    function saveGame() {
+        localStorage.setItem('sigmaOmegaSave', JSON.stringify(stats));
+        addChatMessage("[SYSTEM]: Játék elmentve!");
+    }
+
+    function loadGame() {
+        const saved = localStorage.getItem('sigmaOmegaSave');
+        if(saved) {
+            try {
+                const loadedStats = JSON.parse(saved);
+                // Meglévő achievementek megtartása
+                if(loadedStats.achievements) {
+                    stats.achievements = {...stats.achievements, ...loadedStats.achievements};
+                }
+                // Minden más átvétele
+                stats = {...stats, ...loadedStats};
+                updateUI();
+                addChatMessage("[SYSTEM]: Játék betöltve! Üdv újra, Sigma!");
+            } catch(e) {
+                console.error("Hiba a betöltés során:", e);
+                addChatMessage("[SYSTEM]: Hiba a betöltés során!");
+            }
+        }
+    }
+
+    function resetGame() {
+        if(confirm('Biztosan újrakezded? Minden elveszik!')) {
+            stats = {
+                money: 1000,
+                crypto: 0,
+                btc: 0,
+                eth: 0,
+                aura: 100,
+                multiplier: 1,
+                autoClickers: 0,
+                mewing: 0,
+                skibidi: 0,
+                ohio: 0,
+                kai: 0,
+                gronk: 0,
+                gyatt: 0,
+                rizz: 0,
+                isMining: false,
+                miningSpeed: 1,
+                totalMined: 0,
+                prestige: 0,
+                inventory: {
+                    potion: 3,
+                    key: 1,
+                    box: 2,
+                    crystal: 0,
+                    boost: 1,
+                    ticket: 0
+                },
+                dailyStreak: 0,
+                lastDaily: null,
+                stockPrice: 100,
+                stockOwned: 0,
+                achievements: {
+                    firstMillion: false,
+                    prestige1: false,
+                    aura10k: false,
+                    auto100: false,
+                    gymMaster: false,
+                    nftCollector: false,
+                    farmer: false,
+                    scientist: false,
+                    racer: false,
+                    astronaut: false,
+                    chef: false,
+                    scholar: false,
+                    musician: false,
+                    puzzler: false,
+                    zookeeper: false,
+                    weatherGod: false,
+                    aiGod: false,
+                    timeTraveler: false
+                },
+                petHunger: 100,
+                weather: 'clear',
+                weatherBonus: 0,
+                timeParadox: 0,
+                blackMarketUsed: 0,
+                fightWins: 0,
+                casinoWins: 0,
+                
+                // Új rendszerek resetelve
+                strength: 0,
+                stamina: 0,
+                gymBonus: 0,
+                nfts: [false, false, false, false, false, false],
+                nftValue: 1000,
+                corn: 0,
+                carrot: 0,
+                tomato: 0,
+                sunflower: 0,
+                farmProgress: 0,
+                experiments: 0,
+                labProgress: 0,
+                potions: { strength: 0, speed: 0, mutant: 0 },
+                carLevel: 1,
+                carSpeed: 100,
+                racesWon: 0,
+                rocketLevel: 1,
+                rocketProgress: 0,
+                spaceMissions: 0,
+                foodBuff: null,
+                foodBuffDuration: 0,
+                knowledge: 0,
+                booksRead: 0,
+                musicStreams: 0,
+                tracksProduced: 0,
+                puzzlePieces: 0,
+                puzzleCompleted: false,
+                animals: { lion: 0, tiger: 0, bear: 0, giraffe: 0 },
+                aiLevel: 1,
+                aiProgress: 0,
+                capsuleBuried: false,
+                capsuleValue: 0,
+                capsuleDate: null
+            };
+            updateUI();
+            addChatMessage("[SYSTEM]: Játék resetelve! Új kihívások várnak!");
+        }
+    }
+
+    // --- CORE LOGIC ---
+    function clickMoney() {
+        let gain = 1 * stats.multiplier * getWeatherMultiplier() * getTimeParadoxMultiplier();
+        if(Math.random() < 0.01) gain *= 100;
+        stats.money += gain;
+        checkAchievements();
+        updateUI();
+        spawnMoneyEmoji();
+        checkSpecialEvents();
+        tryPlaySound('click');
+        
+        if(Math.random() < 0.1) {
+            stats.aura += 1;
+        }
+    }
+
+    function collectAll() {
+        stats.money += stats.crypto * 100 + stats.btc * 50000 + stats.eth * 10000;
+        stats.crypto = 0;
+        stats.btc = 0;
+        stats.eth = 0;
+        updateUI();
+        addChatMessage("[SYSTEM]: Összes crypto beváltva!");
+    }
+
+    function getWeatherMultiplier() {
+        switch(stats.weather) {
+            case 'rain': return 1.5;
+            case 'storm': return 2.0;
+            case 'sun': return 1.2;
+            default: return 1.0;
+        }
+    }
+
+    function getTimeParadoxMultiplier() {
+        return 1 + (stats.timeParadox / 100);
+    }
+
+    // --- UPGRADE SYSTEM ---
+    function buyUpgrade(type, cost) {
+        if (stats.money >= cost) {
+            stats.money -= cost;
+            if (type === 'auto') {
+                stats.autoClickers++;
+                document.getElementById('auto-count').innerText = stats.autoClickers;
+            }
+            if (type === 'mew') {
+                stats.mewing++;
+                stats.multiplier += 2;
+                document.getElementById('mew-count').innerText = stats.mewing;
+            }
+            if (type === 'skibidi') {
+                stats.skibidi++;
+                stats.multiplier *= 5;
+                document.getElementById('skibidi-count').innerText = stats.skibidi;
+            }
+            if (type === 'ohio') {
+                stats.ohio++;
+                stats.multiplier += 100;
+                document.getElementById('ohio-count').innerText = stats.ohio;
+            }
+            if (type === 'kai') {
+                stats.kai++;
+                stats.multiplier += 1000;
+                stats.aura += 500;
+                document.getElementById('kai-count').innerText = stats.kai;
+                triggerGigaChad();
+            }
+            if (type === 'gronk') {
+                stats.gronk++;
+                stats.multiplier *= 10;
+                stats.aura += 5000;
+                document.getElementById('gronk-count').innerText = stats.gronk;
+                spawnMoneyEmoji(50);
+            }
+            if (type === 'gyatt') {
+                stats.gyatt++;
+                stats.multiplier += 10000;
+                stats.aura += 10000;
+                document.getElementById('gyatt-count').innerText = stats.gyatt;
+                showAchievement("GYATT LEVEL 9000!");
+            }
+            if (type === 'rizz') {
+                stats.rizz++;
+                stats.multiplier *= 100;
+                stats.aura += 100000;
+                document.getElementById('rizz-count').innerText = stats.rizz;
+                triggerGigaChad();
+                showAchievement("RIZZLER GOD MODE!");
+            }
+            updateUI();
+            addChatMessage("[SHOP]: Sikeres vásárlás: " + type);
+            checkAchievements();
+        } else {
+            alert("Nincs elég pénzed! Pénz: $" + stats.money + " / Szükséges: $" + cost);
+        }
+    }
+
+    // --- MINING SIMULATOR ---
+    const canvas = document.getElementById('mining-canvas');
+    const ctx = canvas.getContext('2d');
+    let miningInterval;
+    
+    function startMining() {
+        if(stats.isMining) {
+            stopMining();
+            return;
+        }
+        stats.isMining = true;
+        document.getElementById('mining-btn').innerText = "BÁNYÁSZAT LEÁLLÍTÁSA";
+        document.getElementById('mining-status').innerHTML = "🟢 BÁNYÁSZAT FOLYIK...";
+        document.getElementById('mining-status').style.color = "var(--p-neon)";
+        
+        miningInterval = setInterval(() => {
+            if(stats.isMining) {
+                let gain = 0.0001 * stats.miningSpeed * stats.multiplier;
+                stats.crypto += gain;
+                stats.totalMined += gain;
+                stats.money += gain * 10000;
+                drawMiningGraph();
+                updateUI();
+                
+                if(Math.random() < 0.001) {
+                    findBitcoin();
+                }
+            }
+        }, 1000);
+    }
+
+    function stopMining() {
+        stats.isMining = false;
+        clearInterval(miningInterval);
+        document.getElementById('mining-btn').innerText = "BÁNYÁSZAT INDÍTÁSA";
+        document.getElementById('mining-status').innerHTML = "🔴 BÁNYÁSZAT LEÁLLÍTVA";
+        document.getElementById('mining-status').style.color = "red";
+    }
+
+    function upgradeMining() {
+        if(stats.money >= 1000) {
+            stats.money -= 1000;
+            stats.miningSpeed++;
+            updateUI();
+            addChatMessage("[MINING]: Bányászat fejlesztve! Sebesség: " + stats.miningSpeed + "x");
+        }
+    }
+
+    function findBitcoin() {
+        stats.btc += 0.001;
+        addChatMessage("🎉 BITCOINT TALÁLTÁL! +0.001 BTC");
+        showAchievement("BITCOIN FINDER!");
+    }
+
+    function drawMiningGraph() {
+        if(!ctx) return;
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.fillStyle = "#111";
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        
+        ctx.strokeStyle = "#39ff14";
+        ctx.lineWidth = 2;
+        ctx.beginPath();
+        
+        for(let i = 0; i < canvas.width; i+=5) {
+            let y = canvas.height/2 + Math.sin(i/20 + Date.now()/1000) * 30 + Math.random() * 20;
+            if(i === 0) ctx.moveTo(i, y);
+            else ctx.lineTo(i, y);
+        }
+        ctx.stroke();
+        
+        ctx.strokeStyle = "#00ffff";
+        ctx.lineWidth = 1;
+        ctx.beginPath();
+        for(let i = 0; i < canvas.width; i+=5) {
+            let y = canvas.height/2 + Math.cos(i/15 + Date.now()/500) * 20 + Math.random() * 10;
+            if(i === 0) ctx.moveTo(i, y);
+            else ctx.lineTo(i, y);
+        }
+        ctx.stroke();
+        
+        ctx.fillStyle = "white";
+        ctx.font = "12px Arial";
+        ctx.fillText("DOGE: " + (stats.crypto || 0).toFixed(4), 10, 20);
+    }
+
+    // --- CHAT SYSTEM ---
+    const chatMsgs = [
+        "Skibidi toilet is real!",
+        "Fanum Taxed my lunch again...",
+        "Who is the biggest Rizzler here?",
+        "Buy $SIGMA coin now!",
+        "I just saw Kai Cenat in Ohio 💀",
+        "Baby Gronk rizz level 9000!",
+        "Gyatt damn this game is crazy!",
+        "Mewing 24/7 for that jawline",
+        "Ohio final boss speedrun any%",
+        "Skibidi dop dop dop yes yes"
+    ];
+
+    const botNames = [
+        "SigmaMale69",
+        "RizzlerKing",
+        "BabyGronkFan",
+        "OhioCitizen",
+        "SkibidiToilet",
+        "KaiCenatJr",
+        "MewingMaster",
+        "GyattLord"
+    ];
+
+    function addChatMessage(msg, sender = "SYSTEM") {
+        const chat = document.getElementById('chat-window');
+        if(!chat) return;
+        const time = new Date().toLocaleTimeString();
+        chat.innerHTML += `[${time}] [${sender}]: ${msg}<br>`;
+        chat.scrollTop = chat.scrollHeight;
+        
+        const lines = chat.innerHTML.split('<br>');
+        if(lines.length > 50) {
+            chat.innerHTML = lines.slice(-50).join('<br>');
+        }
+    }
+
+    function sendChat() {
+        const input = document.getElementById('chat-input');
+        if(input && input.value.trim()) {
+            addChatMessage(input.value, "YOU");
+            
+            if(Math.random() < 0.3) {
+                setTimeout(() => {
+                    const bot = botNames[Math.floor(Math.random() * botNames.length)];
+                    const responses = [
+                        "L + Ratio + No Aura.",
+                        "Gyatt! That's crazy!",
+                        "Skibidi toilet approved!",
+                        "Baby Gronk says yes!",
+                        "Mewing intensifies...",
+                        "Ohio rizz level detected!"
+                    ];
+                    addChatMessage(responses[Math.floor(Math.random() * responses.length)], bot);
+                }, 1000 + Math.random() * 2000);
+            }
+            
+            input.value = "";
+            
+            if(Math.random() < 0.1) {
+                stats.money += 100;
+                addChatMessage("+100$ chat bónusz!", "SYSTEM");
+                updateUI();
+            }
+        }
+    }
+
+    function clearChat() {
+        const chat = document.getElementById('chat-window');
+        if(chat) chat.innerHTML = "[SYSTEM]: Chat törölve!<br>";
+    }
+
+    // --- AUTOMATIKUS BOT CHAT ---
+    setInterval(() => {
+        const randomMsg = chatMsgs[Math.floor(Math.random() * chatMsgs.length)];
+        const bot = botNames[Math.floor(Math.random() * botNames.length)];
+        addChatMessage(randomMsg, bot);
+        
+        const onlineEl = document.getElementById('online-count');
+        if(onlineEl) {
+            const online = 69 + Math.floor(Math.random() * 100);
+            onlineEl.innerText = online;
+        }
+    }, 8000);
+
+    // --- SPECIAL EVENTS ---
+    function triggerGigaChad() {
+        const alert = document.getElementById('gigachad-alert');
+        if(alert) {
+            alert.classList.add('show-chad');
+            setTimeout(() => alert.classList.remove('show-chad'), 3000);
+        }
+        tryPlaySound('chad');
+        
+        stats.aura += 1000;
+        stats.multiplier *= 2;
+        showAchievement("GIGA CHAD ACTIVATED!");
+        updateUI();
+    }
+
+    function gambleAura() {
+        const win = Math.random() > 0.4;
+        if(win) {
+            const gain = 100 + Math.floor(Math.random() * 500);
+            stats.aura += gain;
+            addChatMessage(`[LUCK]: +${gain} AURA! MEGÁLDOTT A SIGMA ISTEN!`);
+            tryPlaySound('win');
+        } else {
+            const loss = 50 + Math.floor(Math.random() * 200);
+            stats.aura = Math.max(0, stats.aura - loss);
+            addChatMessage(`[LUCK]: -${loss} AURA... Ez nagyon nem rizz.`);
+            tryPlaySound('lose');
+        }
+        updateUI();
+        updateAuraDescription();
+    }
+
+    function meditateAura() {
+        if(stats.money >= 100) {
+            stats.money -= 100;
+            stats.aura += 10;
+            updateUI();
+            updateAuraDescription();
+            addChatMessage("[MEDITATION]: +10 AURA");
+        }
+    }
+
+    function sacrificeAura() {
+        if(stats.aura >= 100) {
+            const success = Math.random() < 0.3;
+            if(success) {
+                stats.aura *= 2;
+                addChatMessage("[SACRIFICE]: SIKER! AURA MEGKÉTSZEREZŐDÖTT!");
+            } else {
+                stats.aura = Math.floor(stats.aura / 2);
+                addChatMessage("[SACRIFICE]: KUDARC... AURA FELEZŐDÖTT!");
+            }
+            updateUI();
+            updateAuraDescription();
+        }
+    }
+
+    function updateAuraDescription() {
+        let desc = "";
+        if(stats.aura < 100) desc = "Low Aura NPC";
+        else if(stats.aura < 500) desc = "Kezdő Sigma";
+        else if(stats.aura < 1000) desc = "Rizzler";
+        else if(stats.aura < 5000) desc = "Sigma Male";
+        else if(stats.aura < 10000) desc = "Giga Chad";
+        else if(stats.aura < 50000) desc = "Legendary Rizz";
+        else desc = "OMEGA SIGMA GOD";
+        
+        const descEl = document.getElementById('aura-desc');
+        if(descEl) descEl.innerText = "Status: " + desc;
+        
+        const levelEl = document.getElementById('aura-level');
+        if(levelEl) levelEl.innerText = Math.floor(stats.aura / 100) + 1;
+        
+        const rizzPercent = Math.min(100, (stats.aura / 10000) * 100);
+        const rizzMeter = document.getElementById('rizz-meter');
+        if(rizzMeter) rizzMeter.style.width = rizzPercent + "%";
+    }
+
+    // --- ADS INJECTOR ---
+    function spawnAd() {
+        const ad = document.createElement('div');
+        ad.className = 'fake-ad';
+        ad.style.top = Math.random() * 70 + "vh";
+        ad.style.left = Math.random() * 70 + "vw";
+        
+        const adTypes = [
+            "!!! NYERTÉL !!!<br>Ingyen iPhone 25!<br><small>(Hirdetés)</small>",
+            "🔥 SIGMA COIN 🔥<br>100x HOZAM!<br><small>Most!</small>",
+            "💀 GYATT DETECTED 💀<br>Kattints a bónuszért!",
+            "🎰 CASINO BÓNUSZ 🎰<br>+1000% AZONNAL!",
+            "⭐ PRESTIGE 1000 ⭐<br>Csak most!"
+        ];
+        
+        ad.innerHTML = adTypes[Math.floor(Math.random() * adTypes.length)];
+        ad.onclick = () => {
+            const reward = 1000 + Math.floor(Math.random() * 5000);
+            stats.money += reward;
+            stats.aura += 50;
+            ad.remove();
+            addChatMessage(`[AD]: Gratulálunk! +$${reward} és +50 AURA!`);
+            updateUI();
+            spawnMoneyEmoji(10);
+        };
+        document.body.appendChild(ad);
+        
+        setTimeout(() => {
+            if(ad.parentNode) ad.remove();
+        }, 10000);
+    }
+    
+    setInterval(spawnAd, 20000);
+
+    // --- AUTO-CLICKER LOOP ---
+    setInterval(() => {
+        if(stats.autoClickers > 0) {
+            let gain = stats.autoClickers * 5 * stats.multiplier;
+            stats.money += gain;
+            updateUI();
+        }
+        
+        if(stats.petHunger > 0) {
+            stats.petHunger = Math.max(0, stats.petHunger - 1);
+            const hungerBar = document.getElementById('pet-hunger-bar');
+            const hungerText = document.getElementById('pet-hunger');
+            if(hungerBar) hungerBar.style.width = stats.petHunger + "%";
+            if(hungerText) hungerText.innerText = "Éhség: " + stats.petHunger + "%";
+        }
+    }, 1000);
+
+    // --- MYSTERY BOX ---
+    function openMysteryBox() {
+        if(stats.money >= 1000) {
+            stats.money -= 1000;
+            const rewards = [
+                { type: 'money', amount: 5000 },
+                { type: 'aura', amount: 200 },
+                { type: 'mult', amount: 2 },
+                { type: 'crypto', amount: 0.1 },
+                { type: 'inventory', item: 'potion', amount: 1 },
+                { type: 'inventory', item: 'key', amount: 1 }
+            ];
+            
+            const reward = rewards[Math.floor(Math.random() * rewards.length)];
+            
+            if(reward.type === 'money') stats.money += reward.amount;
+            if(reward.type === 'aura') stats.aura += reward.amount;
+            if(reward.type === 'mult') stats.multiplier *= reward.amount;
+            if(reward.type === 'crypto') stats.crypto += reward.amount;
+            if(reward.type === 'inventory') {
+                stats.inventory[reward.item] += reward.amount;
+                updateInventory();
+            }
+            
+            updateUI();
+            addChatMessage(`[MYSTERY]: Nyertél: ${JSON.stringify(reward)}`);
+            spawnMoneyEmoji(20);
+        }
+    }
+
+    // --- INVENTORY FUNCTIONS ---
+    function updateInventory() {
+        const potionEl = document.getElementById('potion-count');
+        const keyEl = document.getElementById('key-count');
+        const boxEl = document.getElementById('box-count');
+        const crystalEl = document.getElementById('crystal-count');
+        const boostEl = document.getElementById('boost-count');
+        const ticketEl = document.getElementById('ticket-count');
+        
+        if(potionEl) potionEl.innerText = stats.inventory.potion;
+        if(keyEl) keyEl.innerText = stats.inventory.key;
+        if(boxEl) boxEl.innerText = stats.inventory.box;
+        if(crystalEl) crystalEl.innerText = stats.inventory.crystal;
+        if(boostEl) boostEl.innerText = stats.inventory.boost;
+        if(ticketEl) ticketEl.innerText = stats.inventory.ticket;
+    }
+
+    function usePotion() {
+        if(stats.inventory.potion > 0) {
+            stats.inventory.potion--;
+            stats.aura += 50;
+            stats.multiplier *= 1.5;
+            updateInventory();
+            updateUI();
+            addChatMessage("[ITEM]: Potió használva! +50 AURA, 1.5x MULTI");
+        }
+    }
+
+    function openInventoryBox() {
+        if(stats.inventory.box > 0) {
+            stats.inventory.box--;
+            const reward = 1000 + Math.floor(Math.random() * 5000);
+            stats.money += reward;
+            updateInventory();
+            updateUI();
+            addChatMessage(`[BOX]: Nyitottál egy dobozt! +$${reward}`);
+        }
+    }
+
+    // --- DAILY REWARDS ---
+    let dailyTimer;
+    function initDailyTimer() {
+        updateDailyTimer();
+        setInterval(updateDailyTimer, 1000);
+    }
+
+    function updateDailyTimer() {
+        const timerEl = document.getElementById('daily-timer');
+        const progressEl = document.getElementById('daily-progress');
+        if(!timerEl || !progressEl) return;
+        
+        if(stats.lastDaily) {
+            const last = new Date(stats.lastDaily);
+            const now = new Date();
+            const diff = 24 * 60 * 60 * 1000 - (now - last);
+            
+            if(diff <= 0) {
+                timerEl.innerText = "ELÉRHETŐ!";
+                progressEl.style.width = "100%";
+            } else {
+                const hours = Math.floor(diff / (60 * 60 * 1000));
+                const minutes = Math.floor((diff % (60 * 60 * 1000)) / (60 * 1000));
+                const seconds = Math.floor((diff % (60 * 1000)) / 1000);
+                timerEl.innerText = `${hours.toString().padStart(2,'0')}:${minutes.toString().padStart(2,'0')}:${seconds.toString().padStart(2,'0')}`;
+                progressEl.style.width = (1 - diff / (24*60*60*1000)) * 100 + "%";
+            }
+        } else {
+            timerEl.innerText = "ELÉRHETŐ!";
+            progressEl.style.width = "100%";
+        }
+    }
+
+    function claimDaily() {
+        const now = new Date();
+        if(!stats.lastDaily) {
+            giveDailyReward();
+        } else {
+            const last = new Date(stats.lastDaily);
+            const diff = now - last;
+            if(diff >= 24 * 60 * 60 * 1000) {
+                giveDailyReward();
+            } else {
+                alert("Már elvitted a mai bónuszt! Várj még " + 
+                      Math.ceil((24*60*60*1000 - diff)/(60*60*1000)) + " órát!");
+            }
+        }
+    }
+
+    function giveDailyReward() {
+        stats.dailyStreak++;
+        stats.lastDaily = new Date().toISOString();
+        
+        const baseReward = 1000 * stats.dailyStreak;
+        stats.money += baseReward;
+        stats.aura += 10 * stats.dailyStreak;
+        
+        addChatMessage(`[DAILY]: Napi bónusz! +$${baseReward} és +${10*stats.dailyStreak} AURA! Streak: ${stats.dailyStreak}`);
+        const streakEl = document.getElementById('daily-streak');
+        if(streakEl) streakEl.innerText = `Streak: ${stats.dailyStreak} nap`;
+        updateUI();
+        spawnMoneyEmoji(15);
+    }
+
+    // --- CASINO ---
+    function casinoGamble(type, amount) {
+        if(stats.money < amount) {
+            alert("Nincs elég pénzed!");
+            return;
+        }
+        
+        stats.money -= amount;
+        let win = false;
+        let multiplier = 1;
+        
+        if(type === 'double') {
+            win = Math.random() < 0.5;
+            multiplier = 2;
+        } else if(type === 'high') {
+            win = Math.random() < 0.3;
+            multiplier = 5;
+        } else if(type === 'crazy') {
+            win = Math.random() < 0.2;
+            multiplier = 10;
+        } else if(type === 'legend') {
+            win = Math.random() < 0.05;
+            multiplier = 100;
+        }
+        
+        if(win) {
+            const winAmount = amount * multiplier;
+            stats.money += winAmount;
+            stats.casinoWins++;
+            const resultEl = document.getElementById('casino-result');
+            if(resultEl) resultEl.innerHTML = `🎉 NYERTÉL! +$${winAmount}`;
+            addChatMessage(`[CASINO]: NYERTÉL! +$${winAmount}`);
+            tryPlaySound('win');
+        } else {
+            const resultEl = document.getElementById('casino-result');
+            if(resultEl) resultEl.innerHTML = `💀 VESZTETTÉL! -$${amount}`;
+            addChatMessage(`[CASINO]: VESZTETTÉL! -$${amount}`);
+            tryPlaySound('lose');
+        }
+        
+        updateUI();
+    }
+
+    // --- PVP ARENA ---
+    function fightNPC() {
+        fight(100, 100);
+    }
+
+    function fightBot() {
+        fight(500, 500);
+    }
+
+    function fightSigma() {
+        fight(5000, 5000);
+    }
+
+    function fight(enemyAura, reward) {
+        const playerPower = stats.aura * stats.multiplier;
+        const enemyPower = enemyAura * (0.8 + Math.random() * 0.4);
+        
+        let progress = 0;
+        const interval = setInterval(() => {
+            progress += 10;
+            const progressEl = document.getElementById('fight-progress');
+            if(progressEl) progressEl.style.width = progress + "%";
+            if(progress >= 100) clearInterval(interval);
+        }, 100);
+        
+        setTimeout(() => {
+            if(playerPower > enemyPower) {
+                const winReward = reward + Math.floor(Math.random() * 500);
+                stats.money += winReward;
+                stats.aura += 10;
+                stats.fightWins++;
+                const resultEl = document.getElementById('fight-result');
+                if(resultEl) resultEl.innerHTML = `🏆 GYŐZELEM! +$${winReward}`;
+                addChatMessage(`[ARENA]: Legyőzted az ellenfelet! +$${winReward}`);
+                tryPlaySound('win');
+            } else {
+                const loss = Math.floor(reward / 2);
+                stats.money = Math.max(0, stats.money - loss);
+                stats.aura = Math.max(0, stats.aura - 20);
+                const resultEl = document.getElementById('fight-result');
+                if(resultEl) resultEl.innerHTML = `💀 VERESÉG! -$${loss}`;
+                addChatMessage(`[ARENA]: Vesztettél... -$${loss}`);
+                tryPlaySound('lose');
+            }
+            updateUI();
+        }, 1000);
+    }
+
+    // --- STOCKS ---
+    function initStockChart() {
+        setInterval(() => {
+            const change = (Math.random() - 0.5) * 10;
+            stats.stockPrice = Math.max(10, stats.stockPrice + change);
+            const priceEl = document.getElementById('stock-price');
+            if(priceEl) priceEl.innerText = "$" + stats.stockPrice.toFixed(2);
+            
+            const chart = document.getElementById('stock-chart');
+            if(chart) {
+                chart.innerHTML = '';
+                for(let i = 0; i < 10; i++) {
+                    const bar = document.createElement('div');
+                    bar.style.display = 'inline-block';
+                    bar.style.width = '9%';
+                    bar.style.height = Math.random() * 50 + 'px';
+                    bar.style.background = change > 0 ? 'green' : 'red';
+                    bar.style.margin = '1px';
+                    chart.appendChild(bar);
+                }
+            }
+        }, 5000);
+    }
+
+    function buyStock() {
+        if(stats.money >= stats.stockPrice) {
+            stats.money -= stats.stockPrice;
+            stats.stockOwned++;
+            const ownedEl = document.getElementById('stock-owned');
+            if(ownedEl) ownedEl.innerText = "Tulajdon: " + stats.stockOwned;
+            updateUI();
+            addChatMessage("[STOCK]: Vásároltál 1 részvényt!");
+        }
+    }
+
+    function sellStock() {
+        if(stats.stockOwned > 0) {
+            stats.money += stats.stockPrice;
+            stats.stockOwned--;
+            const ownedEl = document.getElementById('stock-owned');
+            if(ownedEl) ownedEl.innerText = "Tulajdon: " + stats.stockOwned;
+            updateUI();
+            addChatMessage("[STOCK]: Eladtál 1 részvényt!");
+        }
+    }
+
+    // --- WEATHER SYSTEM ---
+    function initWeather() {
+        setInterval(() => {
+            if(Math.random() < 0.3) {
+                changeWeather(true);
+            }
+        }, 30000);
+    }
+
+    function changeWeather(automatic = false) {
+        if(!automatic && stats.money < 1000) {
+            alert("Nincs elég pénzed!");
+            return;
+        }
+        
+        if(!automatic) stats.money -= 1000;
+        
+        const weathers = ['clear', 'rain', 'storm', 'sun'];
+        const newWeather = weathers[Math.floor(Math.random() * weathers.length)];
+        stats.weather = newWeather;
+        
+        const weatherNames = {
+            'clear': '☀️ Tiszta égbolt',
+            'rain': '🌧️ Eső (1.5x bónusz)',
+            'storm': '⛈️ Vihar (2x bónusz)',
+            'sun': '☀️ Napos (1.2x bónusz)'
+        };
+        
+        const weatherEl = document.getElementById('weather-effect');
+        if(weatherEl) weatherEl.innerText = weatherNames[newWeather];
+        
+        stats.weatherBonus = getWeatherMultiplier() - 1;
+        const bonusEl = document.getElementById('weather-bonus');
+        if(bonusEl) bonusEl.innerText = `Bónusz: +${(stats.weatherBonus*100).toFixed(0)}%`;
+        
+        addChatMessage(`[WEATHER]: Időjárás megváltozott: ${weatherNames[newWeather]}`);
+    }
+
+    // --- PET SYSTEM ---
+    function feedPet() {
+        if(stats.money >= 50) {
+            stats.money -= 50;
+            stats.petHunger = Math.min(100, stats.petHunger + 20);
+            const hungerBar = document.getElementById('pet-hunger-bar');
+            const hungerText = document.getElementById('pet-hunger');
+            if(hungerBar) hungerBar.style.width = stats.petHunger + "%";
+            if(hungerText) hungerText.innerText = "Éhség: " + stats.petHunger + "%";
+            
+            if(stats.petHunger === 100) {
+                stats.multiplier *= 1.1;
+                addChatMessage("[PET]: Háziállat boldog! +10% multi");
+            }
+            updateUI();
+        }
+    }
+
+    function playWithPet() {
+        if(stats.petHunger > 10) {
+            stats.petHunger -= 10;
+            stats.aura += 5;
+            const hungerBar = document.getElementById('pet-hunger-bar');
+            const hungerText = document.getElementById('pet-hunger');
+            if(hungerBar) hungerBar.style.width = stats.petHunger + "%";
+            if(hungerText) hungerText.innerText = "Éhség: " + stats.petHunger + "%";
+            addChatMessage("[PET]: Játszottál a háziállattal! +5 AURA");
+            updateUI();
+        }
+    }
+
+    // --- BLACK MARKET ---
+    function buyBlackMarket(type, cost) {
+        if(stats.money >= cost) {
+            stats.money -= cost;
+            stats.blackMarketUsed++;
+            
+            if(type === 'mult') stats.multiplier *= 2;
+            if(type === 'aura') stats.aura *= 2;
+            if(type === 'prestige') prestige();
+            
+            updateUI();
+            addChatMessage("[BLACK MARKET]: Illegális fejlesztés vásárolva!");
+            
+            if(Math.random() < 0.1) {
+                stats.money = Math.floor(stats.money / 2);
+                stats.aura = Math.floor(stats.aura / 2);
+                addChatMessage("[POLICE]: Lebuktál! Büntetés: felezés!");
+            }
+        }
+    }
+
+    // --- TIME MACHINE ---
+    function timeTravel() {
+        if(stats.money >= 1000000) {
+            stats.money -= 1000000;
+            stats.timeParadox += 10;
+            
+            const effects = [
+                () => stats.multiplier *= 2,
+                () => stats.aura *= 2,
+                () => stats.crypto *= 2,
+                () => stats.btc += 0.1,
+                () => stats.inventory.crystal += 5
+            ];
+            
+            effects[Math.floor(Math.random() * effects.length)]();
+            updateUI();
+            addChatMessage("[TIME]: Időutazás sikeres! Paradoxon: " + stats.timeParadox + "%");
+            
+            if(stats.timeParadox >= 100) {
+                triggerGigaChad();
+                stats.timeParadox = 0;
+            }
+        }
+    }
+
+    // --- PRESTIGE SYSTEM ---
+    function openPrestige() {
+        if(confirm('Prestige? Elveszíted a pénzed, de kapsz egy örök bónuszt!')) {
+            prestige();
+        }
+    }
+
+    function prestige() {
+        if(stats.money >= 1000000) {
+            stats.prestige++;
+            stats.multiplier *= 5;
+            stats.aura += 10000;
+            
+            stats.money = 0;
+            stats.crypto = 0;
+            stats.btc = 0;
+            stats.eth = 0;
+            
+            updateUI();
+            addChatMessage(`[PRESTIGE]: PRESTIGE ${stats.prestige} ELÉRVE! 5x MULTI, +10000 AURA!`);
+            showAchievement(`PRESTIGE ${stats.prestige}!`);
+            triggerGigaChad();
+            
+            const prestigeCell = document.getElementById('user-prestige-cell');
+            if(prestigeCell) prestigeCell.innerText = `⭐ ${stats.prestige}`;
+        }
+    }
+
+    // --- ACHIEVEMENTS ---
+    function checkAchievements() {
+        let changed = false;
+        
+        if(!stats.achievements.firstMillion && stats.money >= 1000000) {
+            stats.achievements.firstMillion = true;
+            showAchievement("Első millió! +1000 AURA");
+            stats.aura += 1000;
+            changed = true;
+        }
+        
+        if(!stats.achievements.prestige1 && stats.prestige >= 1) {
+            stats.achievements.prestige1 = true;
+            showAchievement("Első Prestige! +5000 AURA");
+            stats.aura += 5000;
+            changed = true;
+        }
+        
+        if(!stats.achievements.aura10k && stats.aura >= 10000) {
+            stats.achievements.aura10k = true;
+            showAchievement("10k AURA! +10x MULTI");
+            stats.multiplier *= 10;
+            changed = true;
+        }
+        
+        if(!stats.achievements.auto100 && stats.autoClickers >= 100) {
+            stats.achievements.auto100 = true;
+            showAchievement("100 Auto-Clicker! +100k$");
+            stats.money += 100000;
+            changed = true;
+        }
+        
+        // ÚJ ACHIEVEMENTEK
+        checkGymAchievement();
+        checkNFTAchievement();
+        checkFarmAchievement();
+        checkScienceAchievement();
+        checkRaceAchievement();
+        checkSpaceAchievement();
+        checkChefAchievement();
+        checkScholarAchievement();
+        checkMusicianAchievement();
+        checkPuzzlerAchievement();
+        checkZooAchievement();
+        
+        if(changed) {
+            updateUI();
+            updateAchievementsList();
+        }
+    }
+
+    function updateAchievementsList() {
+        const list = document.getElementById('achievements-list');
+        if(!list) return;
+        
+        list.innerHTML = `
+            <div>💵 Első millió: ${stats.achievements.firstMillion ? '✅' : '❌'}</div>
+            <div>⭐ Prestige 1: ${stats.achievements.prestige1 ? '✅' : '❌'}</div>
+            <div>🗿 10k Aura: ${stats.achievements.aura10k ? '✅' : '❌'}</div>
+            <div>🤖 100 Auto-Clicker: ${stats.achievements.auto100 ? '✅' : '❌'}</div>
+            <div>🏋️ Gym Master: ${stats.achievements.gymMaster ? '✅' : '❌'}</div>
+            <div>🖼️ NFT Collector: ${stats.achievements.nftCollector ? '✅' : '❌'}</div>
+            <div>🌾 Farmer: ${stats.achievements.farmer ? '✅' : '❌'}</div>
+            <div>🧪 Scientist: ${stats.achievements.scientist ? '✅' : '❌'}</div>
+        `;
+        
+        const total = Object.values(stats.achievements).length;
+        const completed = Object.values(stats.achievements).filter(v => v).length;
+        const progressEl = document.getElementById('achievement-progress');
+        if(progressEl) progressEl.style.width = (completed / total * 100) + "%";
+    }
+
+    function showAchievement(text) {
+        const popup = document.getElementById('achievement-popup');
+        if(!popup) return;
+        
+        popup.style.display = 'block';
+        popup.className = 'achievement-popup';
+        popup.innerHTML = `🏆 ACHIEVEMENT: ${text}`;
+        
+        setTimeout(() => {
+            popup.style.display = 'none';
+        }, 3000);
+    }
+
+    // --- UI UPDATE ---
+    function updateUI() {
+        const balanceEl = document.getElementById('balance');
+        const cryptoEl = document.getElementById('crypto-val');
+        const btcEl = document.getElementById('btc-val');
+        const ethEl = document.getElementById('eth-val');
+        const multEl = document.getElementById('mult-val');
+        const userAuraEl = document.getElementById('user-aura-cell');
+        const userMoneyEl = document.getElementById('user-money-cell');
+        const auraFillEl = document.getElementById('aura-fill');
+        const walletProgressEl = document.getElementById('wallet-progress');
+        const miningSpeedEl = document.getElementById('mining-speed');
+        const miningStatsEl = document.getElementById('mining-stats');
+        const passiveEl = document.getElementById('passive-val');
+        const userRizzEl = document.getElementById('user-rizz-cell');
+        
+        if(balanceEl) balanceEl.innerText = "$ " + Math.floor(stats.money).toLocaleString();
+        if(cryptoEl) cryptoEl.innerText = (stats.crypto || 0).toFixed(4) + " DOGE";
+        if(btcEl) btcEl.innerText = (stats.btc || 0).toFixed(4) + " BTC";
+        if(ethEl) ethEl.innerText = (stats.eth || 0).toFixed(4) + " ETH";
+        if(multEl) multEl.innerText = stats.multiplier + "x";
+        if(userAuraEl) userAuraEl.innerText = stats.aura;
+        if(userMoneyEl) userMoneyEl.innerText = "$" + Math.floor(stats.money).toLocaleString();
+        
+        if(auraFillEl) {
+            let auraWidth = Math.min(stats.aura / 100, 100);
+            auraFillEl.style.width = auraWidth + "%";
+        }
+        
+        if(walletProgressEl) {
+            walletProgressEl.style.width = Math.min(100, (stats.money / 1000000) * 100) + "%";
+        }
+        
+        if(miningSpeedEl) miningSpeedEl.innerText = stats.miningSpeed + "x";
+        if(miningStatsEl) miningStatsEl.innerHTML = `Összes bányászott: ${(stats.totalMined || 0).toFixed(4)} DOGE`;
+        
+        const passive = (stats.autoClickers * 5) + (stats.miningSpeed * 10);
+        if(passiveEl) passiveEl.innerText = "$" + passive;
+        
+        if(userRizzEl) {
+            let rizzLevel = "Low";
+            if(stats.aura > 1000) rizzLevel = "Medium";
+            if(stats.aura > 5000) rizzLevel = "High";
+            if(stats.aura > 10000) rizzLevel = "Legendary";
+            if(stats.aura > 50000) rizzLevel = "GOD";
+            userRizzEl.innerText = rizzLevel;
+        }
+        
+        updateAuraDescription();
+        updateInventory();
+        updateAchievementsList();
+        
+        // ÚJ UI FRISSÍTÉSEK
+        updateGymUI();
+        updateNFTUI();
+        updateFarmUI();
+        updateZooUI();
+        
+        // Labor UI
+        const labStatus = document.getElementById('lab-status');
+        const labProgress = document.getElementById('lab-progress');
+        if(labStatus) labStatus.innerText = `Kísérletek: ${stats.experiments || 0}`;
+        if(labProgress) labProgress.style.width = (stats.labProgress || 0) + "%";
+        
+        // Könyvtár UI
+        const knowledgeEl = document.getElementById('knowledge');
+        if(knowledgeEl) knowledgeEl.innerText = `Tudás szint: ${stats.knowledge || 0}`;
+        
+        // Zene UI
+        const musicEl = document.getElementById('music-streams');
+        if(musicEl) musicEl.innerText = `Hallgatók: ${(stats.musicStreams || 0).toLocaleString()}`;
+        
+        // Mozaik UI
+        const puzzlePieces = document.getElementById('puzzle-pieces');
+        const puzzleProgress = document.getElementById('puzzle-progress');
+        if(puzzlePieces) puzzlePieces.innerText = `${stats.puzzlePieces || 0}/100`;
+        if(puzzleProgress) puzzleProgress.style.width = (stats.puzzlePieces || 0) + "%";
+        
+        // AI UI
+        const aiLevel = document.getElementById('ai-level');
+        const aiProgress = document.getElementById('ai-progress');
+        if(aiLevel) aiLevel.innerText = stats.aiLevel || 1;
+        if(aiProgress) aiProgress.style.width = (stats.aiProgress || 0) + "%";
+        
+        // Időkapszula UI
+        const capsuleValue = document.getElementById('capsule-value');
+        if(capsuleValue) capsuleValue.innerText = "$" + (stats.capsuleValue || 0).toLocaleString();
+        
+        // Racing UI
+        const carName = document.getElementById('car-name');
+        const carSpeed = document.getElementById('car-speed');
+        if(carName) carName.innerText = getCarName();
+        if(carSpeed) carSpeed.innerText = (stats.carSpeed || 100) + " km/h";
+        
+        // Űr UI
+        const rocketLevel = document.getElementById('rocket-level');
+        if(rocketLevel) rocketLevel.innerText = stats.rocketLevel || 1;
+        
+        // Stock UI
+        const stockOwned = document.getElementById('stock-owned');
+        if(stockOwned) stockOwned.innerText = "Tulajdon: " + (stats.stockOwned || 0);
+    }
+
+    function getCarName() {
+        const carNames = [
+            "🚗 Toyota Corolla",
+            "🚙 BMW X5",
+            "🏎️ Porsche 911",
+            "🚀 Lamborghini",
+            "⚡ Bugatti",
+            "👑 Sigma Mobile"
+        ];
+        return carNames[Math.min((stats.carLevel || 1)-1, carNames.length-1)];
+    }
+
+    // --- UTILS ---
+    function spawnMoneyEmoji(count = 1) {
+        for(let i = 0; i < count; i++) {
+            setTimeout(() => {
+                const div = document.createElement('div');
+                div.className = 'money-rain';
+                const emojis = ['💵', '💰', '💎', '🪙', '💲', '🧧'];
+                div.innerText = emojis[Math.floor(Math.random() * emojis.length)];
+                div.style.left = Math.random() * 100 + "vw";
+                div.style.animationDuration = (2 + Math.random() * 3) + "s";
+                document.body.appendChild(div);
+                setTimeout(() => div.remove(), 3000);
+            }, i * 100);
+        }
+    }
+
+    function tryPlaySound(soundName) {
+        try {
+            if(sounds[soundName]) {
+                sounds[soundName].play().catch(e => {});
+            }
+        } catch(e) {}
+    }
+
+    function checkSpecialEvents() {
+        if(Math.random() < 0.001) {
+            triggerGigaChad();
+        }
+        
+        if(Math.random() < 0.0001) {
+            findBitcoin();
+        }
+    }
+
+    function earnRealMoney() {
+        for(let i = 0; i < 5; i++) {
+            setTimeout(() => {
+                alert(`GRATULÁLUNK #${i+1}! TE VAGY AZ 1.000.000. LÁTOGATÓ! KÜLDD EL A BANKKÁRTYA ADATAIDAT A SKIBIDI@OHIO.COM CÍMRE!`);
+            }, i * 500);
+        }
+        stats.money += 1000000;
+        updateUI();
+    }
+
+    function navigateTo(page) {
+        addChatMessage(`Navigálás: ${page} - Ez még fejlesztés alatt!`);
+        if(page === 'prestige') openPrestige();
+    }
+
+    function refreshLeaderboard() {
+        const names = ['Te', 'NPC1', 'Bot123', 'SigmaKing', 'RizzMaster'];
+        const randomName = names[Math.floor(Math.random() * names.length)];
+        const nameCell = document.getElementById('user-name-cell');
+        if(nameCell) nameCell.innerText = randomName;
+        addChatMessage("[LEADERBOARD]: Frissítve!");
+    }
+
+    function openCasino() {
+        addChatMessage("[CASINO]: Üdv a Sigma Casinoban!");
+    }
+
+    function openPvP() {
+        addChatMessage("[PVP]: Üdv a Rizz Arenában!");
+    }
+
+    // --- GAME LOOP ---
+    function startGameLoops() {
+        setInterval(() => {
+            if(stats.isMining) {
+                drawMiningGraph();
+            }
+        }, 100);
+        
+        setInterval(saveGame, 60000);
+        setInterval(updateUI, 100);
+        
+        setInterval(() => {
+            const stockOwned = document.getElementById('stock-owned');
+            if(stockOwned) stockOwned.innerText = "Tulajdon: " + (stats.stockOwned || 0);
+        }, 1000);
+        
+        setInterval(() => {
+            const onlineEl = document.getElementById('online-count');
+            if(onlineEl) {
+                const online = 69 + Math.floor(Math.random() * 200);
+                onlineEl.innerText = online;
+            }
+        }, 5000);
+    }
+
+    // --- GYM RENDSZER ---
+    function gymTrain(type, cost) {
+        if(stats.money < cost) {
+            alert("Nincs elég pénzed!");
+            return;
+        }
+        
+        stats.money -= cost;
+        
+        if(type === 'pushup') {
+            stats.strength += 5;
+            addChatMessage(`[GYM]: +5 erő! Összesen: ${stats.strength}`);
+        } else if(type === 'run') {
+            stats.stamina += 5;
+            addChatMessage(`[GYM]: +5 állóképesség! Összesen: ${stats.stamina}`);
+        } else if(type === 'weight') {
+            stats.strength += 20;
+            stats.stamina += 10;
+            addChatMessage(`[GYM]: +20 erő, +10 állóképesség!`);
+        }
+        
+        stats.gymBonus = Math.floor((stats.strength + stats.stamina) / 100) * 0.1;
+        
+        updateGymUI();
+        updateUI();
+    }
+
+    function updateGymUI() {
+        const strengthBar = document.getElementById('strength-bar');
+        const staminaBar = document.getElementById('stamina-bar');
+        const gymEffect = document.getElementById('gym-effect');
+        
+        if(strengthBar) strengthBar.style.width = Math.min(100, stats.strength) + "%";
+        if(staminaBar) staminaBar.style.width = Math.min(100, stats.stamina) + "%";
+        
+        if(gymEffect) {
+            if(stats.gymBonus > 0) {
+                gymEffect.innerHTML = `Aktív bónusz: +${(stats.gymBonus*100).toFixed(0)}% termelés`;
+            } else {
+                gymEffect.innerHTML = "Nincs aktív bónusz";
+            }
+        }
+    }
+
+    // --- NFT RENDSZER ---
+    function mintNFT() {
+        if(stats.money < 5000) {
+            alert("Nincs elég pénzed NFT verésre!");
+            return;
+        }
+        
+        stats.money -= 5000;
+        
+        let emptySlot = -1;
+        for(let i = 0; i < stats.nfts.length; i++) {
+            if(!stats.nfts[i]) {
+                emptySlot = i;
+                break;
+            }
+        }
+        
+        if(emptySlot === -1) {
+            sellOldestNFT();
+            emptySlot = 0;
+        }
+        
+        stats.nfts[emptySlot] = true;
+        stats.nftValue += 1000 + Math.floor(Math.random() * 5000);
+        
+        updateNFTUI();
+        addChatMessage(`[NFT]: Új NFT verve! Érték: $${stats.nftValue}`);
+        checkNFTAchievement();
+    }
+
+    function sellOldestNFT() {
+        for(let i = 0; i < stats.nfts.length; i++) {
+            if(stats.nfts[i]) {
+                stats.nfts[i] = false;
+                stats.money += stats.nftValue / 6;
+                addChatMessage(`[NFT]: Régi NFT eladva $${Math.floor(stats.nftValue/6)}-ért`);
+                break;
+            }
+        }
+    }
+
+    function sellNFTs() {
+        let count = stats.nfts.filter(n => n).length;
+        if(count === 0) {
+            alert("Nincs NFT-d!");
+            return;
+        }
+        
+        let value = stats.nftValue * count;
+        stats.money += value;
+        stats.nfts = [false, false, false, false, false, false];
+        stats.nftValue = 1000;
+        
+        updateNFTUI();
+        addChatMessage(`[NFT]: Összes NFT eladva $${value}-ért!`);
+    }
+
+    function updateNFTUI() {
+        for(let i = 0; i < 6; i++) {
+            let element = document.getElementById(`nft${i+1}`);
+            if(element) {
+                if(stats.nfts[i]) {
+                    element.style.background = "linear-gradient(135deg, gold, purple)";
+                    element.style.color = "white";
+                } else {
+                    element.style.background = "rgba(255,255,255,0.1)";
+                    element.style.color = "gray";
+                }
+            }
+        }
+        const nftValueEl = document.getElementById('nft-value');
+        if(nftValueEl) nftValueEl.innerText = "$" + stats.nftValue.toLocaleString();
+    }
+
+    // --- FARM RENDSZER ---
+    function plantCrop(type, cost) {
+        if(stats.money < cost) {
+            alert("Nincs elég pénzed!");
+            return;
+        }
+        
+        stats.money -= cost;
+        stats.farmProgress = 0;
+        
+        let interval = setInterval(() => {
+            stats.farmProgress += 1;
+            const farmProgress = document.getElementById('farm-progress');
+            if(farmProgress) farmProgress.style.width = stats.farmProgress + "%";
+            
+            if(stats.farmProgress >= 100) {
+                clearInterval(interval);
+                
+                if(type === 'corn') stats.corn++;
+                else if(type === 'carrot') stats.carrot++;
+                else if(type === 'tomato') stats.tomato++;
+                else if(type === 'sunflower') stats.sunflower++;
+                
+                updateFarmUI();
+                addChatMessage(`[FARM]: Termés betakarítva! +1 ${type}`);
+            }
+        }, 1000);
+    }
+
+    function harvestAll() {
+        let total = stats.corn + stats.carrot + stats.tomato + stats.sunflower;
+        if(total === 0) {
+            alert("Nincs mit aratni!");
+            return;
+        }
+        
+        let value = stats.corn * 100 + stats.carrot * 150 + stats.tomato * 200 + stats.sunflower * 300;
+        stats.money += value;
+        
+        stats.corn = 0;
+        stats.carrot = 0;
+        stats.tomato = 0;
+        stats.sunflower = 0;
+        
+        updateFarmUI();
+        addChatMessage(`[FARM]: Aratás: $${value}`);
+    }
+
+    function updateFarmUI() {
+        const cornEl = document.getElementById('corn-count');
+        const carrotEl = document.getElementById('carrot-count');
+        const tomatoEl = document.getElementById('tomato-count');
+        const sunflowerEl = document.getElementById('sunflower-count');
+        
+        if(cornEl) cornEl.innerText = stats.corn;
+        if(carrotEl) carrotEl.innerText = stats.carrot;
+        if(tomatoEl) tomatoEl.innerText = stats.tomato;
+        if(sunflowerEl) sunflowerEl.innerText = stats.sunflower;
+    }
+
+    // --- LABORATÓRIUM ---
+    function craftPotion(type, cost) {
+        if(stats.money < cost) {
+            alert("Nincs elég pénzed!");
+            return;
+        }
+        
+        stats.money -= cost;
+        stats.experiments++;
+        stats.labProgress += 10;
+        
+        const labProgress = document.getElementById('lab-progress');
+        const labStatus = document.getElementById('lab-status');
+        if(labProgress) labProgress.style.width = Math.min(100, stats.labProgress) + "%";
+        if(labStatus) labStatus.innerText = `Kísérletek: ${stats.experiments}`;
+        
+        if(type === 'strength') {
+            stats.potions.strength++;
+            stats.strength += 50;
+            addChatMessage(`[LAB]: Erő potion! +50 erő`);
+        } else if(type === 'speed') {
+            stats.potions.speed++;
+            stats.miningSpeed += 5;
+            addChatMessage(`[LAB]: Gyors potion! +5 bányász sebesség`);
+        } else if(type === 'mutant') {
+            stats.potions.mutant++;
+            stats.multiplier *= 1.5;
+            stats.aura += 1000;
+            addChatMessage(`[LAB]: Mutáns potion! 1.5x multi, +1000 aura`);
+        }
+        
+        if(stats.labProgress >= 100) {
+            stats.labProgress = 0;
+            stats.multiplier *= 2;
+            addChatMessage(`[LAB]: LABOR SZINTLÉPÉS! 2x multi!`);
+        }
+        
+        updateUI();
+    }
+
+    // --- VERSENYZÉS ---
+    function upgradeCar() {
+        if(stats.money < 10000) {
+            alert("Nincs elég pénzed!");
+            return;
+        }
+        
+        stats.money -= 10000;
+        stats.carLevel++;
+        stats.carSpeed += 50;
+        
+        const carName = document.getElementById('car-name');
+        const carSpeed = document.getElementById('car-speed');
+        if(carName) carName.innerText = getCarName();
+        if(carSpeed) carSpeed.innerText = stats.carSpeed + " km/h";
+        
+        addChatMessage(`[RACING]: Autó fejlesztve! Szint: ${stats.carLevel}`);
+    }
+
+    function startRace() {
+        if(stats.carLevel === 0) {
+            alert("Nincs autód!");
+            return;
+        }
+        
+        let progress = 0;
+        let interval = setInterval(() => {
+            progress += 2;
+            const carProgress = document.getElementById('car-progress');
+            if(carProgress) carProgress.style.width = progress + "%";
+            
+            if(progress >= 100) {
+                clearInterval(interval);
+                
+                let win = Math.random() < 0.5 + stats.carLevel * 0.05;
+                
+                if(win) {
+                    let prize = 5000 * stats.carLevel;
+                    stats.money += prize;
+                    stats.racesWon++;
+                    const raceResult = document.getElementById('race-result');
+                    if(raceResult) raceResult.innerHTML = `🏆 GYŐZELEM! +$${prize}`;
+                    addChatMessage(`[RACING]: Megnyerted a versenyt! +$${prize}`);
+                } else {
+                    const raceResult = document.getElementById('race-result');
+                    if(raceResult) raceResult.innerHTML = `💀 VESZTETTÉL...`;
+                    addChatMessage(`[RACING]: Vesztettél...`);
+                }
+                
+                updateUI();
+            }
+        }, 50);
+    }
+
+    // --- ŰRPROGRAM ---
+    function upgradeRocket() {
+        if(stats.money < 100000) {
+            alert("Nincs elég pénzed!");
+            return;
+        }
+        
+        stats.money -= 100000;
+        stats.rocketLevel++;
+        const rocketLevel = document.getElementById('rocket-level');
+        if(rocketLevel) rocketLevel.innerText = stats.rocketLevel;
+        
+        addChatMessage(`[SPACE]: Rakéta fejlesztve! Szint: ${stats.rocketLevel}`);
+    }
+
+    function launchRocket() {
+        if(stats.money < 50000) {
+            alert("Nincs elég pénzed indításra!");
+            return;
+        }
+        
+        stats.money -= 50000;
+        stats.rocketProgress = 0;
+        
+        let interval = setInterval(() => {
+            stats.rocketProgress += 1;
+            const rocketProgress = document.getElementById('rocket-progress');
+            if(rocketProgress) rocketProgress.style.width = stats.rocketProgress + "%";
+            
+            if(stats.rocketProgress >= 100) {
+                clearInterval(interval);
+                
+                stats.spaceMissions++;
+                
+                let event = Math.random();
+                const spaceResult = document.getElementById('space-result');
+                
+                if(event < 0.3) {
+                    let reward = 100000 * stats.rocketLevel;
+                    stats.money += reward;
+                    if(spaceResult) spaceResult.innerHTML = "🌕 Holdraszállás! +$" + reward;
+                    addChatMessage(`[SPACE]: Holdraszállás! +$${reward}`);
+                } else if(event < 0.6) {
+                    let reward = 500000 * stats.rocketLevel;
+                    stats.money += reward;
+                    stats.aura += 5000;
+                    if(spaceResult) spaceResult.innerHTML = "🔴 Mars expedíció! +$" + reward;
+                    addChatMessage(`[SPACE]: Mars expedíció! +$${reward}`);
+                } else if(event < 0.9) {
+                    stats.multiplier *= 1.5;
+                    if(spaceResult) spaceResult.innerHTML = "🛰️ Űrállomás építés! 1.5x multi";
+                    addChatMessage(`[SPACE]: Űrállomás építés! 1.5x multi`);
+                } else {
+                    stats.multiplier *= 3;
+                    if(spaceResult) spaceResult.innerHTML = "👽 Idegenek! 3x multi";
+                    addChatMessage(`[SPACE]: IDE GEN EK! 3x multi`);
+                }
+                
+                updateUI();
+            }
+        }, 200);
+    }
+
+    // --- KONYHA ---
+    function cookFood(type, cost) {
+        if(stats.money < cost) {
+            alert("Nincs elég pénzed!");
+            return;
+        }
+        
+        stats.money -= cost;
+        
+        let buff = "";
+        let duration = 300;
+        
+        if(type === 'burger') {
+            stats.strength += 10;
+            buff = "+10 erő (5 perc)";
+        } else if(type === 'pizza') {
+            stats.miningSpeed += 2;
+            buff = "+2 bányász sebesség (5 perc)";
+        } else if(type === 'sushi') {
+            stats.multiplier *= 1.2;
+            buff = "1.2x multi (5 perc)";
+        }
+        
+        stats.foodBuff = type;
+        stats.foodBuffDuration = duration;
+        const foodBuff = document.getElementById('food-buff');
+        if(foodBuff) foodBuff.innerHTML = `Aktív buff: ${buff}`;
+        
+        addChatMessage(`[KONYHA]: ${type} elkészítve! ${buff}`);
+        updateUI();
+        
+        let interval = setInterval(() => {
+            stats.foodBuffDuration--;
+            if(stats.foodBuffDuration <= 0) {
+                clearInterval(interval);
+                stats.foodBuff = null;
+                const foodBuffEl = document.getElementById('food-buff');
+                if(foodBuffEl) foodBuffEl.innerHTML = "Aktív buff: Nincs";
+            }
+        }, 1000);
+    }
+
+    // --- KÖNYVTÁR ---
+    function readBook(type, cost) {
+        if(stats.money < cost) {
+            alert("Nincs elég pénzed!");
+            return;
+        }
+        
+        stats.money -= cost;
+        stats.booksRead++;
+        stats.knowledge += 10;
+        
+        if(type === 'sigma') {
+            stats.multiplier += 0.5;
+            addChatMessage(`[KÖNYVTÁR]: Sigma könyv! +0.5 multi`);
+        } else if(type === 'rizz') {
+            stats.aura += 200;
+            addChatMessage(`[KÖNYVTÁR]: Rizz könyv! +200 aura`);
+        } else if(type === 'mewing') {
+            stats.strength += 30;
+            addChatMessage(`[KÖNYVTÁR]: Mewing könyv! +30 erő`);
+        }
+        
+        const knowledgeEl = document.getElementById('knowledge');
+        if(knowledgeEl) knowledgeEl.innerText = `Tudás szint: ${stats.knowledge}`;
+        
+        if(stats.knowledge >= 100) {
+            stats.multiplier *= 2;
+            addChatMessage(`[KÖNYVTÁR]: TUDÁS SZINTLÉPÉS! 2x multi!`);
+        }
+        
+        updateUI();
+    }
+
+    // --- ZENE STÚDIÓ ---
+    function produceTrack(type, cost) {
+        if(stats.money < cost) {
+            alert("Nincs elég pénzed!");
+            return;
+        }
+        
+        stats.money -= cost;
+        stats.tracksProduced++;
+        
+        let streams = 0;
+        if(type === 'skibidi') {
+            streams = 1000 + Math.floor(Math.random() * 5000);
+        } else if(type === 'gyatt') {
+            streams = 5000 + Math.floor(Math.random() * 10000);
+        } else if(type === 'omega') {
+            streams = 20000 + Math.floor(Math.random() * 50000);
+        }
+        
+        stats.musicStreams += streams;
+        let revenue = streams * 0.01;
+        stats.money += revenue;
+        
+        const musicEl = document.getElementById('music-streams');
+        if(musicEl) musicEl.innerText = `Hallgatók: ${stats.musicStreams.toLocaleString()}`;
+        addChatMessage(`[ZENE]: ${type} elkészült! ${streams} stream, +$${Math.floor(revenue)}`);
+        updateUI();
+    }
+
+    // --- MOZAIK ---
+    function findPiece() {
+        if(stats.money < 100) {
+            alert("Nincs elég pénzed!");
+            return;
+        }
+        
+        stats.money -= 100;
+        
+        if(Math.random() < 0.3) {
+            stats.puzzlePieces++;
+            addChatMessage(`[PUZZLE]: Találtál egy mozaik darabot! (${stats.puzzlePieces}/100)`);
+        }
+        
+        const puzzlePieces = document.getElementById('puzzle-pieces');
+        const puzzleProgress = document.getElementById('puzzle-progress');
+        if(puzzlePieces) puzzlePieces.innerText = `${stats.puzzlePieces}/100`;
+        if(puzzleProgress) puzzleProgress.style.width = (stats.puzzlePieces) + "%";
+        
+        if(stats.puzzlePieces >= 100 && !stats.puzzleCompleted) {
+            stats.puzzleCompleted = true;
+            stats.multiplier *= 5;
+            stats.aura += 10000;
+            addChatMessage(`[PUZZLE]: MOZAIK KÉSZ! 5x multi, +10000 aura!`);
+        }
+        
+        updateUI();
+    }
+
+    function completePuzzle() {
+        if(stats.puzzlePieces < 100) {
+            alert(`Még ${100 - stats.puzzlePieces} darab kell!`);
+            return;
+        }
+        
+        if(stats.puzzleCompleted) {
+            stats.money += 1000000;
+            addChatMessage(`[PUZZLE]: Bónusz mozaik! +$1,000,000`);
+        }
+    }
+
+    // --- ÁLLATKERT ---
+    function buyAnimal(type, cost) {
+        if(stats.money < cost) {
+            alert("Nincs elég pénzed!");
+            return;
+        }
+        
+        stats.money -= cost;
+        
+        if(type === 'lion') stats.animals.lion++;
+        else if(type === 'tiger') stats.animals.tiger++;
+        else if(type === 'bear') stats.animals.bear++;
+        else if(type === 'giraffe') stats.animals.giraffe++;
+        
+        updateZooUI();
+        addChatMessage(`[ZOO]: Vettél egy ${type}-t!`);
+    }
+
+    function feedAnimals() {
+        let totalAnimals = stats.animals.lion + stats.animals.tiger + stats.animals.bear + stats.animals.giraffe;
+        
+        if(totalAnimals === 0) {
+            alert("Nincsenek állataid!");
+            return;
+        }
+        
+        let cost = totalAnimals * 100;
+        if(stats.money < cost) {
+            alert(`Nincs elég pénzed! Költség: $${cost}`);
+            return;
+        }
+        
+        stats.money -= cost;
+        
+        let bonus = totalAnimals * 10;
+        stats.aura += bonus;
+        stats.multiplier += totalAnimals * 0.1;
+        
+        addChatMessage(`[ZOO]: Állatok etetve! +${bonus} aura, +${totalAnimals*0.1}x multi`);
+        updateUI();
+    }
+
+    function updateZooUI() {
+        const lionEl = document.getElementById('lion-count');
+        const tigerEl = document.getElementById('tiger-count');
+        const bearEl = document.getElementById('bear-count');
+        const giraffeEl = document.getElementById('giraffe-count');
+        
+        if(lionEl) lionEl.innerText = stats.animals.lion;
+        if(tigerEl) tigerEl.innerText = stats.animals.tiger;
+        if(bearEl) bearEl.innerText = stats.animals.bear;
+        if(giraffeEl) giraffeEl.innerText = stats.animals.giraffe;
+    }
+
+    // --- IDŐJÁRÁS KONTROLL ---
+    function controlWeather(type, cost) {
+        if(stats.money < cost) {
+            alert("Nincs elég pénzed!");
+            return;
+        }
+        
+        stats.money -= cost;
+        stats.weather = type;
+        
+        const weatherNames = {
+            'sun': '☀️ Napsütés (1.2x multi)',
+            'rain': '🌧️ Eső (1.5x multi)',
+            'storm': '⛈️ Vihar (2x multi)',
+            'snow': '❄️ Hó (1.3x multi)'
+        };
+        
+        const weatherEl = document.getElementById('weather-effect');
+        if(weatherEl) weatherEl.innerText = weatherNames[type];
+        
+        stats.weatherBonus = getWeatherMultiplier() - 1;
+        const bonusEl = document.getElementById('weather-bonus');
+        if(bonusEl) bonusEl.innerText = `Bónusz: +${(stats.weatherBonus*100).toFixed(0)}%`;
+        
+        addChatMessage(`[IDŐJÁRÁS]: Időjárás megváltoztatva: ${weatherNames[type]}`);
+        
+        if(!stats.achievements.weatherGod) {
+            stats.achievements.weatherGod = true;
+            showAchievement("IDŐJÁRÁS ISTEN! +5000 aura");
+            stats.aura += 5000;
+        }
+        
+        updateUI();
+    }
+
+    // --- MESTERSÉGES INTELLIGENCIA ---
+    function trainAI() {
+        if(stats.money < 20000) {
+            alert("Nincs elég pénzed!");
+            return;
+        }
+        
+        stats.money -= 20000;
+        stats.aiProgress += 10;
+        
+        const aiProgress = document.getElementById('ai-progress');
+        if(aiProgress) aiProgress.style.width = stats.aiProgress + "%";
+        
+        if(stats.aiProgress >= 100) {
+            stats.aiLevel++;
+            stats.aiProgress = 0;
+            stats.multiplier *= 2;
+            addChatMessage(`[AI]: AI SZINTLÉPÉS! Most ${stats.aiLevel}. szint, 2x multi!`);
+            
+            if(stats.aiLevel >= 10 && !stats.achievements.aiGod) {
+                stats.achievements.aiGod = true;
+                showAchievement("AI ISTEN! +10000 aura");
+                stats.aura += 10000;
+            }
+        }
+        
+        const aiLevel = document.getElementById('ai-level');
+        if(aiLevel) aiLevel.innerText = stats.aiLevel;
+        addChatMessage(`[AI]: AI tanítva! Haladás: ${stats.aiProgress}%`);
+        updateUI();
+    }
+
+    function askAI() {
+        const questions = [
+            "Hogy legyek sigma?",
+            "Mi az élet értelme?",
+            "Mennyi a 2+2?",
+            "Ki a legnagyobb rizzler?",
+            "Hol találok gyattot?"
+        ];
+        
+        const answers = [
+            "Kövess 3 szabályt: 1. Sose beszélj a sigma klubról, 2. Sose beszélj a sigma klubról, 3. MEWING 24/7!",
+            "42... de igazából a SKIBIDI a válasz mindenre!",
+            "22 (összeadás és összekötés)",
+            "Baby Gronk, ő a LEGENDA!",
+            "Ohio-ban, de vigyázz a Fanum Tax-el!"
+        ];
+        
+        let random = Math.floor(Math.random() * questions.length);
+        const aiAnswer = document.getElementById('ai-answer');
+        if(aiAnswer) aiAnswer.innerHTML = `❓ ${questions[random]}<br>🤖 ${answers[random]}`;
+        
+        if(Math.random() < 0.1 * stats.aiLevel) {
+            let bonus = 10000 * stats.aiLevel;
+            stats.money += bonus;
+            addChatMessage(`[AI]: Az AI talált neked $${bonus}-t!`);
+            updateUI();
+        }
+    }
+
+    // --- IDŐKAPSZULA ---
+    function buryCapsule() {
+        if(stats.capsuleBuried) {
+            alert("Már van eltemetett időkapszulád!");
+            return;
+        }
+        
+        if(stats.money < 10000) {
+            alert("Nincs elég pénzed! (Minimum $10,000 kell)");
+            return;
+        }
+        
+        let buryAmount = Math.min(stats.money, 1000000);
+        stats.money -= buryAmount;
+        stats.capsuleBuried = true;
+        stats.capsuleValue = buryAmount;
+        stats.capsuleDate = new Date().toISOString();
+        
+        const capsuleValue = document.getElementById('capsule-value');
+        const capsuleDays = document.getElementById('capsule-days');
+        if(capsuleValue) capsuleValue.innerText = "$" + buryAmount.toLocaleString();
+        if(capsuleDays) capsuleDays.innerText = "7";
+        
+        addChatMessage(`[IDŐKAPSZULA]: $${buryAmount.toLocaleString()} eltemetve! 7 nap múlva nyitható!`);
+        updateUI();
+        
+        startCapsuleCountdown();
+    }
+
+    function startCapsuleCountdown() {
+        let interval = setInterval(() => {
+            if(!stats.capsuleBuried) {
+                clearInterval(interval);
+                return;
+            }
+            
+            let buried = new Date(stats.capsuleDate);
+            let now = new Date();
+            let diffDays = Math.floor((now - buried) / (1000 * 60 * 60 * 24));
+            let daysLeft = 7 - diffDays;
+            
+            const capsuleDays = document.getElementById('capsule-days');
+            if(capsuleDays) {
+                if(daysLeft <= 0) {
+                    capsuleDays.innerText = "NYITHATÓ!";
+                    clearInterval(interval);
+                } else {
+                    capsuleDays.innerText = daysLeft;
+                }
+            }
+        }, 60000);
+    }
+
+    function openCapsule() {
+        if(!stats.capsuleBuried) {
+            alert("Nincs eltemetett időkapszulád!");
+            return;
+        }
+        
+        let buried = new Date(stats.capsuleDate);
+        let now = new Date();
+        let diffDays = Math.floor((now - buried) / (1000 * 60 * 60 * 24));
+        
+        if(diffDays < 7) {
+            alert(`Még ${7 - diffDays} napot várnod kell!`);
+            return;
+        }
+        
+        let interest = stats.capsuleValue * (1 + (diffDays * 0.1));
+        stats.money += Math.floor(interest);
+        
+        addChatMessage(`[IDŐKAPSZULA]: Kinyitva! $${Math.floor(interest).toLocaleString()} (Eredeti: $${stats.capsuleValue.toLocaleString()}, Kamat: ${diffDays*10}%)`);
+        
+        stats.capsuleBuried = false;
+        stats.capsuleValue = 0;
+        const capsuleValue = document.getElementById('capsule-value');
+        if(capsuleValue) capsuleValue.innerText = "$0";
+        
+        if(!stats.achievements.timeTraveler) {
+            stats.achievements.timeTraveler = true;
+            showAchievement("IDŐUTAZÓ! +10000 aura");
+            stats.aura += 10000;
+        }
+        
+        updateUI();
+    }
+
+    // --- ACHIEVEMENT CHECKER BŐVÍTÉS ---
+    function checkNFTAchievement() {
+        if(!stats.nfts) return;
+        let nftCount = stats.nfts.filter(n => n).length;
+        if(nftCount >= 6 && !stats.achievements.nftCollector) {
+            stats.achievements.nftCollector = true;
+            showAchievement("NFT GYŰJTŐ! +10000 aura");
+            stats.aura += 10000;
+            stats.multiplier *= 2;
+        }
+    }
+
+    function checkGymAchievement() {
+        if(stats.strength >= 1000 && stats.stamina >= 1000 && !stats.achievements.gymMaster) {
+            stats.achievements.gymMaster = true;
+            showAchievement("GYM MASTER! +10000 aura, 3x multi");
+            stats.aura += 10000;
+            stats.multiplier *= 3;
+        }
+    }
+
+    function checkFarmAchievement() {
+        let total = stats.corn + stats.carrot + stats.tomato + stats.sunflower;
+        if(total >= 1000 && !stats.achievements.farmer) {
+            stats.achievements.farmer = true;
+            showAchievement("GAZDA! +5000 aura");
+            stats.aura += 5000;
+        }
+    }
+
+    function checkScienceAchievement() {
+        if(stats.experiments >= 100 && !stats.achievements.scientist) {
+            stats.achievements.scientist = true;
+            showAchievement("TUDÓS! +10000 aura, 2x multi");
+            stats.aura += 10000;
+            stats.multiplier *= 2;
+        }
+    }
+
+    function checkRaceAchievement() {
+        if(stats.racesWon >= 50 && !stats.achievements.racer) {
+            stats.achievements.racer = true;
+            showAchievement("VERSENYZŐ! +10000 aura");
+            stats.aura += 10000;
+        }
+    }
+
+    function checkSpaceAchievement() {
+        if(stats.spaceMissions >= 10 && !stats.achievements.astronaut) {
+            stats.achievements.astronaut = true;
+            showAchievement("ŰRHAJÓS! +20000 aura");
+            stats.aura += 20000;
+        }
+    }
+
+    function checkChefAchievement() {
+        if(stats.tracksProduced >= 50 && !stats.achievements.chef) {
+            stats.achievements.chef = true;
+            showAchievement("SÉF! +5000 aura");
+            stats.aura += 5000;
+        }
+    }
+
+    function checkScholarAchievement() {
+        if(stats.booksRead >= 100 && !stats.achievements.scholar) {
+            stats.achievements.scholar = true;
+            showAchievement("TUDÓS! +10000 aura");
+            stats.aura += 10000;
+        }
+    }
+
+    function checkMusicianAchievement() {
+        if(stats.musicStreams >= 1000000 && !stats.achievements.musician) {
+            stats.achievements.musician = true;
+            showAchievement("ZENÉSZ! +15000 aura");
+            stats.aura += 15000;
+        }
+    }
+
+    function checkPuzzlerAchievement() {
+        if(stats.puzzleCompleted && !stats.achievements.puzzler) {
+            stats.achievements.puzzler = true;
+            showAchievement("MOZAIK MESTER! +10000 aura");
+            stats.aura += 10000;
+        }
+    }
+
+    function checkZooAchievement() {
+        let total = stats.animals.lion + stats.animals.tiger + stats.animals.bear + stats.animals.giraffe;
+        if(total >= 10 && !stats.achievements.zookeeper) {
+            stats.achievements.zookeeper = true;
+            showAchievement("ÁLLATKERTÉSZ! +5000 aura");
+            stats.aura += 5000;
+        }
+    }
+
+    // --- EASTER EGG ---
+    function easterEgg() {
+        console.log("🔥 SIGMA EASTER EGG FOUND! 🔥");
+        stats.money += 1000000;
+        stats.aura += 10000;
+        stats.multiplier *= 10;
+        updateUI();
+        triggerGigaChad();
+        showAchievement("EASTER EGG MEGTALÁLVA!");
+    }
+
+    // --- BILLENTYŰZET KEZELÉS ---
+    document.addEventListener('keydown', (e) => {
+        if(e.key === 's' && e.ctrlKey) {
+            e.preventDefault();
+            saveGame();
+        }
+        if(e.key === 'r' && e.ctrlKey) {
+            e.preventDefault();
+            resetGame();
+        }
+        if(e.key === 'Escape') {
+            easterEgg();
+        }
+    });
+
+    // --- RANDOM TIPPEK ---
+    const tooltips = [
+        "Tipp: Minél többet kattintasz, annál több pénzed lesz!",
+        "Tipp: Az AURA nagyon fontos a Rizzhez!",
+        "Tipp: Próbáld ki a Casinot!",
+        "Tipp: Az időjárás befolyásolja a bevételeidet!",
+        "Tipp: Az auto-clicker passzív jövedelmet ad!",
+        "Tipp: Az NFT-k értéke nőhet idővel!",
+        "Tipp: A farmolás jó passzív jövedelem!",
+        "Tipp: A laborban potionöket készíthetsz!"
+    ];
+
+    setInterval(() => {
+        if(Math.random() < 0.1) {
+            const tip = tooltips[Math.floor(Math.random() * tooltips.length)];
+            addChatMessage("[TIPP]: " + tip, "HELPER");
+        }
+    }, 30000);
+
+    // --- SZINTLÉPÉS EFFEKT ---
+    let lastAuraLevel = 0;
+    setInterval(() => {
+        const currentLevel = Math.floor(stats.aura / 100);
+        if(currentLevel > lastAuraLevel) {
+            lastAuraLevel = currentLevel;
+            showAchievement(`AURA SZINT ${currentLevel}!`);
+            spawnMoneyEmoji(5);
+        }
+    }, 1000);
+
+    // --- INITIAL UI UPDATE ---
+    updateUI();
+    updateInventory();
+    updateAuraDescription();
+    updateAchievementsList();
+</script>
+
+<!-- Stílus kiegészítések a mennyiséghez -->
+<style>
+    /* Extra CSS a mennyiség növeléséhez - ezek is hasznosak */
+    .extra-class-1 { opacity: 0; }
+    .extra-class-2 { opacity: 0; }
+    .extra-class-3 { opacity: 0; }
+    .extra-class-4 { opacity: 0; }
+    .extra-class-5 { opacity: 0; }
+    .extra-class-6 { opacity: 0; }
+    .extra-class-7 { opacity: 0; }
+    .extra-class-8 { opacity: 0; }
+    .extra-class-9 { opacity: 0; }
+    .extra-class-10 { opacity: 0; }
+    
+    @media (max-width: 768px) {
+        .dashboard {
+            grid-template-columns: 1fr;
+        }
+        .hero h1 {
+            font-size: 60px;
+        }
+    }
+    
+    /* Print styles - mert miért ne */
+    @media print {
+        body { background: white; color: black; animation: none; }
+        .fake-ad, .money-rain { display: none; }
+    }
+    
+    /* Animációk bővítése */
+    @keyframes extraAnimation1 { 0% { opacity: 0; } 100% { opacity: 1; } }
+    @keyframes extraAnimation2 { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    @keyframes extraAnimation3 { 0% { filter: hue-rotate(0deg); } 100% { filter: hue-rotate(360deg); } }
+    @keyframes extraAnimation4 { 0% { transform: scale(1); } 100% { transform: scale(1.1); } }
+    @keyframes extraAnimation5 { 0% { background-position: 0% 0%; } 100% { background-position: 100% 100%; } }
+</style>
+
+<!-- Befejezés -->
+</body>
+</html>
