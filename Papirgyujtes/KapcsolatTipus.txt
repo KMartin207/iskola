@@ -1,0 +1,17 @@
+1.)
+SELECT tanulok.nev
+	FROM tanulok LEFT JOIN leadasok ON tanulok.tazon = leadasok.tanulo
+    WHERE leadasok.tanulo IS NULL;
+
+2.)
+SELECT COUNT(tanulok.nev) AS 'Inaktív tanulók'
+	FROM leadasok RIGHT JOIN tanulok ON leadasok.tanulo = tanulok.tazon
+    WHERE leadasok.tanulo IS NULL;
+
+3.)
+SELECT DISTINCT tanulok.nev
+	FROM tanulok INNER JOIN leadasok ON tanulok.tazon = leadasok.tanulo;
+
+4.)
+SELECT COUNT(leadasok.tanulo) AS Aktívak
+	FROM tanulok INNER JOIN leadasok ON tanulok.tazon = leadasok.tanulo;

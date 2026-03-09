@@ -1,0 +1,39 @@
+CREATE DATABASE papirgyujtes_km
+	DEFAULT CHARACTER SET utf8
+    DEFAULT COLLATE utf8_hungarian_ci;
+
+1. 
+SELECT nev AS Név, osztaly AS Osztály, SUM( mennyiseg / 100) AS Kg
+	FROM tanulok, leadasok
+    WHERE tanulok.tazon = leadasok.tanulo
+    GROUP BY nev
+    ORDER BY Kg DESC
+
+2.
+SELECT nev, COUNT(mennyiseg) AS "Leadások száma"
+	FROM tanulok, leadasok
+    WHERE tanulok.tazon = leadasok.tanulo
+    GROUP BY nev
+    HAVING COUNT(mennyiseg) > 5
+    ORDER BY COUNT(mennyiseg) DESC, nev ASC;
+
+3.
+SELECT DISTINCT nev
+	FROM tanulok, leadasok
+    WHERE tanulok.tazon = leadasok.tanulo
+    ORDER BY nev ASC;
+
+4.
+SELECT osztaly, SUM(mennyiseg) AS Eredmény
+	FROM tanulok, leadasok
+    WHERE tanulok.tazon = leadasok.tanulo
+    GROUP BY osztaly
+    HAVING Eredmény >= 120000
+    ORDER BY Eredmény DESC;
+
+5.
+SELECT DISTINCT idopont, SUM(mennyiseg / 10000) AS Eredmény
+	FROM leadasok
+    GROUP BY idopont
+    ORDER BY Eredmény DESC;
+    

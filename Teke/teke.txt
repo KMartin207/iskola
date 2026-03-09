@@ -1,0 +1,49 @@
+CREATE DATABASE teke
+	DEFAULT CHARACTER SET utf8
+    DEFAULT COLLATE utf8_hungarian_ci;
+
+2/2p
+
+3.
+SELECT nev
+	FROM versenyzok
+    WHERE korcsop = "A"
+    ORDER BY nev ASC;
+
+3/3p
+
+4.
+
+SELECT DISTINCT rajtszam
+	FROM versenyzok INNER JOIN eredmenyek ON rajtszam = versenyzo
+    WHERE ures >= '1';
+
+3/3p
+
+5.
+SELECT nev, AVG(tarolas) AS atlagpont
+	FROM versenyzok INNER JOIN eredmenyek ON rajtszam = versenyzo
+    GROUP BY nev
+    ORDER BY atlagpont DESC;
+
+3/3p
+
+6.
+
+SELECT egyesuletek.nev
+	FROM egyesuletek INNER JOIN versenyzok ON id = egyid
+    GROUP BY egyid
+    ORDER BY COUNT(egyid) desc
+    LIMIT 1;
+
+4/4p
+
+7.
+
+
+SELECT nev, SUM(teli) + SUM(tarolas) AS eredmeny, SUM(tarolas) AS tarolas, ures
+	FROM versenyzok INNER JOIN eredmenyek ON rajtszam = versenyzo
+    GROUP BY nev
+    ORDER BY eredmeny DESC, tarolas desc, ures DESC;
+
+2/5p

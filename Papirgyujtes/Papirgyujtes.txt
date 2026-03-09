@@ -1,0 +1,53 @@
+CREATE DATABASE papirgyujtes
+	DEFAULT CHARACTER SET utf8
+    DEFAULT COLLATE utf8_hungarian_ci;
+
+
+CREATE TABLE tanulok (
+  tazon int,
+  nev varchar(17) NOT NULL,
+  osztaly varchar(2) NOT NULL,
+  CONSTRAINT pk_tanulok PRIMARY KEY (tazon)
+);
+
+CREATE TABLE leadasok (
+  sorsz int,
+  tanulo int  NOT NULL,
+  idopont date  NOT NULL,
+  mennyiseg int  NOT NULL,
+  CONSTRAINT pk_leadasok PRIMARY KEY (sorsz),
+  CONSTRAINT fk_leadastanulo FOREIGN KEY (tanulo) REFERENCES tanulok(tazon)
+);
+
+
+
+
+3.)
+
+SELECT nev, osztaly, idopont, mennyiseg
+	FROM tanulok INNER JOIN leadasok ON tazon = tanulo
+    WHERE osztaly LIKE '1_';
+
+4.)
+
+SELECT idopont, AVG(mennyiseg) AS "napi atlag"
+	FROM leadasok;
+
+5.)
+
+SELECT DISTINCT osztaly
+	FROM tanulok INNER JOIN leadasok ON tazon = tanulo
+    WHERE idopont = "2016-10-28";
+
+6.)
+SELECT DISTINCT osztaly, mennyiseg / 1000 AS mazsa
+	FROM tanulok INNER JOIN leadasok ON tazon = tanulo
+    ORDER BY mazsa DESC;
+
+7.)
+
+SELECT nev, osztaly, mennyiseg AS osszesen
+	FROM tanulok INNER JOIN leadasok ON tazon = tanulo
+    ORDER BY mennyiseg DESC
+    LIMIT 10;
+

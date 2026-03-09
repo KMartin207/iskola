@@ -1,0 +1,201 @@
+CREATE DATABASE km_repter
+
+1.
+SELECT COUNT(DISTINCT type)
+	FROM airports;
+    
+2.
+SELECT DISTINCT type
+	FROM airports;
+
+3.
+SELECT COUNT(type) AS "nagy_repter_db"
+	FROM airports
+    WHERE type = "large_airport";
+
+4.
+SELECT COUNT(type) AS "ossz_repter_db"
+	FROM airports
+    WHERE type LIKE "%airport";
+
+5.
+SELECT COUNT(DISTINCT continent) AS "foldresz_db", COUNT(DISTINCT iso_country) AS "orszag_db", COUNT(type) AS "ossz_db"
+	FROM airports
+    WHERE type LIKE "heliport";
+
+6.
+SELECT DISTINCT type, count(type) AS db
+	FROM airports
+    GROUP BY type;
+
+7.
+SELECT name, latitude_deg
+	FROM airports
+    WHERE type LIKE "%airport"
+    ORDER BY latitude_deg DESC
+    LIMIT 1;
+    
+8.
+SELECT DISTINCT continent
+	FROM airports
+    ORDER BY continent ASC;
+
+9.
+SELECT iso_country
+	FROM airports
+    WHERE type LIKE "%airports" AND continent = "EU"
+    ORDER BY latitude_deg DESC;
+
+10.
+SELECT count(id) AS db
+	FROM airports
+    WHERE type LIKE "%airport" AND continent = "AN";
+    
+11.
+SELECT count(id) AS db, continent
+	FROM airports
+    WHERE type LIKE "%airport"
+    GROUP BY continent;
+    
+12.
+SELECT DISTINCT iso_country, count(id) AS db
+	FROM airports
+    WHERE type LIKE "%airport"
+    GROUP BY iso_country
+    ORDER BY db DESC
+    LIMIT 15;
+    
+13.
+SELECT countries.code, name
+	FROM countries
+    WHERE countries.code = "CO" OR countries.code = "PG" OR countries.code = "ZA";
+    
+14.
+SELECT name
+	FROM countries
+    WHERE continent = "AN";
+
+15.
+SELECT count(id) as db
+	FROM countries;
+
+16.
+SELECT count(distinct iso_country) as db
+	FROM airports;
+    
+17.
+SELECT *
+	FROM countries
+    WHERE countries.code not IN (SELECT iso_country FROM airports);
+    
+
+19.
+SELECT name, continent
+	FROM countries
+    WHERE name = 'Turkey' OR name = 'Russia';
+
+20.
+SELECT iso_country, count( IF (continent = 'EU', 1, null) ) AS 'Europe', count( IF (continent = 'AS', 1, null)) AS 'Asia'
+	FROM airports
+    WHERE iso_country = 'RU' OR iso_country = 'TR'
+    GROUP BY iso_country;
+
+21.
+SELECT name, type, municipality, iso_country, continent, latitude_deg, longitude_deg
+	FROM airports
+    WHERE iso_country = "RU" AND longitude_deg > 60.35 OR longitude_deg < -169
+    ORDER BY SIGN(longitude_deg) DESC, longitude_deg ASC;
+
+22.
+UPDATE airports
+SET continent = "AS"
+WHERE iso_country = "RU" AND continent = 'EU' AND longitude_deg > 60.35 OR longitude_deg < 0;
+
+23.
+SELECT name, elevation_ft, ROUND(elevation_ft*0.3048) AS elevation_m
+	FROM airports
+    ORDER BY elevation_ft DESC
+    LIMIT 0, 1;
+
+24.
+SELECT name, elevation_ft, ROUND(elevation_ft*0.3048) AS elevation_m
+	FROM airports
+    WHERE name LIKE "%international%"
+    ORDER BY elevation_ft DESC
+    LIMIT 0, 1;
+
+25.
+ALTER TABLE airports
+ADD COLUMN elevation_m INT AFTER elevation_ft;
+
+UPDATE airports
+SET elevation_m = elevation_ft*0.3048;
+
+26.
+SELECT name, continent
+	FROM countries
+    WHERE code IN (SELECT iso_country FROM airports WHERE elevation_m > 4000)
+    ORDER BY 2, 1;
+
+27.
+SELECT airports.name, iso_country, municipality, elevation_m
+	FROM airports, countries
+    WHERE airports.iso_country = countries.code AND airports.continent = 'EU' AND airports.name LIKE "%international%"
+    ORDER BY airports.elevation_m DESC
+    LIMIT 1;
+    
+
+28.
+
+29.
+SELECT length_m AS hossz
+	FROM runways
+    WHERE lighted = 1
+    ORDER BY length_m DESC
+    LIMIT 1;
+
+30.
+SELECT length_m AS hossz, airports.municipality
+	FROM runways, airports
+    WHERE runways.airport_ref = airports.id AND runways.lighted = 1
+    ORDER BY runways.length_m DESC
+    LIMIT 1;
+
+31.
+SELECT length_m AS hossz, countries.name
+	FROM runways, airports, countries
+    WHERE runways.airport_ref = airports.id AND airports.iso_country = countries.code AND runways.lighted = 1
+    ORDER BY runways.length_m DESC
+    LIMIT 1;
+
+33.
+SELECT airports.name, count(runways.airport_ref) AS db
+	FROM airports, runways
+    WHERE airports.id = runways.airport_ref
+    GROUP BY airports.name
+    ORDER BY db DESC
+    LIMIT 1;
+
+35.
+SELECT surface, count(id) as db
+	FROM runways
+    GROUP BY surface
+    ORDER BY db DESC;
+
+36.
+ALTER TABLE runways
+ADD COLUMN surface_type varchar(255);
+
+UPDATE runways
+SET surface_type = 'solid'
+WHERE surface LIKE '%ASP%' OR surface LIKE '%BIT%' OR surface LIKE '%CON%' OR surface LIKE '%PEM%';
+
+UPDATE runways
+SET surface_type = 'grass'
+WHERE surface LIKE '%GRAS%' OR surface LIKE '%GRE%' OR surface LIKE '%GRS%' OR surface LIKE '%TURF%';
+
+UPDATE runways
+SET surface_type = 'unknown'
+WHERE surface LIKE '%UNK%';
+
+

@@ -1,0 +1,42 @@
+1/a: SELECT distinct count(tanulo) AS "Papírgyűlytésben résztevők száma"
+	FROM leadasok;
+1/b: SELECT count(tazon) AS "Papírgyűlytésben résztevők száma"
+	FROM tanulok;
+
+2: SELECT count(tazon) AS "A-val kezdődő nevűek száma"
+	FROM tanulok
+    WHERE nev LIKE "A%";
+
+3: SELECT DISTINCT LEFT(nev, 1) AS Kezdőbetű, COUNT(nev) AS Darabszám
+	FROM tanulok
+    GROUP BY LEFT(nev, 1)
+    ORDER BY LEFT(nev, 1) ASC;
+
+4: SELECT DISTINCT LEFT(nev, 1) AS Kezdőbetű
+	FROM tanulok
+    GROUP BY LEFT(nev, 1)
+    HAVING COUNT(nev) >= 20;
+
+5: SELECT COUNT(*) AS DB
+	FROM leadasok
+    WHERE mennyiseg < 2000
+
+UNION ALL
+
+SELECT COUNT(*) AS DB
+	FROM leadasok
+    WHERE mennyiseg > 2000
+
+6: SELECT 
+	CASE
+		WHEN mennyiseg > 2000 THEN "Súlyos tételek"
+       	ELSE "Könnyű tételek"
+    END AS "Kategorizálás", 
+    COUNT(*) AS DB
+    FROM leadasok
+GROUP BY 
+	CASE
+		WHEN mennyiseg > 2000 THEN "Súlyos tételek"
+       	ELSE "Könnyű tételek"
+    END;
+	

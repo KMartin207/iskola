@@ -28,3 +28,19 @@ SELECT mnev, CONCAT('-', ROUND(SUM(terulet)), ' km2') AS Terület
     GROUP BY mnev
     ORDER BY ROUND(SUM(terulet)) DESC
     LIMIT 3;
+
+6.)
+SELECT CONCAT(LENGTH(varos.vnev), ' kar.') AS Névhossz, COUNT(varos.id) as Városszám
+	FROM varos
+    WHERE LENGTH(varos.vnev) > 9 OR LENGTH(varos.vnev) < 100
+    GROUP BY LENGTH(varos.vnev)
+    HAVING Városszám > 20
+    ORDER BY Névhossz ASC
+
+7.)
+SELECT LEFT(vnev, 1) AS Kezdőbetű, COUNT(varos.id) AS DB
+	FROM varos
+    WHERE vnev <> 'Budapest'
+    GROUP BY Kezdőbetű
+    ORDER BY Kezdőbetű ASC;
+
