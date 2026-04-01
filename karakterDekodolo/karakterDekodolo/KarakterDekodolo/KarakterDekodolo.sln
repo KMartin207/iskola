@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KarakterDekodolo", "KarakterDekodolo\KarakterDekodolo.csproj", "{CA4D90F4-CD25-4ECE-8222-2FF03CA22F88}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA4D90F4-CD25-4ECE-8222-2FF03CA22F88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA4D90F4-CD25-4ECE-8222-2FF03CA22F88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA4D90F4-CD25-4ECE-8222-2FF03CA22F88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA4D90F4-CD25-4ECE-8222-2FF03CA22F88}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {101CC506-C030-49BF-8A15-0E4A18E4BD16}
+	EndGlobalSection
+EndGlobal

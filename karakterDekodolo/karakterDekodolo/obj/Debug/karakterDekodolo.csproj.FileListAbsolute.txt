@@ -1,0 +1,8 @@
+Z:\Programozas_C\OOP\karakterDekodolo\karakterDekodolo\bin\Debug\bank.txt
+Z:\Programozas_C\OOP\karakterDekodolo\karakterDekodolo\bin\Debug\dekodol.txt
+Z:\Programozas_C\OOP\karakterDekodolo\karakterDekodolo\bin\Debug\karakterDekodolo.exe.config
+Z:\Programozas_C\OOP\karakterDekodolo\karakterDekodolo\bin\Debug\karakterDekodolo.exe
+Z:\Programozas_C\OOP\karakterDekodolo\karakterDekodolo\bin\Debug\karakterDekodolo.pdb
+Z:\Programozas_C\OOP\karakterDekodolo\karakterDekodolo\obj\Debug\karakterDekodolo.csprojAssemblyReference.cache
+Z:\Programozas_C\OOP\karakterDekodolo\karakterDekodolo\obj\Debug\karakterDekodolo.exe
+Z:\Programozas_C\OOP\karakterDekodolo\karakterDekodolo\obj\Debug\karakterDekodolo.pdb
