@@ -1,0 +1,7 @@
+E:\kalapacsvetes\Paris2012\Paris2012\bin\Debug\Paris2012.exe.config
+E:\kalapacsvetes\Paris2012\Paris2012\bin\Debug\Paris2012.exe
+E:\kalapacsvetes\Paris2012\Paris2012\bin\Debug\Paris2012.pdb
+E:\kalapacsvetes\Paris2012\Paris2012\obj\Debug\Paris2012.csproj.AssemblyReference.cache
+E:\kalapacsvetes\Paris2012\Paris2012\obj\Debug\Paris2012.csproj.CoreCompileInputs.cache
+E:\kalapacsvetes\Paris2012\Paris2012\obj\Debug\Paris2012.exe
+E:\kalapacsvetes\Paris2012\Paris2012\obj\Debug\Paris2012.pdb
