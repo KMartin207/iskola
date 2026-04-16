@@ -1,0 +1,13 @@
+Z:\Programozas_C\vizsgaFelkeszules\Pars2012\Pars2012GUI\bin\Debug\Pars2012GUI.exe.config
+Z:\Programozas_C\vizsgaFelkeszules\Pars2012\Pars2012GUI\bin\Debug\Pars2012GUI.exe
+Z:\Programozas_C\vizsgaFelkeszules\Pars2012\Pars2012GUI\bin\Debug\Pars2012GUI.pdb
+Z:\Programozas_C\vizsgaFelkeszules\Pars2012\Pars2012GUI\bin\Debug\Pars2012.exe
+Z:\Programozas_C\vizsgaFelkeszules\Pars2012\Pars2012GUI\bin\Debug\Pars2012.pdb
+Z:\Programozas_C\vizsgaFelkeszules\Pars2012\Pars2012GUI\bin\Debug\Pars2012.exe.config
+Z:\Programozas_C\vizsgaFelkeszules\Pars2012\Pars2012GUI\obj\Debug\Pars2012GUI.csprojAssemblyReference.cache
+Z:\Programozas_C\vizsgaFelkeszules\Pars2012\Pars2012GUI\obj\Debug\Pars2012GUI.Form1.resources
+Z:\Programozas_C\vizsgaFelkeszules\Pars2012\Pars2012GUI\obj\Debug\Pars2012GUI.Properties.Resources.resources
+Z:\Programozas_C\vizsgaFelkeszules\Pars2012\Pars2012GUI\obj\Debug\Pars2012GUI.csproj.GenerateResource.cache
+Z:\Programozas_C\vizsgaFelkeszules\Pars2012\Pars2012GUI\obj\Debug\Pars2012GUI.csproj.CopyComplete
+Z:\Programozas_C\vizsgaFelkeszules\Pars2012\Pars2012GUI\obj\Debug\Pars2012GUI.exe
+Z:\Programozas_C\vizsgaFelkeszules\Pars2012\Pars2012GUI\obj\Debug\Pars2012GUI.pdb

@@ -1,0 +1,6 @@
+Z:\Programozas_C\vizsgaFelkeszules\Pars2012\Pars2012\bin\Debug\Pars2012.exe.config
+Z:\Programozas_C\vizsgaFelkeszules\Pars2012\Pars2012\bin\Debug\Pars2012.exe
+Z:\Programozas_C\vizsgaFelkeszules\Pars2012\Pars2012\bin\Debug\Pars2012.pdb
+Z:\Programozas_C\vizsgaFelkeszules\Pars2012\Pars2012\obj\Debug\Pars2012.csprojAssemblyReference.cache
+Z:\Programozas_C\vizsgaFelkeszules\Pars2012\Pars2012\obj\Debug\Pars2012.exe
+Z:\Programozas_C\vizsgaFelkeszules\Pars2012\Pars2012\obj\Debug\Pars2012.pdb
