@@ -1,0 +1,6 @@
+Z:\Programozas_C\vizsgaFelkeszules\SzakmaiVizsgaGyakorlo\Kalapacsvetes\Kalapacsvetes\bin\Debug\Kalapacsvetes.exe.config
+Z:\Programozas_C\vizsgaFelkeszules\SzakmaiVizsgaGyakorlo\Kalapacsvetes\Kalapacsvetes\bin\Debug\Kalapacsvetes.exe
+Z:\Programozas_C\vizsgaFelkeszules\SzakmaiVizsgaGyakorlo\Kalapacsvetes\Kalapacsvetes\bin\Debug\Kalapacsvetes.pdb
+Z:\Programozas_C\vizsgaFelkeszules\SzakmaiVizsgaGyakorlo\Kalapacsvetes\Kalapacsvetes\obj\Debug\Kalapacsvetes.csprojAssemblyReference.cache
+Z:\Programozas_C\vizsgaFelkeszules\SzakmaiVizsgaGyakorlo\Kalapacsvetes\Kalapacsvetes\obj\Debug\Kalapacsvetes.exe
+Z:\Programozas_C\vizsgaFelkeszules\SzakmaiVizsgaGyakorlo\Kalapacsvetes\Kalapacsvetes\obj\Debug\Kalapacsvetes.pdb
